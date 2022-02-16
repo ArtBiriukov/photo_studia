@@ -1,0 +1,19 @@
+//расположение элементов по центру
+%displayCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//расположение элементов по центру вертикали
+%displayFlex {
+  display: flex;
+  align-items: center;
+}
+
+//расположение элементов на всю ширину по центру
+%displaySpaceBeetwen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,3 +1,13 @@
+//FONTS
 @import 'fonts.scss';
+//MAIN MODULES
 @import './modules/vars.scss';
+@import './modules/mixin.scss';
+@import './modules/selectors.scss';
 @import './modules/global.scss';
+
+//BLOCKS
+@import "./blocks/header.scss";
+
+// //MEDIA 
+// @import "./modules/media.scss";

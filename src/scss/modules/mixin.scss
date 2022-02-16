@@ -1,0 +1,11 @@
+@mixin transition ($property:all, $duration:.5s, $timingFunction:ease-in-out) {
+  transition: $property $duration $timingFunction;
+}
+
+@mixin radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin zindex($index) {
+  z-index: $index;
+}
