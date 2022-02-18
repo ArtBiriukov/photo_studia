@@ -10,14 +10,10 @@
   }
 
   &__title {
-    margin-bottom: 117px;
-
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 107px;
-    }
+    margin-bottom: 80px;
 
     @media screen and (max-width: 896px) {
-      margin-bottom: 56px;
+      margin-bottom: 40px;
     }
   }
 
