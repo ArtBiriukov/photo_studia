@@ -10,6 +10,7 @@
   <meta name="description" content="Проект про классные лакации в вашем городе" />
   <meta name="keywords" content="фото, лакации" />
   <meta name="author" content="Artem Biryukov" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
   <title>Главная</title>
 </head>
@@ -37,6 +38,10 @@
   <symbol id="icon-telegram">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M33.7065 2.53874C33.6236 3.63887 32.9398 7.48453 32.2663 11.6363L30.1422 23.9578C30.1422 23.9578 29.9764 25.7658 28.5258 26.0719C27.0856 26.3876 24.7024 24.9718 24.2776 24.6561C23.9357 24.417 17.9053 20.887 15.6984 19.1651C15.1078 18.6963 14.4239 17.7492 15.7812 16.6587C18.8379 14.0662 22.4955 10.8519 24.7024 8.81426C25.7179 7.87675 26.7436 5.67649 22.4955 8.3455L10.5176 15.7977C10.5176 15.7977 9.1603 16.5821 6.61139 15.8742C4.06248 15.1663 1.08875 14.2288 1.08875 14.2288C1.08875 14.2288 -0.95245 13.0522 2.52899 11.799L22.3297 4.27024C24.288 3.4858 30.9089 0.979418 30.9089 0.979418C30.9089 0.979418 33.9656 -0.120708 33.7065 2.53874Z" />
   </symbol>
+  <symbol id="icon-arrow">
+    <path d="M2.5776 2.5L21.4142 21.3349C22.1953 22.1159 22.1953 23.3823 21.4142 24.1634L2.5776 43" stroke-width="4" stroke-linecap="round" fill='none' />
+  </symbol>
+
 </svg>
 
   <header class="header container" id="header">
@@ -90,13 +95,61 @@
   <div class="main-screen__wrapper container">
     <div class="main-screen__content">
       <h1 class="main-screen__heading">Профессиональная фотосессия в студии</h1>
-      <h3 class="main-screen__title">Наша фотостудия позволит <br />
+      <h3 class="main-screen__title title">Наша фотостудия позволит <br />
         исполнить ваши мечты</h3>
       <p class="main-screen__text">Фотографии стали неотъемлемой частью нашей жизни. Это теперь не просто памятные снимки в альбомах, ныне фото становиться способом понравиться окружающим, получить восхищение, заявить о себе всему миру. <br />
         Выбор правильной фотостудии занимает далеко не последнее место в получение фотографий. И мы с точностью заявляем, что нашей фотостудией вы останетесь довольны <br />
         и еще не раз захотите возвращаться к нам.</p>
       <button href="#" class="main-screen__btn btn">Получить консультацию</button>
     </div>
+  </div>
+
+</section>
+    <section class="works" id="works">
+  <h2 class="works__title title">Наши работы</h2>
+
+  <!-- Slider main container -->
+  <div class="slider works-slider">
+    <!-- Additional required wrapper -->
+    <div class="slider__wrapper works-slider__wrapper">
+
+      <!-- Slides -->
+      <div class="slider__slide works-slider__slide">
+        <img src="../../images/works/first-slide.jpg" alt="Slide 1">
+      </div>
+
+      <div class="slider__slide works-slider__slide active">
+        <img src="../../images/works/second-slide.jpg" alt="Slide 2">
+      </div>
+
+      <div class="slider__slide works-slider__slide">
+        <img src="../../images/works/three-slide.jpg" alt="Slide 3">
+      </div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="slider__pagination">
+      <span class="slider__dot active"></span>
+      <span class="slider__dot"></span>
+      <span class="slider__dot"></span>
+      <span class="slider__dot"></span>
+      <span class="slider__dot"></span>
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="slider__control works-slider__control">
+      <div class="slider__btn slider__btn-prev">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+      <div class="slider__btn slider__btn-next">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#icon-arrow"></use>
+        </svg>
+      </div>
+    </div>
+
   </div>
 
 </section>
@@ -142,19 +195,19 @@
       </p>
 
       <div class="footer__socials">
-        <svg width="32" height="31">
+        <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#icon-instagram"></use>
         </svg>
 
-        <svg width="23" height="31">
+        <svg width="23" height="31" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#icon-facebook"></use>
         </svg>
 
-        <svg width="32" height="29">
+        <svg width="32" height="29" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#icon-twitter"></use>
         </svg>
 
-        <svg width="34" height="27">
+        <svg width="34" height="27" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#icon-telegram"></use>
         </svg>
       </div>
