@@ -1,22 +1,30 @@
 .main-screen {
+  position: relative;
   background-color: #444;
-  background-image: url(../images/icons/icon_play.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   color: $text_white;
   padding: 145px 0;
 
-  @media screen and (max-width: 1024px) {
-    background-image: url(../images/icons/icon_play-tablet.svg);
-    padding: 70px 0;
+  &__play-icon svg {
+    & path {
+      fill: #575757;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 96px;
+      height: 112px;
+    }
+
+    @media screen and (max-width: 896px) {
+      width: 36px;
+      height: 41px;
+    }
   }
 
-  @media screen and (max-width: 896px) {
-    background-image: url(../images/icons/icon_play-mobile.svg);
-    padding: 183px 0;
-  }
+
 
   &__content {
+    position: relative;
+    z-index: 2;
     width: 815px;
 
     @media screen and (max-width: 1024px) {
