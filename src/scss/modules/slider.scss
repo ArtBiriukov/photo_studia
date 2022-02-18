@@ -63,19 +63,33 @@
     @extend %displayCenter;
     cursor: pointer;
 
+    @media screen and (max-width: 1024px) {
+      width: 64px;
+      height: 64px;
+    }
+
+    @media screen and (max-width: 896px) {
+      width: 36px;
+      height: 36px;
+    }
+
+    &-prev {
+      transform: rotate(180deg);
+    }
+
     svg {
       width: 24px;
       height: 45px;
 
-      // @media screen and (max-width: 896px) {
-      //   width: 13px;
-      //   height: 23px;
-      // }
-    }
+      path {
+        stroke: $accent_color;
+      }
 
 
-    &-prev {
-      transform: rotate(180deg);
+      @media screen and (max-width: 896px) {
+        width: 13x;
+        height: 23px;
+      }
     }
 
     &:hover {
@@ -83,8 +97,11 @@
     }
 
     &:active {
-      stroke: $color_white;
       background-color: $accent_color;
+
+      & svg path {
+        stroke: $color_white;
+      }
     }
   }
 }
