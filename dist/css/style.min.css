@@ -318,6 +318,18 @@ img {
   }
 }
 
+.locations {
+  padding-top: 120px;
+  background-image: url(../../images/location_bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 720px;
+}
+.locations__title {
+  margin-bottom: 80px;
+}
+
 footer {
   background-color: #F2F4F4;
   padding-top: 60px;
