@@ -1,0 +1,107 @@
+.slider {
+  position: relative;
+  z-index: 1;
+
+  &__wrapper {
+    @extend %displayCenter;
+  }
+
+  &__slide {
+    z-index: 1;
+  }
+
+  &__control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+
+    @extend %displaySpaceBeetwen;
+  }
+
+  &__pagination {
+    margin-top: 77px;
+    @extend %displayCenter;
+    column-gap: 14px;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: 57px;
+    }
+
+    @media screen and (max-width: 896px) {
+      margin-top: 28px;
+    }
+  }
+
+  &__dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: $color_grey;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.active {
+      width: 12px;
+      height: 12px;
+      background-color: $accent_color;
+    }
+  }
+
+  &__btn {
+    width: 73px;
+    height: 73px;
+
+    background-color: $color_white;
+    border-radius: 50%;
+    stroke: $accent_color;
+
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+
+    @extend %displayCenter;
+    cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+      width: 64px;
+      height: 64px;
+    }
+
+    @media screen and (max-width: 896px) {
+      width: 36px;
+      height: 36px;
+    }
+
+    &-prev {
+      transform: rotate(180deg);
+    }
+
+    svg {
+      width: 24px;
+      height: 45px;
+
+      path {
+        stroke: $accent_color;
+      }
+
+
+      @media screen and (max-width: 896px) {
+        width: 13x;
+        height: 23px;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active {
+      background-color: $accent_color;
+
+      & svg path {
+        stroke: $color_white;
+      }
+    }
+  }
+}
