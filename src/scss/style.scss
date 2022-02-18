@@ -4,14 +4,15 @@
 @import './modules/vars.scss';
 @import './modules/mixin.scss';
 @import './modules/selectors.scss';
+@import './modules/slider';
 @import './modules/global.scss';
 
 //BLOCKS
 @import "./blocks/header.scss";
 @import "./blocks/mainScreen";
+@import "./blocks/works";
+
 @import "./blocks/locations";
-
-
 
 
 @import './blocks/footer.scss';

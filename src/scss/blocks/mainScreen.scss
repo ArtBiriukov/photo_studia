@@ -50,9 +50,7 @@
   }
 
   &__title {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 120%;
+    text-align: initial;
     margin-bottom: 24px;
 
     @media screen and (max-width: 1024px) {
