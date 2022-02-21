@@ -1,0 +1,3 @@
+@function percent($length, $allLength) {
+  @return calc(($length/$allLength)*100%);
+}

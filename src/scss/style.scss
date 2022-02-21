@@ -1,14 +1,15 @@
 //FONTS
-@import 'fonts.scss';
+@import 'fonts';
 //MAIN MODULES
-@import './modules/vars.scss';
-@import './modules/mixin.scss';
-@import './modules/selectors.scss';
+@import './modules/vars';
+@import './modules/mixin';
+@import './modules/selectors';
+@import './modules/functions';
 @import './modules/slider';
-@import './modules/global.scss';
+@import './modules/global';
 
 //BLOCKS
-@import "./blocks/header.scss";
+@import "./blocks/header";
 @import "./blocks/mainScreen";
 @import "./blocks/works";
 @import "./blocks/locations";
@@ -17,6 +18,6 @@
 @import "./blocks/steps";
 
 
-@import './blocks/footer.scss';
+@import './blocks/footer';
 // MEDIA 
 // @import "./modules/media.scss";
