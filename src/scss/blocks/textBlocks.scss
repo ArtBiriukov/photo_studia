@@ -1,0 +1,70 @@
+.textblock {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @media screen and (max-width: 896px) {
+    padding-top: 50px;
+    padding-bottom: 36px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 896px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    line-height: 26px;
+
+    @media screen and (max-width: 1024px) {
+      line-height: 24px;
+    }
+
+    @media screen and (max-width: 896px) {
+      text-align: center;
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+  }
+
+  &__control {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    @media screen and (max-width: 896px) {
+      justify-content: center;
+      margin-top: 22px;
+    }
+  }
+
+  &__btn {
+    color: $accent_color;
+    font-weight: 600;
+    line-height: 24px;
+    margin-right: 16px;
+
+    @media screen and (max-width: 896px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  &__first {
+    background-color: $bg_color1;
+  }
+
+  &__second {
+    background-color: $bg_color2;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 896px) {}
