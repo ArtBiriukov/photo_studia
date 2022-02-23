@@ -18,14 +18,6 @@
     padding-bottom: 60px;
   }
 
-  &__title {
-    margin-bottom: 80px;
-
-    @media screen and (max-width: 896px) {
-      margin-bottom: 40px;
-    }
-  }
-
   &__container {
     @extend %displayCenter;
     flex-wrap: wrap;

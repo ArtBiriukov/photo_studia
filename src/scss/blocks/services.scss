@@ -9,14 +9,6 @@
     margin-top: 60px;
   }
 
-  &__title {
-    margin-bottom: 80px;
-
-    @media screen and (max-width: 896px) {
-      margin-bottom: 40px;
-    }
-  }
-
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
