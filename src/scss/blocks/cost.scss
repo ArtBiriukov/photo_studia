@@ -42,19 +42,20 @@
 
   &__item {
     position: relative;
-    flex: 0 0 398px;
+    max-width: 398px;
+    width: initial;
     padding: 48px 15px;
     border-radius: 16px;
     color: $text_color1;
     overflow: hidden;
 
     @media screen and (max-width: 1024px) {
-      flex: 0 0 420px;
+      max-width: 420px;
       padding: 48px 22px;
     }
 
-    @media screen and (max-width: 896px) {
-      flex: 0 0 340px;
+    @media screen and (max-width: 700px) {
+      max-width: 340px;
       padding: 45px 12px;
     }
 
@@ -243,6 +244,6 @@
 
   &__btn {
     display: block;
-    padding: 14px 89px;
+    padding: 14px 0;
   }
 }

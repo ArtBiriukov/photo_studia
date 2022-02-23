@@ -1,0 +1,229 @@
+.present {
+  padding-top: 82px;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 1439.98px) {
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (max-width: 896px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 896px) {
+      margin-bottom: 40px;
+    }
+  }
+
+
+  &__container {
+    position: relative;
+
+    border-radius: 25px;
+    background-color: $bg_color1;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 86px 37px 120px;
+
+    @media screen and (max-width: 1200px) {
+      padding-left: 60px;
+      padding-right: 45px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 20px 12px 70px 44px;
+    }
+
+    @media screen and (max-width: 896px) {
+      padding: 40px 10px 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+
+    width: initial;
+
+    bottom: -90px;
+    right: -98px;
+
+    @media screen and (max-width: 1200px) {
+      bottom: -75px;
+      right: -165px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      bottom: -30px;
+      right: -220px;
+    }
+
+    @media screen and (max-width: 896px) {
+      bottom: -25px;
+      right: -185px;
+      height: 55%;
+    }
+
+  }
+
+  &__left {
+    width: 485px;
+
+    padding-top: 112px;
+
+    @media screen and (max-width: 1024px) {
+      width: 375px;
+      padding-top: 119px;
+    }
+
+    @media screen and (max-width: 896px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 0;
+    }
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 1px;
+
+    color: #C1C1C1;
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 896px) {
+      font-size: 12px;
+    }
+  }
+
+  &__heading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: $text_color2;
+    margin-bottom: 52px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 896px) {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+
+    padding-left: 40px;
+
+    color: $text_color2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 24px;
+      width: 24px;
+
+      background: url(../../images/present_icon.svg), no-repeat;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__right {
+
+    @media screen and (max-width:896px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    position: relative;
+    z-index: 3;
+    margin-top: -6px;
+    width: initial;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 438px;
+
+      margin-top: 0;
+    }
+
+    @media screen and (max-width: 896px) {
+      max-width: 267px;
+    }
+  }
+
+  &__buy {
+    width: 342px;
+    margin-top: -17px;
+    margin-left: 38px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: -13px;
+      margin-left: 22px;
+    }
+
+    @media screen and (max-width: 896px) {
+      margin: 0;
+      max-width: 320px;
+      width: initial;
+    }
+  }
+
+  &__text {
+    line-height: 140%;
+
+    margin-bottom: 24px;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: 896px) {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 3;
+    padding: 14px 98px;
+
+    @media screen and (max-width: 896px) {
+      padding: 20px 0;
+    }
+  }
+}
