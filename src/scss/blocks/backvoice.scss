@@ -1,0 +1,225 @@
+.backvoice {
+
+  margin-bottom: 148px;
+
+  &__content {
+    @extend %displayCenter;
+
+    @media screen and (max-width: 896px) {
+      flex-direction: column;
+    }
+  }
+
+  &__map {
+    width: 650px;
+
+    @media screen and (max-width: 1024px) {
+      width: 382px;
+    }
+
+    @media screen and (max-width: 896px) {
+      max-width: 340px;
+      width: 100%;
+    }
+  }
+
+  &__form {
+    position: relative;
+    max-width: 550px;
+    z-index: 3;
+    padding: 81px 36px;
+    background: $bg_color1;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    @media screen and (max-width: 1024px) {
+      padding: 73px 50px;
+    }
+
+    @media screen and (max-width: 896px) {
+      margin-top: -45px;
+      padding: 51px 20px;
+      max-width: 320px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    border-radius: 50%;
+
+    &.decor1 {
+      top: -91px;
+      right: -75px;
+
+      width: 264px;
+      height: 264px;
+      background: rgba(0, 0, 0, 0.03);
+
+      @media screen and (max-width: 1024px) {
+        width: 201px;
+        height: 201px;
+        top: -65px;
+        right: -81px;
+      }
+
+      @media screen and (max-width: 896px) {
+        top: -111px;
+        right: -115px;
+      }
+    }
+
+    &.decor2 {
+      top: 106px;
+      right: -49px;
+      width: 106px;
+      height: 106px;
+      background: rgba(0, 0, 0, 0.04);
+
+      @media screen and (max-width: 1024px) {
+        top: 103px;
+        right: -63px;
+      }
+
+      @media screen and (max-width: 896px) {
+        top: 57px;
+        right: -97px;
+      }
+    }
+
+    &.decor3 {
+      bottom: -220px;
+      left: -130px;
+      width: 333px;
+      height: 333px;
+
+      background: rgba(0, 0, 0, 0.03);
+
+      @media screen and (max-width: 1024px) {
+        left: -182px;
+      }
+
+      @media screen and (max-width: 896px) {
+        bottom: -259px;
+        left: -222px;
+      }
+    }
+
+  }
+}
+
+.form {
+
+  &__content {
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 16px;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 896px) {
+      row-gap: 24px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: $text_color2;
+
+    @media screen and (max-width: 896px) {
+      font-size: 22px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-weight: 500;
+    line-height: 12px;
+    opacity: 0.4;
+
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    padding: 18px 16px;
+
+    background: #FFFFFF;
+    border: 1px solid #DDDEE4;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    margin-bottom: 16px;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 12px;
+      color: $color_grey;
+      opacity: 0.4;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    padding: 14px 0;
+  }
+
+  &__notific {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #585858;
+
+    a {
+      text-decoration-line: underline;
+      color: $text_color1;
+    }
+  }
+
+}
+
+
+//Настройки Карты
+.ymaps-2-1-79-map-bg {
+  border-radius: 25.8573px 0px 0px 25.8573px;
+
+  @media screen and (max-width: 896px) {
+    border-radius: 15px;
+  }
+}
+
+.ymaps-2-1-79-map ymaps {
+  @media screen and (max-width: 896px) {
+    box-sizing: border-box !important;
+  }
+}
+
+.ymaps-2-1-79-inner-panes {
+  border: 5px solid $bg_color1;
+  border-radius: 25.8573px 0px 0px 25.8573px;
+  box-shadow: 0px 2.69px 6.65px rgba(121, 121, 121, 0.2);
+
+  @media screen and (max-width: 896px) {
+    border-radius: 15px;
+  }
+}

@@ -74,10 +74,6 @@
 
       & .cost__services-item {
         width: 170px;
-
-        @media screen and (max-width: 896px) {
-          width: initial;
-        }
       }
     }
 
@@ -209,16 +205,17 @@
     }
 
     &-item {
-      padding: 6px;
+      height: 40px;
       background: #FFFFFF;
       border: 1px solid #C2C2C2;
       border-radius: 5px;
       cursor: pointer;
+      color: $text_color1;
 
       @include transition(background, 0.3s);
 
       @media screen and (max-width: 896px) {
-        padding: 6px 26px;
+
         flex: 1 1 150px;
       }
 
@@ -226,10 +223,8 @@
         background: #d3d2d2;
       }
 
-      @media screen and (max-width: 896px) {
-        &:last-child {
-          padding: 6px 68px;
-        }
+      &.active {
+        border: 1px solid $accent_color;
       }
     }
   }

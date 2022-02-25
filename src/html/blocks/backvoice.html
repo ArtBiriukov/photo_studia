@@ -1,0 +1,80 @@
+<div class="backvoice container">
+  <h2 class="backvoice__title title"></h2>
+  <div class="backvoice__content">
+
+    <div class="backvoice__map">
+
+      <div class="backvoice__map-wrapper">
+        <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+
+        <div id="mapexMap" style="width:100%;height:540px;">
+          <script type="text/javascript">
+            ymaps.ready(function () {
+              var mapexMap = new ymaps.Map('mapexMap', {
+                  center: [55.9925, 37.8524614], // центр карты
+                  zoom: 17, // масштаб 
+                  controls: ['zoomControl']
+                }),
+
+                myPlacemark = new ymaps.Placemark(
+                  [55.9917208, 37.8508414], // координаты маркера
+                  {
+                    "iconContent": `<div class="marker">
+                                    <img src="../../images/logo_marker.svg" alt="logo" class="marker__logo">
+                                    <div class="marker__content">
+                                      <p class="marker__text">+7 (499) 344 60 91</p>
+                                      <p class="marker__text">content@addmarkets.ru</p>
+                                      <p class="marker__text">Режим работы:
+                                        ПН-ПТ 09:00 - 18:00</p>
+                                    </div>
+                                  </div>`,
+                    "balloonContent": "",
+                    "balloonContentHeader": "AddPhoto"
+                  }, // контент маркера
+                  {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#imageWithContent',
+                    // Своё изображение иконки метки.
+                    //iconImageHref: 'images/marker.png',
+                    // Размеры метки.
+                    iconImageSize: [1, 1],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-100, -225]
+                  });
+              mapexMap.behaviors.disable('scrollZoom');
+              mapexMap.geoObjects.add(myPlacemark);
+            });
+          </script>
+        </div>
+      </div>
+
+    </div>
+
+    <form action="#" class="backvoice__form" method="post">
+      <div class="form__content">
+        <h3 class="form__title">Форма обратной связи</h3>
+
+
+
+        <div class="form__wrapper">
+          <label class="form__label" for="name">Имя</label>
+          <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя">
+          <label class="form__label" for="name">E-mail</label>
+          <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail">
+          <label class="form__label" for="name">Телефон</label>
+          <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон">
+        </div>
+
+        <button class="form__btn btn" type="submit">Отправить</button>
+      </div>
+
+      <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+
+      <div class="backvoice__decor decor1"></div>
+      <div class="backvoice__decor decor2"></div>
+      <div class="backvoice__decor decor3"></div>
+    </form>
+  </div>
+</div>

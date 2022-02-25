@@ -114,11 +114,67 @@ img {
   transform: translate(-50%, -50%);
 }
 
-//TABLE
-@media screen and (max-width: 1024px) {}
+//Маркер на карте
 
-//MOBILE
-@media screen and (max-width: 896px) {}
+.marker {
+  width: 255px;
+  position: relative;
+  padding: 36px 26px;
+  background: $text_color2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: #fff;
+  pointer-events: none;
+
+  @media screen and (max-width: 896px) {
+    width: 238px;
+    padding: 32px 30px;
+  }
+
+  &__logo {
+    width: 113px;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    width: 153px;
+
+    @media screen and (max-width: 896px) {
+      width: 132px;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: start;
+
+    @media screen and (max-width: 896px) {
+      font-size: 14px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      line-height: 24px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -19px;
+    content: '';
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    background: $text_color2;
+    height: 20px;
+    width: 40px;
+  }
+}
 
 /*
 @media screen and (max-width: 1199.98px) {}
