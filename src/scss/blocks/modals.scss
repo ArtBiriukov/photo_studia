@@ -1,0 +1,226 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 3;
+
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+
+  background: rgba($color: #000000, $alpha: 0.4);
+
+  @include transition;
+
+  &.show {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+  background: white;
+  border-radius: 15px;
+
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+
+  @include transition;
+
+  &.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 100;
+    top: -39px;
+    right: 0;
+
+    stroke: #fff;
+    cursor: pointer;
+
+    @include transition;
+
+    &:hover {
+      stroke: $accent_color;
+    }
+
+    @media screen and (max-width: 896px) {
+      top: 12px;
+      right: 12px;
+      stroke: #D8D8D8;
+    }
+  }
+
+  &__content {
+    padding: 60px 40px;
+
+    @extend %displaySpaceBeetwen;
+    gap: 26px;
+
+    &-sucsses {
+      position: relative;
+      width: 622px;
+
+      flex-direction: column;
+      padding: 88px 83px;
+      text-align: center;
+
+      overflow: hidden;
+      z-index: 10;
+      border-radius: 15px;
+      cursor: default;
+
+      @media screen and (max-width: 896px) {
+        width: 337px;
+        padding: 99px 23px;
+      }
+
+      @media screen and (max-width: 350px) {
+        width: 280px;
+      }
+    }
+
+    @media screen and (max-width: 1090px) {
+      padding: 30px 20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 50px;
+    }
+
+    @media screen and (max-width: 896px) {
+      padding: 18px 17px 32px 18px;
+      flex-direction: column;
+    }
+
+    &-col {
+      @media screen and (max-width: 896px) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__title {
+    &-sucsses {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 120%;
+
+      color: #4A4A4A;
+      z-index: 10;
+
+      @media screen and (max-width: 896px) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__text {
+    &-sucsses {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+
+      margin-top: 24px;
+      color: #121621;
+      opacity: 0.4;
+      z-index: 10;
+
+      @media screen and (max-width: 896px) {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  &__decor1 {
+    left: percent(-177, 622);
+    top: percent(100, 331);
+
+    width: 264px;
+    height: 264px;
+    background: #F9F4EE;
+
+    @media screen and (max-width: 896px) {
+      left: percent(-177, 337);
+    }
+  }
+
+  &__decor2 {
+    left: percent(2, 622);
+    top: percent(275, 331);
+
+    width: 106px;
+    height: 106px;
+
+    background: #F9F4EE;
+    mix-blend-mode: multiply;
+
+    @media screen and (max-width: 896px) {
+      left: percent(2, 337);
+    }
+  }
+
+  &__decor3 {
+    right: percent(-74, 622);
+    top: percent(-132, 331);
+
+    width: 264px;
+    height: 264px;
+    background: rgba(0, 0, 0, 0.03);
+
+    @media screen and (max-width: 896px) {
+      right: percent(-116, 337);
+    }
+  }
+
+  &__decor4 {
+    right: percent(-39, 622);
+    top: percent(78, 331);
+
+    width: 106px;
+    height: 106px;
+
+    background: rgba(0, 0, 0, 0.04);
+    mix-blend-mode: multiply;
+
+    @media screen and (max-width: 896px) {
+      right: percent(-68, 337);
+      top: percent(82, 331);
+    }
+  }
+
+}
+
+//Картинка для модалки обратной связи
+
+.backvoice__img,
+.location__img,
+.review__img {
+  width: 455px;
+
+  @media screen and (max-width: 1024px) {
+    width: 363px;
+  }
+
+  @media screen and (max-width: 896px) {
+    width: 112px;
+  }
+}
+
+@import './select';

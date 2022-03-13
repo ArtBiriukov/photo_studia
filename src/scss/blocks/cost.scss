@@ -153,7 +153,6 @@
     font-size: 15px;
 
     @media screen and (max-width: 896px) {
-
       font-size: 13px;
       line-height: 140%;
     }
@@ -197,8 +196,6 @@
       @extend %displaySpaceBeetwen;
       gap: 5px;
 
-      @media screen and (max-width: 1024px) {}
-
       @media screen and (max-width: 896px) {
         flex-wrap: wrap;
       }
@@ -215,7 +212,6 @@
       @include transition(background, 0.3s);
 
       @media screen and (max-width: 896px) {
-
         flex: 1 1 150px;
       }
 

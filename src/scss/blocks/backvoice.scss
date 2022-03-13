@@ -1,13 +1,9 @@
 .backvoice {
-
   margin-bottom: 148px;
+  @extend %displayCenter;
 
-  &__content {
-    @extend %displayCenter;
-
-    @media screen and (max-width: 896px) {
-      flex-direction: column;
-    }
+  @media screen and (max-width: 896px) {
+    flex-direction: column;
   }
 
   &__map {
@@ -36,6 +32,14 @@
     flex-direction: column;
     overflow: hidden;
 
+    &-title {
+      font-size: 30px;
+    }
+
+    &-date {
+      width: 100%;
+    }
+
     @media screen and (max-width: 1024px) {
       padding: 73px 50px;
     }
@@ -52,152 +56,68 @@
     border-radius: 50%;
 
     &.decor1 {
-      top: -91px;
-      right: -75px;
+      top: percent(-91, 594);
+      right: percent(-75, 551);
 
       width: 264px;
       height: 264px;
       background: rgba(0, 0, 0, 0.03);
 
       @media screen and (max-width: 1024px) {
+        top: percent(-65, 594);
+        right: percent(-81, 482);
+
         width: 201px;
         height: 201px;
-        top: -65px;
-        right: -81px;
       }
 
       @media screen and (max-width: 896px) {
-        top: -111px;
-        right: -115px;
+        top: percent(-111, 541);
+        right: percent(-115, 321);
       }
     }
 
     &.decor2 {
-      top: 106px;
-      right: -49px;
+      top: percent(116, 594);
+      right: percent(-49, 551);
+
       width: 106px;
       height: 106px;
       background: rgba(0, 0, 0, 0.04);
 
       @media screen and (max-width: 1024px) {
-        top: 103px;
-        right: -63px;
+        top: percent(103, 594);
+        right: percent(-63, 482);
       }
 
       @media screen and (max-width: 896px) {
-        top: 57px;
-        right: -97px;
+        top: percent(57, 541);
+        right: percent(-97, 321);
+
       }
     }
 
     &.decor3 {
-      bottom: -220px;
-      left: -130px;
+      bottom: percent(-220, 594);
+      left: percent(-130, 551);
+
       width: 333px;
       height: 333px;
 
       background: rgba(0, 0, 0, 0.03);
 
       @media screen and (max-width: 1024px) {
-        left: -182px;
+        left: percent(-182, 482);
       }
 
       @media screen and (max-width: 896px) {
-        bottom: -259px;
-        left: -222px;
+        bottom: percent(-213, 541);
+        left: percent(-222, 321);
       }
     }
 
   }
 }
-
-.form {
-
-  &__content {
-    width: 100%;
-    padding: 0 30px;
-    margin-bottom: 30px;
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 16px;
-      padding: 0;
-    }
-
-    @media screen and (max-width: 896px) {
-      row-gap: 24px;
-    }
-  }
-
-  &__title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 120%;
-    color: $text_color2;
-
-    @media screen and (max-width: 896px) {
-      font-size: 22px;
-    }
-  }
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__label {
-    font-weight: 500;
-    line-height: 12px;
-    opacity: 0.4;
-
-    margin-bottom: 8px;
-  }
-
-  &__input {
-    padding: 18px 16px;
-
-    background: #FFFFFF;
-    border: 1px solid #DDDEE4;
-    box-sizing: border-box;
-
-    border-radius: 5px;
-    margin-bottom: 16px;
-
-    &::placeholder {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 12px;
-      color: $color_grey;
-      opacity: 0.4;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__btn {
-    padding: 14px 0;
-  }
-
-  &__notific {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    text-align: center;
-    color: #585858;
-
-    a {
-      text-decoration-line: underline;
-      color: $text_color1;
-    }
-  }
-
-}
-
 
 //Настройки Карты
 .ymaps-2-1-79-map-bg {

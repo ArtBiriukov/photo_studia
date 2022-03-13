@@ -1,0 +1,232 @@
+.form {
+  width: 480px;
+
+  @media screen and (max-width: 1024px) {
+    width: 374px;
+  }
+
+  @media screen and (max-width: 896px) {
+    width: 304px;
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 250px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: $text_color2;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 896px) {
+      font-size: 22px;
+    }
+
+    @media screen and (max-width: 350px) {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__date {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 1024px) {
+      padding: 0;
+    }
+
+    @media screen and (max-width: 896px) {
+      padding: 0 12px;
+    }
+  }
+
+  &__elem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 896px) {
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+
+    color: #121621;
+    opacity: 0.4;
+
+    margin-bottom: 8px;
+    cursor: default;
+
+    @media screen and (max-width: 896px) {
+      font-size: 12px;
+    }
+  }
+
+  &__input {
+    padding: 18px 16px;
+
+    border: 1px solid #DDDEE4;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    margin-bottom: 16px;
+
+    font-size: 12px;
+    line-height: 12px;
+
+    outline: none;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 12px;
+      color: $color_grey;
+      opacity: 0.4;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    padding: 14px 0;
+
+    @media screen and (max-width: 896px) {
+      padding: 12px 0;
+    }
+  }
+
+  &__notific {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #585858;
+
+    a {
+      text-decoration-line: underline;
+      color: $text_color1;
+    }
+
+    @media screen and (max-width: 896px) {
+      font-size: 11px;
+    }
+  }
+
+  &__textarea {
+    max-height: 300px;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 12px;
+
+    resize: vertical;
+    outline: none;
+    border: none;
+
+    &::placeholder {
+      color: $color_grey;
+      opacity: 0.4;
+    }
+
+  }
+
+  &__photo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 6px;
+    margin-top: 15px;
+
+    &-del {
+      position: absolute;
+      top: 11px;
+      right: 11px;
+      width: 27px;
+      height: 27px;
+
+      background: #EAEAEA;
+      border-radius: 50%;
+
+      @extend %displayCenter;
+      @include transition;
+
+      cursor: pointer;
+
+      &:hover {
+        background: #fff;
+      }
+    }
+
+    &-content {
+      max-height: 147px;
+
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      overflow: overlay;
+
+      @media screen and (max-width: 1024px) {
+        max-height: 260px;
+        gap: 8px;
+      }
+
+      @media screen and (max-width: 896px) {
+        max-height: 180px;
+      }
+    }
+
+    &-item {
+      position: relative;
+      width: 166px;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+
+    &-btn {
+      position: relative;
+      width: 32px;
+      height: 32px;
+
+      @extend %displayCenter;
+      cursor: pointer;
+    }
+
+    &-upload {
+      display: none;
+    }
+
+    &-icon {
+      fill: #BBBDC1;
+      @include transition;
+
+      &::hover {
+        fill: $accent_color;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
 }
 
 body {
+  position: relative;
   min-height: 100%;
 
   color: $text_color1;
@@ -29,7 +30,6 @@ body {
 //   background-color: #123;
 // }
 
-
 a {
   text-decoration: none;
   color: inherit;
@@ -41,6 +41,10 @@ ul {
 
 img {
   width: 100%;
+  display: block;
+}
+
+svg {
   display: block;
 }
 
@@ -115,7 +119,6 @@ img {
 }
 
 //Маркер на карте
-
 .marker {
   width: 255px;
   position: relative;
@@ -176,13 +179,8 @@ img {
   }
 }
 
-/*
-@media screen and (max-width: 1199.98px) {}
-
-@media screen and (max-width: 991.98px) {}
-
-@media screen and (max-width: 767.98px) {}*/
-
 @media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 896px) {}
+
+@media screen and (max-width: 350px) {}

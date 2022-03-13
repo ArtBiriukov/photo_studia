@@ -82,6 +82,8 @@ footer {
 
   &__socials {
 
+    @extend %displayCenter;
+
     &>* {
       cursor: pointer;
       fill: $color_grey;
@@ -100,6 +102,4 @@ footer {
       }
     }
   }
-
-  @media screen and (max-width: 896px) {}
 }
