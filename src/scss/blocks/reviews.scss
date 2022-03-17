@@ -1,49 +1,35 @@
 .reviews {
+  position: relative;
+
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 186px;
 
-  &__title {
-    margin-bottom: 205px;
-  }
-
-  &__slider {
+  .slider__controls {
     width: 100%;
   }
 
-  &__inner {
-    width: 100%;
-    @extend %displayCenter;
+  .slider__controls .swiper-button-prev {
+    left: 16px;
   }
 
-  &__wrapper {
-    width: 1050px;
-    @extend %displaySpaceBeetwen;
-  }
-
-  &__slide {
-    max-width: 340px;
-    @extend %displayCenter;
-    flex-direction: column;
-  }
-
-  &__avatar {
-    img {
-      width: initial;
-    }
-  }
-
-  &__content {
-    @extend %displayCenter;
-    flex-direction: column;
-  }
-
-  &__text {
-    text-align: center;
+  .slider__controls .swiper-button-next {
+    right: 16px;
   }
 
   &__btn {
     padding: 14px 70px;
+    margin-top: -24px;
+    z-index: 100;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: 42px;
+      z-index: initial;
+    }
+
+    @media screen and (max-width: 896px) {
+      margin-top: 32px;
+    }
   }
 }

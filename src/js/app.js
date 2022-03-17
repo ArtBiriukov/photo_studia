@@ -1,7 +1,11 @@
-import app1 from './modules/app1.js';
 import sliders from './modules/sliders.js';
+import gal from './modules/gallery.js';
+import textBlock from './modules/textBlock.js';
+
+import './vender/vender.js';
+
 
 
 sliders();
-app1();
-console.log(1);
+gal();
+textBlock();

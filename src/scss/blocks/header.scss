@@ -31,7 +31,7 @@
         @include transition;
         transform: translateY(-1000px);
 
-        &__show {
+        &.show {
           transform: translateY(0);
         }
       }
@@ -69,12 +69,26 @@
       }
 
       &__link {
+        font-size: 14px;
+        line-height: 20px;
+        color: $text_color2;
+
+        @include transition;
+
         &:hover {
           color: $text_color1;
         }
 
         &:active {
           color: $accent_color;
+        }
+
+        @media screen and (max-width: 1024px) {
+          font-size: 12px;
+        }
+
+        @media screen and (max-width: 896px) {
+          font-size: 14px;
         }
       }
 
@@ -141,6 +155,8 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 20px;
+        color: $text_color2;
+
 
         @media screen and (max-width: 1161px) {
           order: initial;

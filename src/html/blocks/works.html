@@ -1,47 +1,37 @@
 <section class="works" id="works">
   <h2 class="works__title title">Наши работы</h2>
 
-  <!-- Slider main container -->
-  <div class="slider works-slider">
-    <!-- Additional required wrapper -->
-    <div class="slider__wrapper works-slider__wrapper">
-      <!-- Slides -->
-      <div class="slider__slide works-slider__slide">
+  <div class="swiper slider__works">
+
+    <div class="swiper-wrapper slider__wrapper">
+
+      <div class="swiper-slide slider__slide>
+        <a class=" gallery" data-fslightbox="works" href="../../images/works/first-slide.jpg">
         <img src="../../images/works/first-slide.jpg" alt="Slide 1">
+        </a>
       </div>
 
-      <div class="slider__slide works-slider__slide active">
-        <img src="../../images/works/second-slide.jpg" alt="Slide 2">
+      <div class="swiper-slide slider__slide">
+        <a class="gallery" data-fslightbox="works" href="../../images/works/second-slide.jpg">
+          <img src="../../images/works/second-slide.jpg" alt="Slide 2">
+        </a>
+
       </div>
 
-      <div class="slider__slide works-slider__slide">
-        <img src="../../images/works/three-slide.jpg" alt="Slide 3">
+      <div class="swiper-slide slider__slide">
+        <a class="gallery" data-fslightbox="works" href="../../images/works/three-slide.jpg">
+          <img src="../../images/works/three-slide.jpg" alt="Slide 3">
+        </a>
+
       </div>
 
     </div>
-    <!-- If we need pagination -->
-    <div class="slider__pagination">
-      <span class="slider__dot active"></span>
-      <span class="slider__dot"></span>
-      <span class="slider__dot"></span>
-      <span class="slider__dot"></span>
-      <span class="slider__dot"></span>
-    </div>
 
-    <!-- If we need navigation buttons -->
-    <div class="slider__control works-slider__control">
-      <div class="slider__btn slider__btn-prev">
-        <svg width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.5776 2.5L21.4142 21.3349C22.1953 22.1159 22.1953 23.3823 21.4142 24.1634L2.5776 43" stroke-width="4" stroke-linecap="round" />
-        </svg>
-      </div>
-      <div class="slider__btn slider__btn-next">
-        <svg width="24" height="45" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2.5776 2.5L21.4142 21.3349C22.1953 22.1159 22.1953 23.3823 21.4142 24.1634L2.5776 43" stroke-width="4" stroke-linecap="round" />
-        </svg>
-      </div>
-    </div>
+    <div class="swiper-button-prev slider__button slider__works-btn-prev"></div>
+    <div class="swiper-button-next slider__button slider__works-btn-next"></div>
 
   </div>
+
+  <div class="swiper-pagination slider__pagination"></div>
 
 </section>

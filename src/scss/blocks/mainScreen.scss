@@ -3,6 +3,19 @@
   background-color: #444;
   color: $text_white;
   padding: 145px 0;
+  height: calc(100vh - 80px);
+
+  @media screen and (max-width: 1024px) {
+    height: initial;
+    padding: 70px 0;
+  }
+
+  @media screen and (max-width: 896px) {
+    padding: 183px 0;
+
+    display: flex;
+    align-items: center;
+  }
 
   &__play-icon svg {
     & path {

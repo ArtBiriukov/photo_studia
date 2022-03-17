@@ -1,0 +1,33 @@
+.btn__top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  height: 50px;
+  width: 50px;
+
+  font-family: swiper-icons;
+  font-size: 30px;
+  color: $accent_color;
+
+  @extend %displayCenter;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid $accent_color;
+
+  transform: rotate(270deg);
+
+  cursor: pointer;
+  @include transition;
+
+  &::after {
+    content: 'next';
+  }
+
+  &:hover {
+    background: $accent_color;
+    color: #fff;
+  }
+
+
+}

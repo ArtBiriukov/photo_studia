@@ -1,0 +1,2 @@
+//Галлерея
+import 'fslightbox';
