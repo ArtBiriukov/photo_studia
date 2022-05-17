@@ -2,30 +2,30 @@
 @import 'fonts';
 //MAIN MODULES
 @import './modules/vars';
+@import './modules/global';
 @import './modules/mixin';
 @import './modules/selectors';
 @import './modules/functions';
 @import './modules/slider';
-@import './modules/global';
+@import './modules/btn';
 
 //BLOCKS
-@import "./blocks/header";
-@import "./blocks/mainScreen";
-@import "./blocks/works";
-@import "./blocks/locations";
-@import "./blocks/decor";
-@import "./blocks/services";
-@import "./blocks/steps";
-@import "./blocks/textBlocks";
-@import "./blocks/cost";
-@import "./blocks/present";
-@import "./blocks/reviews";
-@import "./blocks/backvoice";
-@import "./blocks/form";
-@import "./blocks/modals";
-@import "./blocks/button-top";
-
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/play-icon';
+@import './blocks/mainScreen';
+@import './blocks/works';
+@import './blocks/locations';
+@import './blocks/decor';
+@import './blocks/services';
+@import './blocks/steps';
+@import './blocks/textBlocks';
+@import './blocks/cost';
+@import './blocks/present';
+@import './blocks/reviews';
+@import './blocks/backvoice';
+@import './blocks/form';
+@import './blocks/modals';
+@import './blocks/button-top';
 
 @import './blocks/footer';
-// MEDIA 
-// @import "./modules/media.scss";

@@ -1,13 +1,13 @@
 .cost {
   padding-top: 120px;
   padding-bottom: 170px;
-  background-image: url(../../images/cost_bg.svg);
+  background-image: url(@images/cost_bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (max-width: 1024px) {
-    background-image: url(../../images/cost_bg-tablet.svg);
+    background-image: url(@images/cost_bg-tablet.svg);
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -18,7 +18,7 @@
     padding-bottom: 60px;
   }
 
-  &__container {
+  &__list {
     @extend %displayCenter;
     flex-wrap: wrap;
     gap: 22px;
@@ -41,71 +41,12 @@
     color: $text_color1;
     overflow: hidden;
 
-    @media screen and (max-width: 1024px) {
-      max-width: 420px;
-      padding: 48px 22px;
-    }
-
-    @media screen and (max-width: 700px) {
-      max-width: 340px;
-      padding: 45px 12px;
-    }
-
-    &:nth-child(1) {
-      background-color: $bg_color1;
-    }
-
-    &:nth-child(2) {
-      background-color: $bg_color2;
-    }
-
-    &:nth-child(3) {
-      background-color: #F5D9C6;
-
-      & .decor-big {
-        top: -106px;
-        right: -78px;
-      }
-
-      & .decor-small {
-        top: 96px;
-        right: 12px;
-      }
-
-      & .cost__services-item {
-        width: 170px;
-      }
-    }
 
     &-content {
       padding: 0 34px;
 
       @media screen and (max-width: 896px) {
         padding: 0 23px;
-      }
-    }
-
-    &-decor {
-      position: absolute;
-
-      &.decor-big {
-        top: -132px;
-        right: -98px;
-
-        width: 264px;
-        height: 264px;
-        background: rgba(0, 0, 0, 0.03);
-        border-radius: 50%;
-      }
-
-      &.decor-small {
-        top: 70px;
-        right: -12.5px;
-
-        width: 106px;
-        height: 106px;
-        background: rgba(0, 0, 0, 0.04);
-        border-radius: 50%;
       }
     }
 
@@ -134,11 +75,76 @@
       line-height: 140%;
       color: #838383;
     }
-  }
 
-  //List
-  &__features {
-    margin-bottom: 32px;
+    //List
+    &-features {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 420px;
+      padding: 48px 22px;
+    }
+
+    @media screen and (max-width: 700px) {
+      max-width: 340px;
+      padding: 45px 12px;
+    }
+
+    &:nth-child(1) {
+      background-color: $bg_color1;
+    }
+
+    &:nth-child(2) {
+      background-color: $bg_color2;
+    }
+
+    &:nth-child(3) {
+      background-color: #F5D9C6;
+
+      //Декор big
+      &::after {
+        top: -106px;
+        right: -78px;
+      }
+
+      //Декор small
+      &::before {
+        top: 96px;
+        right: 12px;
+      }
+
+      & .cost__services {
+        width: 170px;
+      }
+    }
+
+    //Декор big
+    &::after {
+      content: '';
+      position: absolute;
+
+      top: -132px;
+      right: -98px;
+
+      width: 264px;
+      height: 264px;
+      background: rgba(0, 0, 0, 0.03);
+      border-radius: 50%;
+    }
+
+    //Декор small
+    &::before {
+      content: '';
+      position: absolute;
+      top: 70px;
+      right: -12.5px;
+
+      width: 106px;
+      height: 106px;
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 50%;
+    }
   }
 
   //item
@@ -164,64 +170,11 @@
       height: 18px;
       width: 18px;
 
-      background-image: url(../../images/cost-check.svg);
+      background: url(../../images/cost-check.svg);
     }
 
     &:not(:last-child) {
       margin-bottom: 16px;
-    }
-  }
-
-  &__services {
-    margin-bottom: 40px;
-    @extend %displayCenter;
-    flex-direction: column;
-
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 46px;
-    }
-
-    @media screen and (max-width: 896px) {
-      margin-bottom: 32px;
-    }
-
-    &-title {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 140%;
-      margin-bottom: 12px;
-    }
-
-    &-content {
-      @extend %displaySpaceBeetwen;
-      gap: 5px;
-
-      @media screen and (max-width: 896px) {
-        flex-wrap: wrap;
-      }
-    }
-
-    &-item {
-      height: 40px;
-      background: #FFFFFF;
-      border: 1px solid #C2C2C2;
-      border-radius: 5px;
-      cursor: pointer;
-      color: $text_color1;
-
-      @include transition(background, 0.3s);
-
-      @media screen and (max-width: 896px) {
-        flex: 1 1 150px;
-      }
-
-      &:hover {
-        background: #d3d2d2;
-      }
-
-      &.active {
-        border: 1px solid $accent_color;
-      }
     }
   }
 

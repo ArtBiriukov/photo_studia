@@ -9,7 +9,7 @@ body {
   min-height: 100%;
 
   color: $text_color1;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main_font;
   font-size: 16px;
   font-weight: 500;
 }
@@ -62,36 +62,6 @@ svg {
   }
 }
 
-.btn {
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
-  color: #fff;
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-
-  cursor: pointer;
-  @include transition(background);
-
-  &:hover {
-    background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
-  }
-
-  &:active {
-    background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
-  }
-
-  @media screen and (max-width: 896px) {
-    font-size: 14px;
-    line-height: 17px;
-  }
-}
-
 .title {
   font-weight: 600;
   font-size: 36px;
@@ -109,13 +79,6 @@ svg {
     line-height: 140%;
     margin-bottom: 40px;
   }
-}
-
-.play-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 //Маркер на карте
@@ -186,8 +149,11 @@ svg {
   height: 100%;
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+}
 
-@media screen and (max-width: 896px) {}
+@media screen and (max-width: 896px) {
+}
 
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {
+}

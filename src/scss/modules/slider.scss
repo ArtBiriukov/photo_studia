@@ -143,6 +143,7 @@
   }
 
   &__controls {
+
     .swiper-button-prev {
       left: percent(-36px, 1240px);
 
@@ -195,6 +196,8 @@
   }
 
   &__button {
+    z-index: 1;
+
     width: 73px;
     height: 73px;
     background: $color_white;
@@ -204,7 +207,6 @@
     color: $accent_color;
 
     @include transition;
-
 
     &:after {
       font-size: 40px;

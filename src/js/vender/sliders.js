@@ -39,6 +39,7 @@ const sliders = () => {
     },
   });
 
+
   new Swiper('.slider__locations', {
     slidesPerView: 1,
     grabCursor: true,
