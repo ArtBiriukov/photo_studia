@@ -115,17 +115,22 @@
 </section>
 
       
+      
       <section class="decor" id="decor">
-
   <h2 class="decor__title title">Оформление фотостудии</h2>
   <div class="decor__content">
+    <!-- <video autoplay muted loop id="myVideo" class="video">
+      <source src="../../clip.mp4" type="video/mp4" />
+    </video> -->
+
     <div class="decor__play-icon play-icon">
       <svg width="135" height="156" viewBox="0 0 135 156" xmlns="http://www.w3.org/2000/svg">
         <path d="M135 78L-7.33505e-06 155.942L-5.26633e-07 0.0577105L135 78Z" />
       </svg>
     </div>
   </div>
-</section> <section class="services container" id="services">
+</section>
+ <section class="services container" id="services">
   <h2 class="services__title title">Виды услуг</h2>
   <div class="services__content">
     <div class="services__photo services__photo-family" data-text="Семейная фотосессия (дети +14)">
@@ -282,102 +287,106 @@
     </div>
 
 </section>
-      <section class="cost" id="cost">
-  <h2 class="cost__title title">Стоимость фотосесии</h2>
-  <div class="cost__list container">
+      <section class="price" id="price">
+  <h2 class="price__title title">Стоимость фотосесии</h2>
+  <div class="price__list container">
+    <div class="price__item item">
+      <div class="item__content">
+        <header class="item__header">
+          <h3 class="item__title">MINI</h3>
+          <p class="item__price">2500 <span class="item__price-littel">₽</span></p>
+          <p class="item__location">/ 1 локация</p>
+        </header>
 
-    <div class="cost__item">
-
-      <div class="cost__content">
-        <div class="cost__item-header">
-          <h3 class="cost__item-name">MINI</h3>
-          <p class="cost__item-price">2500 ₽</p>
-          <p class="cost__item-location">/ 1 локация</p>
-        </div>
-
-        <ul class="cost__item-features">
-          <li class="cost__feature">Длительность — 30 минут</li>
-          <li class="cost__feature">Исходники — До 100 штук</li>
-          <li class="cost__feature">Ретушь — 4 фото</li>
-          <li class="cost__feature">Аренда фотостудии — Бесплатно</li>
-          <li class="cost__feature">Любой образ</li>
+        <ul class="item__services">
+          <li class="service">Длительность — 30 минут</li>
+          <li class="service">Исходники — До 100 штук</li>
+          <li class="service">Ретушь — 4 фото</li>
+          <li class="service">Аренда фотостудии — Бесплатно</li>
+          <li class="service">Любой образ</li>
         </ul>
       </div>
 
-      <div class="cost__services service">
-        <h3 class="service-title">Дополнительные услуги</h3>
+      <div class="item__additionals additionals">
+        <h3 class="additionals__title">Дополнительные услуги</h3>
 
-        <div class="service-content">
-          <button class="service-item">Помощь в позировании</button>
-          <button class="service-item">Визажист + 2000&nbsp;₽</button>
-          <button class="service-item">Дополнительная ретушь фото — 1 шт.&nbsp;/&nbsp;250 ₽</button>
+        <div class="additionals__list">
+          <button class="additionals__item" data-additional-name="help">Помощь в позировании</button>
+          <button class="additionals__item" data-additional-name="visagiste" ="">Визажист + 2000 <span class="additionals__text-littel">₽</span></button>
+          <button class="additionals__item" data-additional-name="retouch">
+            Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span>
+          </button>
         </div>
       </div>
 
-      <a href="#" class="cost__btn btn">Забронировать</a>
+      <button class="price__btn btn">Забронировать</button>
     </div>
 
-    <div class="cost__item">
+    <div class="price__item item">
+      <div class="item__content">
+        <header class="item__header">
+          <h3 class="item__title">STANDART</h3>
+          <p class="item__price">5000 <span class="item__price-littel">₽</span></p>
+          <p class="item__location">/ 2 локации</p>
+        </header>
 
-      <div class="cost__item-content">
-        <div class="cost__item-header">
-          <h3 class="cost__item-name">STANDART</h3>
-          <p class="cost__item-price">5000 ₽</p>
-          <p class="cost__item-location">/ 2 локации </p>
-        </div>
-
-        <ul class="cost__features">
-          <li class="cost__feature">Длительность — 1 час 20 минут</li>
-          <li class="cost__feature">Исходники — До 200 штук</li>
-          <li class="cost__feature">Ретушь — 8 фото</li>
-          <li class="cost__feature">Аренда фотостудии — Бесплатно</li>
-          <li class="cost__feature">Любой образ</li>
+        <ul class="item__services">
+          <li class="service">Длительность — 1 час 20 минут</li>
+          <li class="service">Исходники — До 200 штук</li>
+          <li class="service">Ретушь — 8 фото</li>
+          <li class="service">Аренда фотостудии — Бесплатно</li>
+          <li class="service">Любой образ</li>
         </ul>
       </div>
 
-      <div class="cost__services">
-        <h3 class="cost__services-title">Дополнительные услуги</h3>
+      <div class="item__additionals additionals">
+        <h3 class="additionals__title">Дополнительные услуги</h3>
 
-        <div class="cost__services-content">
-          <button class="cost__services-item">Помощь в позировании</button>
-          <button class="cost__services-item">Визажист + 2000&nbsp;₽</button>
-          <button class="cost__services-item">Дополнительная ретушь фото — 1 шт.&nbsp;/&nbsp;250 ₽</button>
+        <div class="additionals__list">
+          <button class="additionals__item" data-additional-name="help">Помощь в позировании</button>
+          <button class="additionals__item" data-additional-name="visagiste" ="">Визажист + 2000 <span class="additionals__text-littel">₽</span></button>
+          <button class="additionals__item" data-additional-name="retouch">
+            Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span>
+          </button>
         </div>
       </div>
 
-      <a href="#" class="cost__btn btn">Забронировать</a>
+      <button class="price__btn btn">Забронировать</button>
     </div>
 
-    <div class="cost__item">
-      <div class="cost__item-content">
-        <div class="cost__item-header">
-          <h3 class="cost__item-name">MAXI</h3>
-          <p class="cost__item-price">N ₽</p>
-          <p class="cost__item-location">/ Максимальное количество локаций</p>
-        </div>
+    <div class="price__item item">
+      <div class="item__content">
+        <header class="item__header">
+          <h3 class="item__title">MAXI</h3>
+          <p class="item__price">N <span class="item__price-littel">₽</span></p>
+          <p class="item__location">/ Максимальное количество локаций</p>
+        </header>
 
-        <ul class="cost__features">
-          <li class="cost__feature">Длительность — 4 часа</li>
-          <li class="cost__feature">Исходники — До 500 штук</li>
-          <li class="cost__feature">Ретушь — 50 фото</li>
-          <li class="cost__feature">Аренда фотостудии — Бесплатно</li>
-          <li class="cost__feature">Визажист — Make-Up, Укладка</li>
-          <li class="cost__feature">Предварительный подбор образов — До 8 образов</li>
+        <ul class="item__services">
+          <li class="service">Длительность — 4 часа</li>
+          <li class="service">Исходники — До 500 штук</li>
+          <li class="service">Ретушь — 50 фото</li>
+          <li class="service">Аренда фотостудии — Бесплатно</li>
+          <li class="service">Визажист — Make-Up, Укладка</li>
+          <li class="service">Предварительный подбор образов — До 8 образов</li>
         </ul>
       </div>
 
-      <div class="cost__services">
-        <h3 class="cost__services-title">Дополнительные услуги</h3>
+      <div class="item__additionals additionals">
+        <h3 class="additionals__title">Дополнительные услуги</h3>
 
-        <div class="cost__services-content">
-          <button class="cost__services-item">Дополнительная ретушь фото — 1 шт.&nbsp;/&nbsp;250 ₽</button>
+        <div class="additionals__list">
+          <button class="additionals__item" data-additional-name="retouch">
+            Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span>
+          </button>
         </div>
       </div>
-      <a href="#" class="cost__btn btn">Забронировать</a>
-    </div>
 
+      <button class="price__btn btn">Забронировать</button>
+    </div>
   </div>
-</section> <section class="textblock textblock--trends" id="textblock-trends">
+</section>
+ <section class="textblock textblock--trends" id="textblock-trends">
 
   <div class="textblock__container container">
     <h2 class="textblock__title title">Фотоискусство в тренде. Любая фотоссесия ваша история
@@ -455,123 +464,25 @@
 
   </div>
 
-</section> <section class="reviews container" id="reviews">
-  <h2 class="reviews__title title">Отзывы</h2>
-
-  <div class="slider__wrapper">
-    <div class="swiper slider__reviews">
-
-      <div class="swiper-wrapper slider__wrapper">
-        <div class="swiper-slide slider__slide">
-
-          <div class="slider__avatar">
-            <img src="../../images/revies_avatar1.png" alt="аватарка">
-          </div>
-
-          <div class="slider__content">
-            <h3 class="slider__title">Мария</h3>
-            <p class="slider__text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-            <a href="#" class="slider__link">Показать ещё</a>
-          </div>
-        </div>
-
-        <div class="swiper-slide slider__slide">
-
-          <div class="slider__avatar">
-            <img src="../../images/revies_avatar2.png" alt="аватарка">
-          </div>
-
-          <div class="slider__content">
-            <h3 class="slider__title">Мария</h3>
-            <p class="slider__text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-            <a href="#" class="slider__link">Показать ещё</a>
-          </div>
-        </div>
-
-        <div class="swiper-slide slider__slide">
-
-          <div class="slider__avatar">
-            <img src="../../images/revies_avatar3.png" alt="аватарка">
-          </div>
-
-          <div class="slider__content">
-            <h3 class="slider__title">Мария</h3>
-            <p class="slider__text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-            <a href="#" class="slider__link">Показать ещё</a>
-          </div>
-        </div>
-
-        <div class="swiper-slide slider__slide">
-
-          <div class="slider__avatar">
-            <img src="../../images/revies_avatar1.png" alt="аватарка">
-          </div>
-
-          <div class="slider__content">
-            <h3 class="slider__title">Мария</h3>
-            <p class="slider__text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-            <a href="#" class="slider__link">Показать ещё</a>
-          </div>
-        </div>
-
-        <div class="swiper-slide slider__slide">
-
-          <div class="slider__avatar">
-            <img src="../../images/revies_avatar2.png" alt="аватарка">
-          </div>
-
-          <div class="slider__content">
-            <h3 class="slider__title">Мария</h3>
-            <p class="slider__text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-            <a href="#" class="slider__link">Показать ещё</a>
-          </div>
-        </div>
-
-        <div class="swiper-slide slider__slide">
-
-          <div class="slider__avatar">
-            <img src="../../images/revies_avatar3.png" alt="аватарка">
-          </div>
-
-          <div class="slider__content">
-            <h3 class="slider__title">Мария</h3>
-            <p class="slider__text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких французских булок, да выпей чаю.</p>
-            <a href="#" class="slider__link">Показать ещё</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="slider__controls">
-    <div class="swiper-button-prev slider__button"></div>
-    <div class="swiper-button-next slider__button"></div>
-  </div>
-
-  <button class="reviews__btn btn">Добавить отзыв</button>
 </section>
+      
       <div class="backvoice container" id="backvoice">
-
   <div class="backvoice__map">
-
     <div class="backvoice__map-wrapper">
       <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 
-      <div id="mapexMap" style="width:100%;height:540px;">
+      <div id="mapexMap" style="width: 100%; height: 540px">
         <script type="text/javascript">
           ymaps.ready(function () {
             var mapexMap = new ymaps.Map('mapexMap', {
                 center: [55.9925, 37.8524614], // центр карты
-                zoom: 17, // масштаб 
-                controls: ['zoomControl']
+                zoom: 17, // масштаб
+                controls: ['zoomControl'],
               }),
-
               myPlacemark = new ymaps.Placemark(
                 [55.9917208, 37.8508414], // координаты маркера
                 {
-                  "iconContent": `<div class="marker">
+                  iconContent: `<div class="marker">
                                     <img src="../../images/logo_marker.svg" alt="logo" class="marker__logo">
                                     <div class="marker__content">
                                       <p class="marker__text">+7 (499) 344 60 91</p>
@@ -580,8 +491,8 @@
                                         ПН-ПТ 09:00 - 18:00</p>
                                     </div>
                                   </div>`,
-                  "balloonContent": "",
-                  "balloonContentHeader": "AddPhoto"
+                  balloonContent: '',
+                  balloonContentHeader: 'AddPhoto',
                 }, // контент маркера
                 {
                   // Опции.
@@ -593,58 +504,56 @@
                   iconImageSize: [1, 1],
                   // Смещение левого верхнего угла иконки относительно
                   // её "ножки" (точки привязки).
-                  iconImageOffset: [-100, -225]
-                });
+                  iconImageOffset: [-100, -225],
+                }
+              );
             mapexMap.behaviors.disable('scrollZoom');
             mapexMap.geoObjects.add(myPlacemark);
           });
         </script>
       </div>
     </div>
-
   </div>
 
   <form class="backvoice__form" action="#" id="backvoice-form" method="post">
-
     <h3 class="backvoice__form-title form__title">Форма обратной связи</h3>
 
-    <div class="backvoice__form-date form__date">
-
+    <div class="backvoice__form-content form__content">
       <div class="form__elem">
         <h3 class="form__label" for="name">Имя</h3>
-        <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя">
+        <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя" />
       </div>
 
       <div class="form__elem">
         <h3 class="form__label" for="email">E-mail</h3>
-        <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail">
+        <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail" />
       </div>
 
       <div class="form__elem">
         <h3 class="form__label" for="tel">Телефон</h3>
-        <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон">
+        <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон" />
       </div>
 
       <button class="form__btn btn" type="submit">Отправить</button>
     </div>
 
-    <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+    <p class="form__notific">
+      Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+    </p>
 
     <div class="backvoice__decor decor1"></div>
     <div class="backvoice__decor decor2"></div>
     <div class="backvoice__decor decor3"></div>
-
   </form>
-
 </div>
+
     </main>
 
     <footer id="footer">
   <div class="footer container">
     <div class="footer__top">
-
       <a class="footer__logo" href="index.html">
-        <img class="logo" src="images/logo.svg" alt="logo">
+        <img class="logo" src="images/logo.svg" alt="logo" />
       </a>
 
       <nav class="footer__menu">
@@ -669,14 +578,10 @@
           </li>
         </ul>
       </nav>
-
     </div>
 
     <div class="footer__bottom">
-
-      <p class="footer__title">
-        Наши социцальные сети:
-</p>
+      <p class="footer__title">Наши социцальные сети:</p>
 
       <div class="footer__socials">
         <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg">
@@ -695,254 +600,15 @@
           <use xlink:href="#icon-telegram"></use>
         </svg>
       </div>
-
     </div>
   </div>
 </footer>
 
+
     <div class="btn__top"></div>
 
-    <div class="overlay"></div>
+    
 
-<!-- Форма обратной связи-->
-<div class="modal modal__backvoice">
-
-  <div class="modal__close">
-    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L22 22" stroke-width="2" stroke-linecap="round" />
-      <path d="M22 1L1 22" stroke-width="2" stroke-linecap="round" />
-    </svg>
-  </div>
-
-  <div class="modal__content">
-    <!-- Контент обратной связи сама форма!!! -->
-    <img class="modal__img backvoice__img" src="images/modal/backvoice.svg" alt="Обратная связь">
-
-    <form class="modal__form form" action="#" id="form__backvoice" method="post">
-
-      <h3 class="form__title">Форма обратной связи</h3>
-
-      <div class="form__date">
-
-        <div class="form__elem">
-          <h3 class="form__label" for="name">Имя</h3>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя">
-        </div>
-
-        <div class="form__elem">
-          <h3 class="form__label" for="email">E-mail</h3>
-          <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail">
-        </div>
-
-        <div class="form__elem">
-          <h3 class="form__label" for="tel">Телефон</h3>
-          <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон">
-        </div>
-
-        <button class="form__btn btn" type="submit">Отправить</button>
-      </div>
-
-      <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
-
-    </form>
-  </div>
-</div>
-
-<div class="modal__content-sucsses">
-
-  <h2 class="modal__title-sucsses">Благодарим <br>за оставленную заявку!</h2>
-  <p class="modal__text-sucsses">Наши специалисты уже обрабатывают <br> Вашу заявку и свяжутся с Вами в ближайшее время</p>
-
-  <div class="modal__decor modal__decor1"></div>
-  <div class="modal__decor modal__decor2"></div>
-  <div class="modal__decor modal__decor3"></div>
-  <div class="modal__decor modal__decor4"></div>
-
-</div>
-
-<!-- Форма выбора локации-->
-<div class="modal modal__location">
-
-  <div class="modal__close">
-    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L22 22" stroke-width="2" stroke-linecap="round" />
-      <path d="M22 1L1 22" stroke-width="2" stroke-linecap="round" />
-    </svg>
-  </div>
-
-  <div class="modal__content">
-    <img class="location__img" src="images/modal/location.svg" alt="Выбор локации">
-
-    <form class="modal__form form" action="#" id="form__location" method="post">
-
-      <h3 class="form__title">Форма выбора локации</h3>
-
-      <div class="form__date">
-
-        <div class="form__elem">
-          <h3 class="form__label" for="name">Имя</h3>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя">
-        </div>
-
-        <div class="form__elem">
-          <h3 class="form__label" for="email">E-mail</h3>
-          <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail">
-        </div>
-
-        <div class="form__elem">
-          <h3 class="form__label" for="tel">Телефон</h3>
-          <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон">
-        </div>
-
-        <div class="form__elem">
-          <h3 class="form__label" for="location">Локации</h3>
-
-          <div class="form__select select">
-
-            <button type="button" class="select__toggle" name="location" data-select="toggle" data-index="-1">Выберите локацию</button>
-
-            <div class="select__dropdown">
-
-              <ul class="select__options">
-                <li class="select__option" data-select="option" data-value="location1" data-index="0">Локация 1</li>
-                <li class="select__option" data-select="option" data-value="location2" data-index="1">Локация 2</li>
-                <li class="select__option" data-select="option" data-value="location3" data-index="2">Локация 3</li>
-                <li class="select__option" data-select="option" data-value="location4" data-index="3">Локация 4</li>
-              </ul>
-
-            </div>
-          </div>
-
-        </div>
-
-        <button class="form__btn btn" type="submit">Отправить</button>
-      </div>
-
-      <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
-
-    </form>
-  </div>
-</div>
-
-<!-- Форма отзыва -->
-<div class="modal modal__review">
-
-  <div class="modal__close">
-    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L22 22" stroke-width="2" stroke-linecap="round" />
-      <path d="M22 1L1 22" stroke-width="2" stroke-linecap="round" />
-    </svg>
-  </div>
-
-  <div class="modal__content modal__content-col">
-
-    <form class="modal__form form" action="#" id="form__review" method="post">
-
-      <h3 class="form__title">Оставьте отзыв о том, как прошла ваша фотосессия</h3>
-
-      <div class="form__date">
-
-        <div class="form__elem">
-          <h3 class="form__label" for="name">Имя</h3>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя">
-        </div>
-
-        <div class="form__elem">
-          <h3 class="form__label" for="email">E-mail</h3>
-          <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail">
-        </div>
-
-        <div class="form__elem">
-          <h3 class="form__label" for="review">Отзыв</h3>
-
-          <div class="form__input">
-
-            <textarea class="form__textarea" name="review" id="review" placeholder="Введите ваш отзыв"></textarea>
-
-            <div class="form__photo">
-
-              <div class="form__photo-content">
-
-                <div class="form__photo-item">
-                  <span class="form__photo-del">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L13 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
-                      <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <img src="../../images/placeholder.jpg" alt="Заглушка">
-                </div>
-
-                <div class="form__photo-item">
-                  <span class="form__photo-del">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L13 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
-                      <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <img src="../../images/placeholder.jpg" alt="Заглушка">
-                </div>
-
-                <div class="form__photo-item">
-                  <span class="form__photo-del">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L13 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
-                      <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <img src="../../images/placeholder.jpg" alt="Заглушка">
-                </div>
-
-                <div class="form__photo-item">
-                  <span class="form__photo-del">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L13 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
-                      <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                  </span>
-                  <img src="../../images/placeholder.jpg" alt="Заглушка">
-                </div>
-              </div>
-
-              <div class="form__photo-btn">
-                <input class="form__photo-upload" type="file" accept=".jpg, .jpeg, .png" multiple="multiple">
-
-                <span class="form__photo-icon">
-                  <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#icon-photoAdd"></use>
-                  </svg>
-                </span>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <button class="form__btn btn" type="submit">Отправить</button>
-      </div>
-
-      <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
-
-    </form>
-
-    <img class="review__img" src="images/modal/review.svg" alt="Оставить отзыв">
-  </div>
-
-</div>
-
-<div class="modal__content-sucsses">
-
-  <h2 class="modal__title-sucsses">Благодарим<br>за оставленный отзыв!</h2>
-
-  <div class="modal__decor modal__decor1"></div>
-  <div class="modal__decor modal__decor2"></div>
-  <div class="modal__decor modal__decor3"></div>
-  <div class="modal__decor modal__decor4"></div>
-
-</div>
-
-    <script src="js/app.min.js"></script>
+    <!-- <script src="js/app.min.js"></script> -->
   </body>
 </html>

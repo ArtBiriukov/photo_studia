@@ -19,38 +19,6 @@
     }
   }
 
-  &__form {
-    position: relative;
-    max-width: 550px;
-    z-index: 3;
-    padding: 81px 36px;
-    background: $bg_color1;
-    border-radius: 25px;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-
-    &-title {
-      font-size: 30px;
-    }
-
-    &-date {
-      width: 100%;
-    }
-
-    @media screen and (max-width: 1024px) {
-      padding: 73px 50px;
-    }
-
-    @media screen and (max-width: 896px) {
-      margin-top: -45px;
-      padding: 51px 20px;
-      max-width: 320px;
-    }
-  }
-
   &__decor {
     position: absolute;
     border-radius: 50%;
@@ -93,7 +61,6 @@
       @media screen and (max-width: 896px) {
         top: percent(57, 541);
         right: percent(-97, 321);
-
       }
     }
 
@@ -115,8 +82,7 @@
         left: percent(-222, 321);
       }
     }
-
   }
 }
 
-@import "./map";
+@import './map';

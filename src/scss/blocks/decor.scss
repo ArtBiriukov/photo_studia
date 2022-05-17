@@ -21,7 +21,7 @@
 
   &__play-icon svg {
     & path {
-      fill: #D8D8D8;
+      fill: #d8d8d8;
     }
 
     @media screen and (max-width: 896px) {
@@ -29,4 +29,9 @@
       height: 41px;
     }
   }
+}
+
+.video {
+  width: 560px;
+  height: 315px;
 }

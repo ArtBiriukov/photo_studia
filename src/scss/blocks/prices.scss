@@ -1,0 +1,278 @@
+.price {
+  padding-top: 120px;
+  padding-bottom: 170px;
+  background-image: url(/images/cost_bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 1024px) {
+    background-image: url(/images/cost_bg-tablet.svg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (max-width: 896px) {
+    background-image: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__list {
+    @extend %displayCenter;
+    flex-wrap: wrap;
+    gap: 22px;
+
+    @media screen and (max-width: 1024px) {
+      gap: 34px;
+    }
+
+    @media screen and (max-width: 896px) {
+      gap: 24px;
+    }
+  }
+
+  .item {
+    position: relative;
+    max-width: 398px;
+    width: initial;
+    padding: 48px 15px 42px 15px;
+    border-radius: 16px;
+    color: $text_color1;
+    overflow: hidden;
+
+    &__content {
+      padding: 0 29px;
+      margin-bottom: 32px;
+
+      @media screen and (max-width: 896px) {
+        padding: 0 23px;
+      }
+    }
+
+    &__header {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      color: $text_color2;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 16px;
+    }
+
+    &__price {
+      font-weight: bold;
+      font-size: 56px;
+      margin-bottom: 4px;
+
+      &-littel {
+        font-size: 36px;
+      }
+    }
+
+    &__location {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      color: #838383;
+    }
+
+    &__services {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+
+      & .service {
+        position: relative;
+
+        display: flex;
+        align-items: baseline;
+        padding-left: 26px;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+
+        @media screen and (max-width: 896px) {
+          font-size: 13px;
+          line-height: 140%;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          height: 18px;
+          width: 18px;
+
+          background-image: url(/images/cost-check.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    & .additionals {
+      margin-bottom: 52px;
+      @extend %displayCenter;
+      flex-direction: column;
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 46px;
+      }
+
+      @media screen and (max-width: 896px) {
+        margin-bottom: 32px;
+      }
+
+      &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 12px;
+      }
+
+      &__list {
+        max-width: 370px;
+
+        @extend %displaySpaceBeetwen;
+        gap: 5px;
+
+        @media screen and (max-width: 896px) {
+          flex-wrap: wrap;
+        }
+      }
+
+      &__item {
+        height: 40px;
+
+        background: #ffffff;
+        padding: 4px;
+
+        border: 1px solid #c2c2c2;
+        border-radius: 5px;
+
+        font-family: 'Montserrat';
+        font-size: 12px;
+        line-height: 120%;
+        color: $text_color1;
+
+        cursor: pointer;
+
+        @include transition(background, 0.3s);
+
+        @media screen and (max-width: 896px) {
+          flex: 1 1 150px;
+        }
+
+        &:hover {
+          background: #d3d2d2;
+        }
+
+        &.active {
+          border: 1px solid $accent_color;
+        }
+
+        //Обращение по дата атрибутам
+        &[data-additional-name='help'] {
+          width: 108px;
+        }
+
+        &[data-additional-name='visagiste'] {
+          width: 82px;
+        }
+
+        &[data-additional-name='retouch'] {
+          width: 170px;
+
+          @media screen and (max-width: 896px) {
+            width: initial;
+          }
+        }
+      }
+
+      &__text-littel {
+        font-size: 9px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 420px;
+      padding: 48px 22px;
+    }
+
+    @media screen and (max-width: 700px) {
+      max-width: 340px;
+      padding: 45px 12px;
+    }
+
+    //Фон у карточек
+    &:nth-child(1) {
+      background-color: $bg_color1;
+    }
+
+    &:nth-child(2) {
+      background-color: $bg_color2;
+    }
+
+    &:nth-child(3) {
+      background-color: #f5d9c6;
+
+      & .item__content {
+        margin-bottom: 25px;
+      }
+
+      & .additionals {
+        margin-bottom: 40px;
+      }
+
+      //Декор big
+      &::after {
+        top: -106px;
+        right: -78px;
+      }
+
+      //Декор small
+      &::before {
+        top: 96px;
+        right: 12px;
+      }
+    }
+
+    //Декор big
+    &::after {
+      content: '';
+      position: absolute;
+
+      top: -132px;
+      right: -98px;
+
+      width: 264px;
+      height: 264px;
+      background: rgba(0, 0, 0, 0.03);
+      border-radius: 50%;
+    }
+
+    //Декор small
+    &::before {
+      content: '';
+      position: absolute;
+      top: 70px;
+      right: -12.5px;
+
+      width: 106px;
+      height: 106px;
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 50%;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    display: block;
+    padding: 14px 0;
+  }
+}
