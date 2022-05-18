@@ -1,12 +1,7 @@
-import Swiper, {
-  Navigation,
-  Pagination,
-  EffectCoverflow,
-  Autoplay
-} from 'swiper';
+import Swiper, { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper';
 
 const sliders = () => {
-  new Swiper('.slider__works', {
+  new Swiper('.works__slider', {
     slidesPerView: 3,
     centeredSlides: true,
     grabCursor: true,
@@ -25,7 +20,7 @@ const sliders = () => {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-      clickable: true
+      clickable: true,
     },
 
     effect: 'coverflow',
@@ -39,33 +34,31 @@ const sliders = () => {
     },
   });
 
-
-  new Swiper('.slider__locations', {
+  new Swiper('.locations__slider-container', {
     slidesPerView: 1,
-    grabCursor: true,
-
     modules: [Navigation, Autoplay],
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.slider__button-next',
+      prevEl: '.slider__button-prev',
+      disabledClass: 'slider__button-disabled',
     },
 
     breakpoints: {
       961: {
         slidesPerView: 3,
-        spaceBetween: 15
+        spaceBetween: 15,
       },
 
       1345: {
         slidesPerView: 3,
-        spaceBetween: 27
-      }
+        spaceBetween: 27.5,
+      },
     },
 
-    autoplay: {
-      delay: 3000,
-    }
+    // autoplay: {
+    //   delay: 3000,
+    // },
   });
 
   new Swiper('.slider__reviews', {
@@ -89,7 +82,7 @@ const sliders = () => {
       // when window width is >= 896px
       895: {
         slidesPerView: 2,
-        spaceBetween: 21
+        spaceBetween: 21,
       },
       // when window width is >= 1024px
       1026: {
@@ -97,15 +90,14 @@ const sliders = () => {
         spaceBetween: 16,
         centeredSlides: true,
         initialSlide: 1,
-        loop: false
-      }
+        loop: false,
+      },
     },
 
     autoplay: {
       delay: 3000,
     },
-
   });
-}
+};
 
 export default sliders;

@@ -12,7 +12,7 @@
   text-transform: uppercase;
 
   cursor: pointer;
-  @include transition(background);
+  @include transition();
 
   &:hover {
     background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);

@@ -1,8 +1,9 @@
 .locations {
   padding-top: 120px;
-  background-image: url(../../images/location_bg.svg);
+  background-image: url(/images/location_bg.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 
   @media screen and (max-width: 1024px) {
     padding-top: 95px;

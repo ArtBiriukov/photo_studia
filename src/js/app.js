@@ -8,5 +8,5 @@ import sliders from './vender/sliders.js';
 sliders();
 showText();
 scrollTop('.btn__top', '#main-screen');
-modals('.btn__contact', ".modal__backvoice");
-modals('.reviews__btn', ".modal__review");
+// modals('.btn__contact', ".modal__backvoice");
+// modals('.reviews__btn', ".modal__review");
