@@ -1,13 +1,13 @@
 .price {
   padding-top: 120px;
   padding-bottom: 170px;
-  background-image: url(/images/cost_bg.svg);
+  background-image: url(../images/cost_bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (max-width: 1024px) {
-    background-image: url(/images/cost_bg-tablet.svg);
+    background-image: url(../images/cost_bg-tablet.svg);
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -107,7 +107,7 @@
           height: 18px;
           width: 18px;
 
-          background-image: url(/images/cost-check.svg);
+          background-image: url(../images/cost-check.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;

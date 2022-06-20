@@ -65,7 +65,6 @@
       right: -185px;
       height: 55%;
     }
-
   }
 
   &__left {
@@ -92,7 +91,7 @@
     line-height: 120%;
     letter-spacing: 1px;
 
-    color: #C1C1C1;
+    color: #c1c1c1;
     margin-bottom: 8px;
 
     @media screen and (max-width: 896px) {
@@ -137,7 +136,7 @@
       height: 24px;
       width: 24px;
 
-      background: url(../../images/present_icon.svg), no-repeat;
+      background: url(../images/present_icon.svg), no-repeat;
     }
 
     &:not(:last-child) {
@@ -146,8 +145,7 @@
   }
 
   &__right {
-
-    @media screen and (max-width:896px) {
+    @media screen and (max-width: 896px) {
       display: flex;
       align-items: center;
       justify-content: center;

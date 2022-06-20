@@ -8,7 +8,6 @@ const sliders = () => {
     initialSlide: 1,
     autoplay: true,
     // loop: true,
-    // loopedSlides: 3,
 
     modules: [Navigation, Pagination, EffectCoverflow, Autoplay],
 

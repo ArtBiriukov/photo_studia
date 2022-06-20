@@ -105,10 +105,23 @@
   }
 
   &__btn {
-    padding: 22px 26px;
+    width: 366px;
+    height: 64px;
+    transition: all 0.3s ease-in-out;
+
+    // &:active {
+    //   width: 319px;
+    //   height: 56px;
+    // }
 
     @media screen and (max-width: 896px) {
-      padding: 20px 21px;
+      width: 320px;
+      height: 56px;
+
+      &:active {
+        width: 281px;
+        height: 49px;
+      }
     }
   }
 }

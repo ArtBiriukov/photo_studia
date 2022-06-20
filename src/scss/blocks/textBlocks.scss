@@ -19,13 +19,9 @@
     font-weight: 500;
     line-height: 26px;
 
-    &.hidden {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 11;
-      -webkit-box-orient: vertical;
-    }
+    transition: all 0.3s ease-in-out;
+
+    overflow: hidden;
 
     @media screen and (max-width: 1024px) {
       line-height: 24px;

@@ -1,7 +1,7 @@
 .btn {
   border: none;
   border-radius: 10px;
-  background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
+  background: linear-gradient(180deg, #ffa96b 21.43%, #ee7a28 100%);
   color: #fff;
 
   font-family: $main_font;
@@ -10,9 +10,8 @@
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
-
   cursor: pointer;
-  @include transition();
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
@@ -20,10 +19,20 @@
 
   &:active {
     background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
   }
 
   @media screen and (max-width: 896px) {
     font-size: 14px;
     line-height: 17px;
+
+    &:active {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 3px;
+    }
   }
 }
