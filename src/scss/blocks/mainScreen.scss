@@ -1,8 +1,15 @@
 .main-screen {
   position: relative;
   background-color: #444;
+
+  background-image: url('../../images/icon_play-gray-dark.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: $text_white;
   padding: 145px 0;
+
+  overflow: hidden;
 
   @media screen and (max-width: 1024px) {
     height: initial;
@@ -14,22 +21,6 @@
 
     display: flex;
     align-items: center;
-  }
-
-  &__play-icon svg {
-    & path {
-      fill: #575757;
-    }
-
-    @media screen and (max-width: 1024px) {
-      width: 96px;
-      height: 112px;
-    }
-
-    @media screen and (max-width: 896px) {
-      width: 36px;
-      height: 41px;
-    }
   }
 
   &__content {

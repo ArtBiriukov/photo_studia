@@ -1216,6 +1216,19 @@ svg {
   }
 }
 
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+.video-filter {
+  filter: brightness(0.45);
+}
+
 .header {
   position: relative;
   height: 80px;
@@ -1375,8 +1388,12 @@ svg {
 .main-screen {
   position: relative;
   background-color: #444;
+  background-image: url("../../images/icon_play-gray-dark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   color: #f5f5f5;
   padding: 145px 0;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   .main-screen {
@@ -1389,21 +1406,6 @@ svg {
     padding: 183px 0;
     display: flex;
     align-items: center;
-  }
-}
-.main-screen__play-icon svg path {
-  fill: #575757;
-}
-@media screen and (max-width: 1024px) {
-  .main-screen__play-icon svg {
-    width: 96px;
-    height: 112px;
-  }
-}
-@media screen and (max-width: 896px) {
-  .main-screen__play-icon svg {
-    width: 36px;
-    height: 41px;
   }
 }
 .main-screen__content {
@@ -1552,6 +1554,10 @@ svg {
   position: relative;
   height: 644px;
   background-color: #999999;
+  background-image: url("../../images/icon_play-gray-light.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   .decor__content {
@@ -1562,20 +1568,6 @@ svg {
   .decor__content {
     height: 375px;
   }
-}
-.decor__play-icon svg path {
-  fill: #d8d8d8;
-}
-@media screen and (max-width: 896px) {
-  .decor__play-icon svg {
-    width: 36px;
-    height: 41px;
-  }
-}
-
-.video {
-  width: 560px;
-  height: 315px;
 }
 
 .services {

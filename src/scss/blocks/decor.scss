@@ -9,6 +9,10 @@
     position: relative;
     height: 644px;
     background-color: #999999;
+    background-image: url('../../images/icon_play-gray-light.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 
     @media screen and (max-width: 1024px) {
       height: 674px;
@@ -18,20 +22,4 @@
       height: 375px;
     }
   }
-
-  &__play-icon svg {
-    & path {
-      fill: #d8d8d8;
-    }
-
-    @media screen and (max-width: 896px) {
-      width: 36px;
-      height: 41px;
-    }
-  }
-}
-
-.video {
-  width: 560px;
-  height: 315px;
 }
