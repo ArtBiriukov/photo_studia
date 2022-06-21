@@ -11,10 +11,13 @@
 
     padding: 16px;
     @include transition;
-    transform: translateY(-1000px);
+
+    opacity: 0;
+    visibility: hidden;
 
     &.show {
-      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
     }
   }
 

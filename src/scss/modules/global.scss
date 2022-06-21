@@ -12,6 +12,10 @@ body {
   font-family: $main_font;
   font-size: 16px;
   font-weight: 500;
+
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 a {

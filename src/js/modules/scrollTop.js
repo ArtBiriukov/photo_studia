@@ -1,16 +1,16 @@
 const scrollTop = (targetBtn, targetSection) => {
-  const btn = document.querySelector(targetBtn);
-  const section = document.querySelector(targetSection);
+  const btn = document.querySelector(targetBtn),
+    section = document.querySelector(targetSection);
 
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   };
 
   const scrolling = () => {
-    btn.addEventListener('click', event => {
+    btn.addEventListener('click', (event) => {
       const eventCount = event.detail;
       event.preventDefault();
       if (eventCount === 1) {

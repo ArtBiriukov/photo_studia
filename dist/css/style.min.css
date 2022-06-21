@@ -820,6 +820,9 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+body.hidden {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -1199,7 +1202,6 @@ svg {
   background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
 }
 .btn:active {
-  background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 2px;
@@ -1214,6 +1216,10 @@ svg {
     line-height: 15px;
     letter-spacing: 3px;
   }
+}
+.btn__reset {
+  border: none;
+  background: none;
 }
 
 .video {
@@ -1236,6 +1242,12 @@ svg {
 @media screen and (max-width: 896px) {
   .header {
     height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   }
   .header__logo img {
     width: 63px;
@@ -1307,7 +1319,11 @@ svg {
 @media screen and (max-width: 896px) {
   .header__icon {
     display: block;
+    transition: all 0.3s ease-in-out;
   }
+}
+.header__icon.open {
+  fill: #e97522;
 }
 
 @media screen and (max-width: 896px) {
@@ -1321,10 +1337,12 @@ svg {
     background-color: rgba(15, 15, 15, 0.7);
     padding: 16px;
     transition: all 0.5s ease-in-out;
-    transform: translateY(-1000px);
+    opacity: 0;
+    visibility: hidden;
   }
   .menu.show {
-    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
 @media screen and (max-width: 896px) {
@@ -3179,7 +3197,7 @@ footer {
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 1000;
+  z-index: 100;
   height: 50px;
   width: 50px;
   font-family: swiper-icons;
@@ -3203,4 +3221,10 @@ footer {
 .btn__top.show {
   cursor: pointer;
   opacity: 1;
+}
+@media screen and (max-width: 896px) {
+  .btn__top {
+    bottom: 20px;
+    right: 20px;
+  }
 }
