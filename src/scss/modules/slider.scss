@@ -1,11 +1,11 @@
 .slider {
   position: relative;
 
-  &__wrapper {
-  }
+  // &__wrapper {
+  // }
 
-  &__slide {
-  }
+  // &__slide {
+  // }
 
   &__button {
     position: absolute;
@@ -27,36 +27,34 @@
     cursor: pointer;
     @include transition();
 
+    @media screen and (max-width: 1024px) {
+      width: 64px;
+      height: 64px;
+    }
+
+    @media screen and (max-width: 936px) {
+      width: 36px;
+      height: 36px;
+    }
+
     &-icon {
-      width: 33px;
+      width: 24px;
       height: 45px;
 
       stroke: $accent_color;
       @include transition();
+
+      @media screen and (max-width: 936px) {
+        width: 13px;
+      }
     }
 
     &-prev {
-      left: percent(calc(-73px / 2), 1240px);
-
-      @media screen and (max-width: 1024px) {
-        left: percent(calc(-73px / 2), 864px);
-      }
-
-      @media screen and (max-width: 896px) {
-        left: percent(calc(-36px / 2), 308px);
-      }
+      left: percent(calc(-73px / 2), 1270px);
     }
 
     &-next {
-      right: percent(calc(-73px / 2), 1240px);
-
-      @media screen and (max-width: 1024px) {
-        right: percent(calc(-73px / 2), 864px);
-      }
-
-      @media screen and (max-width: 896px) {
-        right: percent(calc(-36px / 2), 308px);
-      }
+      right: percent(calc(-73px / 2), 1270px);
 
       & > svg {
         transform: rotate(180deg);
@@ -88,11 +86,19 @@
     &-container {
       width: 1240px;
 
-      @media screen and (max-width: 1345px) {
+      @media screen and (max-width: 1340px) {
+        width: 940px;
+      }
+
+      @media screen and (max-width: 1024px) {
         width: 864px;
       }
 
-      @media screen and (max-width: 960px) {
+      @media screen and (max-width: 936px) {
+        width: 635px;
+      }
+
+      @media screen and (max-width: 665px) {
         width: 310px;
       }
     }
@@ -136,6 +142,52 @@
     &:hover .slide__title,
     &:hover .slide__content::after {
       opacity: 1;
+    }
+  }
+
+  .slider__button {
+    &-prev {
+      @media screen and (max-width: 1345px) {
+        left: percent(calc(-73px / 2), 864px);
+      }
+
+      // @media screen and (max-width: 896px) {
+      //   left: percent(calc(-36px / 2), 308px);
+      // }
+
+      @media screen and (max-width: 1024px) {
+        left: percent(calc(-64px / 2), 864px);
+      }
+
+      @media screen and (max-width: 936px) {
+        left: percent(calc(-36px / 2), 635px);
+      }
+
+      @media screen and (max-width: 665px) {
+        left: percent(calc(-36px / 2), 350px);
+      }
+    }
+
+    &-next {
+      @media screen and (max-width: 1345px) {
+        right: percent(calc(-73px / 2), 864px);
+      }
+
+      // @media screen and (max-width: 896px) {
+      //   right: percent(calc(-36px / 2), 308px);
+      // }
+
+      @media screen and (max-width: 1024px) {
+        right: percent(calc(-64px / 2), 864px);
+      }
+
+      @media screen and (max-width: 936px) {
+        right: percent(calc(-36px / 2), 635px);
+      }
+
+      @media screen and (max-width: 665px) {
+        right: percent(calc(-36px / 2), 350px);
+      }
     }
   }
 }

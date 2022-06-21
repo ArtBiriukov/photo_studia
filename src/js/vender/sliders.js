@@ -35,6 +35,7 @@ const sliders = () => {
 
   new Swiper('.locations__slider-container', {
     slidesPerView: 1,
+    autoHeight: true,
     modules: [Navigation, Autoplay],
 
     navigation: {
@@ -44,20 +45,25 @@ const sliders = () => {
     },
 
     breakpoints: {
-      961: {
+      665: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+
+      936: {
         slidesPerView: 3,
         spaceBetween: 15,
       },
 
-      1345: {
+      1340: {
         slidesPerView: 3,
         spaceBetween: 27.5,
       },
     },
 
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
   });
 
   new Swiper('.slider__reviews', {
