@@ -39,8 +39,8 @@ const sliders = () => {
     modules: [Navigation, Autoplay],
 
     navigation: {
-      nextEl: '.slider__button-next',
-      prevEl: '.slider__button-prev',
+      nextEl: '.locations__btn-next',
+      prevEl: '.locations__btn-prev',
       disabledClass: 'slider__button-disabled',
     },
 
@@ -66,36 +66,30 @@ const sliders = () => {
     },
   });
 
-  new Swiper('.slider__reviews', {
-    grabCursor: true,
-
+  new Swiper('.reviews__slider', {
     slidesPerView: 1,
-    spaceBetween: 0,
-    centeredSlides: false,
     loop: true,
-
     slideActiveClass: 'slider__slide-active',
 
     modules: [Navigation, Autoplay],
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.slider__button-next',
+      prevEl: '.slider__button-prev',
     },
 
     breakpoints: {
-      // when window width is >= 896px
-      895: {
+      730: {
         slidesPerView: 2,
         spaceBetween: 21,
       },
-      // when window width is >= 1024px
-      1026: {
+
+      1240: {
         slidesPerView: 3,
         spaceBetween: 16,
         centeredSlides: true,
         initialSlide: 1,
-        loop: false,
+        loop: true,
       },
     },
 

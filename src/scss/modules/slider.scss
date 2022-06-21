@@ -151,10 +151,6 @@
         left: percent(calc(-73px / 2), 864px);
       }
 
-      // @media screen and (max-width: 896px) {
-      //   left: percent(calc(-36px / 2), 308px);
-      // }
-
       @media screen and (max-width: 1024px) {
         left: percent(calc(-64px / 2), 864px);
       }
@@ -173,10 +169,6 @@
         right: percent(calc(-73px / 2), 864px);
       }
 
-      // @media screen and (max-width: 896px) {
-      //   right: percent(calc(-36px / 2), 308px);
-      // }
-
       @media screen and (max-width: 1024px) {
         right: percent(calc(-64px / 2), 864px);
       }
@@ -192,32 +184,15 @@
   }
 }
 
-/*
-.slider {
-
-  //Стили для блока Наши работы
-  &__works {
-    max-width: 1440px;
-    width: auto;
-
-    &-btn-prev {
-      left: percent(310, 1440);
-    }
-
-    &-btn-next {
-      right: percent(310, 1440);
-    }
-  }
-
-  //Стили для блока Отзывы
-  &__reviews {
+.reviews {
+  &__slider {
     width: 1052px;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1240px) {
       width: 701px;
     }
 
-    @media screen and (max-width: 896px) {
+    @media screen and (max-width: 730px) {
       width: 340px;
     }
 
@@ -232,7 +207,7 @@
       &-active {
         height: 550px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1240px) {
           height: auto;
         }
       }
@@ -262,22 +237,39 @@
       font-size: 16px;
       line-height: 26px;
       color: $text_color1;
-      margin-bottom: 8px;
     }
 
-    .slider__link {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 24px;
+    &-controls {
+      @media screen and (max-width: 730px) {
+        position: absolute;
+        top: 50%;
+        width: 340px;
+      }
 
-      color: $accent_color;
-      @include transition;
-
-      &:hover {
-        color: $text_color1;
+      .slider__button-prev {
+        left: 16px;
+      }
+      .slider__button-next {
+        right: 16px;
       }
     }
   }
+}
+
+.slider {
+  //Стили для блока Наши работы
+  // &__works {
+  //   max-width: 1440px;
+  //   width: auto;
+
+  //   &-btn-prev {
+  //     left: percent(310, 1440);
+  //   }
+
+  //   &-btn-next {
+  //     right: percent(310, 1440);
+  //   }
+  // }
 
   &__pagination {
     position: initial;
@@ -304,6 +296,4 @@
       background: $accent_color;
     }
   }
-
-
-}*/
+}

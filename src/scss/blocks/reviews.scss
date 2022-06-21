@@ -6,24 +6,15 @@
   flex-direction: column;
   margin-bottom: 186px;
 
-  .slider__controls {
-    width: 100%;
-  }
-
-  .slider__controls .swiper-button-prev {
-    left: 16px;
-  }
-
-  .slider__controls .swiper-button-next {
-    right: 16px;
+  @media screen and (max-width: 896px) {
+    margin-bottom: 80px;
   }
 
   &__btn {
     padding: 14px 70px;
-    margin-top: -24px;
     z-index: 100;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1240px) {
       margin-top: 42px;
       z-index: initial;
     }
