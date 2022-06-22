@@ -16,6 +16,7 @@
 </head>
 
   <body>
+    <!-- спрайты -->
     <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
   <symbol id="icon-call">
     <path
@@ -73,7 +74,9 @@
     <path d="M21.4224 42.5L2.58585 23.6651C1.80474 22.8841 1.80471 21.6177 2.58578 20.8366L21.4224 2" stroke-width="4" stroke-linecap="round" />
   </symbol>
 </svg>
- <header class="header container" id="header">
+
+    <!-- блок шапки -->
+    <header class="header container" id="header">
   <a class="header__logo" href="index.html">
     <img class="logo" src="images/logo.svg" alt="logo" />
   </a>
@@ -90,7 +93,7 @@
         <a href="#textblock-ideas" class="menu__link">О фотостудии</a>
       </li>
       <li class="menu__item">
-        <a href="#cost" class="menu__link">Услуги и цены</a>
+        <a href="#price" class="menu__link">Услуги и цены</a>
       </li>
       <li class="menu__item">
         <a href="#backvoice" class="menu__link">Контакты</a>
@@ -102,11 +105,11 @@
     <a href="tel:+74999999999" class="order__phone">+7 (499) 999 99 99</a>
     <a href="#backvoice" class="order__call">Обратный звонок</a>
 
-    <button class="header__icon order__icon btn__reset">
+    <a href="#backvoice" class="header__icon order__icon btn__reset">
       <svg width="26" height="26">
         <use xlink:href="#icon-call"></use>
       </svg>
-    </button>
+    </a>
 
     <button class="header__icon menu__icon btn__reset">
       <svg width="32" height="32">
@@ -118,9 +121,10 @@
 
 
     <main>
+      <!-- Главный экран -->
       <section class="main-screen" id="main-screen">
   <video autoplay muted loop id="promo_video" class="video video-filter">
-    <source src="../../promo.mp4" type="video/mp4" />
+    <source src="promo.mp4" type="video/mp4" />
   </video>
 
   <div class="main-screen__wrapper container">
@@ -142,7 +146,48 @@
   </div>
 </section>
 
-      
+      <!-- блок с работами -->
+      <section class="works" id="works">
+  <h2 class="works__title title">Наши работы</h2>
+
+  <div class="swiper works__slider">
+    <div class="swiper-wrapper slider__wrapper">
+      <div class="swiper-slide slider__slide">
+        <a class="gallery" data-fslightbox="works" href="images/works/first-slide.jpg">
+          <img src="images/works/first-slide.jpg" alt="Slide 1" />
+        </a>
+      </div>
+
+      <div class="swiper-slide slider__slide">
+        <a class="gallery" data-fslightbox="works" href="images/works/second-slide.jpg">
+          <img src="images/works/second-slide.jpg" alt="Slide 2" />
+        </a>
+      </div>
+
+      <div class="swiper-slide slider__slide">
+        <a class="gallery" data-fslightbox="works" href="images/works/three-slide.jpg">
+          <img src="images/works/three-slide.jpg" alt="Slide 3" />
+        </a>
+      </div>
+    </div>
+
+    <div class="slider__button slider__button-prev works__slider-btn-prev">
+      <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#slider-arrow"></use>
+      </svg>
+    </div>
+
+    <div class="slider__button slider__button-next works__slider-btn-next">
+      <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#slider-arrow"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="swiper-pagination works__slider-pagination"></div>
+</section>
+
+      <!-- блок локаций -->
       <section class="locations" id="locations">
   <div class="locations__container container">
     <h2 class="locations__title title">Наши локации</h2>
@@ -221,15 +266,19 @@
     <button class="locations__btn btn">выбрать локацию</button>
   </div>
 </section>
- <section class="decor" id="decor">
+
+      <!-- блок декора студии -->
+      <section class="decor" id="decor">
   <h2 class="decor__title title">Оформление фотостудии</h2>
   <div class="decor__content">
     <video autoplay muted loop id="decor_video" class="video">
-      <source src="../../clip.mp4" type="video/mp4" />
+      <source src="clip.mp4" type="video/mp4" />
     </video>
   </div>
 </section>
- <section class="services container" id="services">
+
+      <!-- блок видов услуг -->
+      <section class="services container" id="services">
   <h2 class="services__title title">Виды услуг</h2>
   <div class="services__content">
     <div class="services__photo services__photo-family" data-text="Семейная фотосессия (дети +14)">
@@ -277,7 +326,9 @@
     </div>
   </div>
 </section>
- <section class="steps" id="steps">
+
+      <!-- блок этапов работам -->
+      <section class="steps" id="steps">
   <h2 class="steps__title title">Этапы работ</h2>
   <div class="steps__container container">
     <div class="steps__item">
@@ -308,7 +359,9 @@
     </div>
 
   </div>
-</section> <section class="textblock textblock--ideas" id="textblock-ideas">
+</section>
+      <!-- тестовый блок  -->
+      <section class="textblock textblock--ideas" id="textblock-ideas">
 
   <div class="textblock__container container">
     <h2 class="textblock__title title">Фотостудия для любых идейных фотоссесий</h2>
@@ -364,6 +417,7 @@
     </div>
 
 </section>
+      <!-- блок с ценами -->
       <section class="price" id="price">
   <h2 class="price__title title">Стоимость фотосесии</h2>
   <div class="price__list container">
@@ -390,9 +444,7 @@
         <div class="additionals__list">
           <button class="additionals__item" data-additional-name="help">Помощь в позировании</button>
           <button class="additionals__item" data-additional-name="visagiste" ="">Визажист + 2000 <span class="additionals__text-littel">₽</span></button>
-          <button class="additionals__item" data-additional-name="retouch">
-            Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span>
-          </button>
+          <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
         </div>
       </div>
 
@@ -422,9 +474,7 @@
         <div class="additionals__list">
           <button class="additionals__item" data-additional-name="help">Помощь в позировании</button>
           <button class="additionals__item" data-additional-name="visagiste" ="">Визажист + 2000 <span class="additionals__text-littel">₽</span></button>
-          <button class="additionals__item" data-additional-name="retouch">
-            Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span>
-          </button>
+          <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
         </div>
       </div>
 
@@ -453,9 +503,7 @@
         <h3 class="additionals__title">Дополнительные услуги</h3>
 
         <div class="additionals__list">
-          <button class="additionals__item" data-additional-name="retouch">
-            Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span>
-          </button>
+          <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
         </div>
       </div>
 
@@ -463,7 +511,9 @@
     </div>
   </div>
 </section>
- <section class="textblock textblock--trends" id="textblock-trends">
+
+      <!-- второй текстовый блок -->
+      <section class="textblock textblock--trends" id="textblock-trends">
 
   <div class="textblock__container container">
     <h2 class="textblock__title title">Фотостудия для любых идейных фотоссесий</h2>
@@ -502,7 +552,9 @@
       </svg>
     </div>
 
-</section> <section class="present container" id="present">
+</section>
+      <!-- блок с подарками -->
+      <section class="present container" id="present">
   <h2 class="present__title title">Подарочный сертификат на фотосессию</h2>
 
   <div class="present__container ">
@@ -533,14 +585,16 @@
 
   </div>
 
-</section> <section class="reviews container" id="reviews">
+</section>
+      <!-- блок с отзывами -->
+      <section class="reviews container" id="reviews">
   <h2 class="reviews__title title">Отзывы</h2>
 
   <div class="swiper reviews__slider">
     <div class="swiper-wrapper slider__wrapper">
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <img src="../../images/revies_avatar1.png" alt="аватарка" />
+          <img src="images/revies_avatar1.png" alt="аватарка" />
         </div>
 
         <div class="slider__content">
@@ -553,7 +607,7 @@
 
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <img src="../../images/revies_avatar2.png" alt="аватарка" />
+          <img src="images/revies_avatar2.png" alt="аватарка" />
         </div>
 
         <div class="slider__content">
@@ -566,7 +620,7 @@
 
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <img src="../../images/revies_avatar3.png" alt="аватарка" />
+          <img src="images/revies_avatar3.png" alt="аватарка" />
         </div>
 
         <div class="slider__content">
@@ -579,7 +633,7 @@
 
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <img src="../../images/revies_avatar1.png" alt="аватарка" />
+          <img src="images/revies_avatar1.png" alt="аватарка" />
         </div>
 
         <div class="slider__content">
@@ -592,7 +646,7 @@
 
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <img src="../../images/revies_avatar2.png" alt="аватарка" />
+          <img src="images/revies_avatar2.png" alt="аватарка" />
         </div>
 
         <div class="slider__content">
@@ -605,7 +659,7 @@
 
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <img src="../../images/revies_avatar3.png" alt="аватарка" />
+          <img src="images/revies_avatar3.png" alt="аватарка" />
         </div>
 
         <div class="slider__content">
@@ -619,12 +673,12 @@
   </div>
 
   <div class="reviews__slider-controls">
-    <div class="slider__button slider__button-prev">
+    <div class="slider__button slider__button-prev revies__button-prev">
       <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#slider-arrow"></use>
       </svg>
     </div>
-    <div class="slider__button slider__button-next">
+    <div class="slider__button slider__button-next revies__button-next">
       <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#slider-arrow"></use>
       </svg>
@@ -633,7 +687,9 @@
 
   <button class="reviews__btn btn">Добавить отзыв</button>
 </section>
- <div class="backvoice container" id="backvoice">
+
+      <!-- блок с контактами -->
+      <div class="backvoice container" id="backvoice">
   <div class="backvoice__map">
     <div class="backvoice__map-wrapper">
       <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
@@ -650,7 +706,7 @@
                 [55.9917208, 37.8508414], // координаты маркера
                 {
                   iconContent: `<div class="marker">
-                                    <img src="../../images/logo_marker.svg" alt="logo" class="marker__logo">
+                                    <img src="images/logo_marker.svg" alt="logo" class="marker__logo">
                                     <div class="marker__content">
                                       <p class="marker__text">+7 (499) 344 60 91</p>
                                       <p class="marker__text">content@addmarkets.ru</p>
@@ -705,7 +761,8 @@
     </div>
 
     <p class="form__notific">
-      Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+      Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с
+      <a href="#">политикой конфиденциальности</a>
     </p>
 
     <div class="backvoice__decor decor1"></div>
@@ -715,7 +772,7 @@
 </div>
 
     </main>
-
+    <!-- блок футера -->
     <footer id="footer">
   <div class="footer container">
     <div class="footer__top">
@@ -773,7 +830,7 @@
 
 
     <div class="btn__top"></div>
-
+    <!-- модалки -->
     
 
     <script src="js/app.min.js"></script>

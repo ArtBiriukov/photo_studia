@@ -940,7 +940,7 @@ svg {
   height: 100%;
 }
 
-.btn__top, .form__photo-btn, .form__photo-del, .footer__socials, .footer__bottom, .backvoice, .price .item .additionals, .price__list, .locations__container, .menu__list, .slider__pagination, .reviews__slider .slider__content {
+.btn__top, .form__photo-btn, .form__photo-del, .footer__socials, .footer__bottom, .backvoice, .price .item .additionals, .price__list, .locations__container, .menu__list, .works__slider-pagination, .reviews__slider .slider__content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1179,22 +1179,61 @@ svg {
   right: 16px;
 }
 
-.slider__pagination {
+.works__slider {
+  max-width: 1440px;
+  padding: 37px 0;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  .works__slider {
+    width: 1024px;
+    padding: 27px 0;
+  }
+}
+@media screen and (max-width: 625px) {
+  .works__slider {
+    width: 625px;
+    padding: 16px 0;
+  }
+}
+.works__slider .swiper-slide-active {
+  transform: scale(1.13);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.works__slider-btn-prev {
+  left: 21.5277777778%;
+}
+.works__slider-btn-next {
+  right: 21.5277777778%;
+}
+.works__slider-pagination {
   position: initial;
   bottom: 0;
   margin-top: 40px;
 }
-.slider__pagination > .swiper-pagination-bullet {
+@media screen and (max-width: 1024px) {
+  .works__slider-pagination {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .works__slider-pagination {
+    margin-top: 13px;
+  }
+}
+.works__slider-pagination > .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
   background: #b1b1b1;
   opacity: 1;
   margin: 0 14px 0 0 !important;
 }
-.slider__pagination > .swiper-pagination-bullet:last-child {
+.works__slider-pagination > .swiper-pagination-bullet:last-child {
   margin: 0 !important;
 }
-.slider__pagination > .swiper-pagination-bullet-active {
+.works__slider-pagination > .swiper-pagination-bullet-active {
   width: 12px;
   height: 12px;
   background: #e97522;
@@ -1535,6 +1574,11 @@ svg {
 
 .works {
   margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   .works {

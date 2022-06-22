@@ -3,19 +3,42 @@
   @@include('html/head.html', { "title":"Главная" })
 
   <body>
-    @@include('html/blocks/sprites.html') @@include('html/header.html')
+    <!-- спрайты -->
+    @@include('html/blocks/sprites.html')
+    <!-- блок шапки -->
+    @@include('html/header.html')
 
     <main>
+      <!-- Главный экран -->
       @@include('html/blocks/main-screen.html')
-      <!-- @@include('html/blocks/works.html') -->
-      @@include('html/blocks/locations.html') @@include('html/blocks/decor.html') @@include('html/blocks/services.html') @@include('html/blocks/steps.html') @@include('html/blocks/textblock1.html')
-      @@include('html/blocks/prices.html') @@include('html/blocks/textblock2.html') @@include('html/blocks/present.html') @@include('html/blocks/reviews.html') @@include('html/blocks/backvoice.html')
+      <!-- блок с работами -->
+      @@include('html/blocks/works.html')
+      <!-- блок локаций -->
+      @@include('html/blocks/locations.html')
+      <!-- блок декора студии -->
+      @@include('html/blocks/decor.html')
+      <!-- блок видов услуг -->
+      @@include('html/blocks/services.html')
+      <!-- блок этапов работам -->
+      @@include('html/blocks/steps.html')
+      <!-- тестовый блок  -->
+      @@include('html/blocks/textblock1.html')
+      <!-- блок с ценами -->
+      @@include('html/blocks/prices.html')
+      <!-- второй текстовый блок -->
+      @@include('html/blocks/textblock2.html')
+      <!-- блок с подарками -->
+      @@include('html/blocks/present.html')
+      <!-- блок с отзывами -->
+      @@include('html/blocks/reviews.html')
+      <!-- блок с контактами -->
+      @@include('html/blocks/backvoice.html')
     </main>
-
+    <!-- блок футера -->
     @@include('html/footer.html')
 
     <div class="btn__top"></div>
-
+    <!-- модалки -->
     <!-- @@include('html/blocks/modals.html') -->
 
     <script src="js/app.min.js"></script>

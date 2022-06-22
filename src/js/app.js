@@ -13,7 +13,11 @@ showText();
 scrollTop('.btn__top', '#main-screen');
 changePhotos();
 openMenu();
+
+//Плавный скролл
 smoothScroll('.menu__link');
 smoothScroll('.footer__menu-link');
+smoothScroll('.order__call');
+smoothScroll('.order__icon');
 // modals('.btn__contact', ".modal__backvoice");
 // modals('.reviews__btn', ".modal__review");

@@ -4,28 +4,19 @@ const sliders = () => {
   new Swiper('.works__slider', {
     slidesPerView: 3,
     centeredSlides: true,
-    grabCursor: true,
     initialSlide: 1,
-    autoplay: true,
-    // loop: true,
 
-    modules: [Navigation, Pagination, EffectCoverflow, Autoplay],
+    modules: [Navigation, Pagination, Autoplay],
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.works__slider-btn-next',
+      prevEl: '.works__slider-btn-prev',
     },
 
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
-    },
-
-    effect: 'coverflow',
-    coverflowEffect: {
-      rotate: 0,
-      slideShadows: true,
     },
 
     autoplay: {
@@ -74,8 +65,8 @@ const sliders = () => {
     modules: [Navigation, Autoplay],
 
     navigation: {
-      nextEl: '.slider__button-next',
-      prevEl: '.slider__button-prev',
+      nextEl: '.revies__button-next',
+      prevEl: '.revies__button-prev',
     },
 
     breakpoints: {

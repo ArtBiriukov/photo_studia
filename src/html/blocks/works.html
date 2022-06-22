@@ -2,36 +2,38 @@
   <h2 class="works__title title">Наши работы</h2>
 
   <div class="swiper works__slider">
-
     <div class="swiper-wrapper slider__wrapper">
-
-      <div class="swiper-slide slider__slide>
-        <a class=" gallery" data-fslightbox="works" href="../../images/works/first-slide.jpg">
-        <img src="../../images/works/first-slide.jpg" alt="Slide 1">
+      <div class="swiper-slide slider__slide">
+        <a class="gallery" data-fslightbox="works" href="@images/works/first-slide.jpg">
+          <img src="@images/works/first-slide.jpg" alt="Slide 1" />
         </a>
       </div>
 
       <div class="swiper-slide slider__slide">
-        <a class="gallery" data-fslightbox="works" href="../../images/works/second-slide.jpg">
-          <img src="../../images/works/second-slide.jpg" alt="Slide 2">
+        <a class="gallery" data-fslightbox="works" href="@images/works/second-slide.jpg">
+          <img src="@images/works/second-slide.jpg" alt="Slide 2" />
         </a>
-
       </div>
 
       <div class="swiper-slide slider__slide">
-        <a class="gallery" data-fslightbox="works" href="../../images/works/three-slide.jpg">
-          <img src="../../images/works/three-slide.jpg" alt="Slide 3">
+        <a class="gallery" data-fslightbox="works" href="@images/works/three-slide.jpg">
+          <img src="@images/works/three-slide.jpg" alt="Slide 3" />
         </a>
-
       </div>
-
     </div>
 
-    <div class="swiper-button-prev slider__button slider__works-btn-prev"></div>
-    <div class="swiper-button-next slider__button slider__works-btn-next"></div>
+    <div class="slider__button slider__button-prev works__slider-btn-prev">
+      <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#slider-arrow"></use>
+      </svg>
+    </div>
 
+    <div class="slider__button slider__button-next works__slider-btn-next">
+      <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#slider-arrow"></use>
+      </svg>
+    </div>
   </div>
 
-  <div class="swiper-pagination slider__pagination"></div>
-
+  <div class="swiper-pagination works__slider-pagination"></div>
 </section>
