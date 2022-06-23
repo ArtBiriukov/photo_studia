@@ -2529,16 +2529,16 @@ svg {
 }
 .backvoice__map {
   width: 650px;
+  height: 540px;
 }
 @media screen and (max-width: 1024px) {
   .backvoice__map {
-    width: 382px;
+    width: 380px;
   }
 }
 @media screen and (max-width: 896px) {
   .backvoice__map {
-    max-width: 340px;
-    width: 100%;
+    width: 340px;
   }
 }
 .backvoice__decor {
@@ -2603,9 +2603,37 @@ svg {
     left: -69.1588785047%;
   }
 }
+.backvoice__form {
+  position: relative;
+  width: 550px;
+  z-index: 3;
+  padding: 85px 35px;
+  background: #f2f4f4;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.backvoice__form-content {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .backvoice__form {
+    width: 480px;
+    padding: 75px 50px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .backvoice__form {
+    margin-top: -45px;
+    padding: 50px 20px;
+    max-width: 320px;
+  }
+}
 
 .ymaps-2-1-79-map-bg {
-  border-radius: 25.8573px 0px 0px 25.8573px;
+  border-radius: 26px 0px 0px 26px;
 }
 @media screen and (max-width: 896px) {
   .ymaps-2-1-79-map-bg {
@@ -2613,20 +2641,15 @@ svg {
   }
 }
 
-@media screen and (max-width: 896px) {
-  .ymaps-2-1-79-map ymaps {
-    box-sizing: border-box !important;
-  }
-}
-
 .ymaps-2-1-79-inner-panes {
   border: 5px solid #f2f4f4;
-  border-radius: 25.8573px 0px 0px 25.8573px;
-  box-shadow: 0px 2.69px 6.65px rgba(121, 121, 121, 0.2);
+  border-radius: 26px 0px 0px 26px;
+  box-shadow: 0px 3px 7px rgba(121, 121, 121, 0.2);
 }
 @media screen and (max-width: 896px) {
   .ymaps-2-1-79-inner-panes {
     border-radius: 15px;
+    box-sizing: border-box !important;
   }
 }
 
@@ -2931,34 +2954,6 @@ footer {
 }
 .form__photo-icon::hover {
   fill: #e97522;
-}
-
-.backvoice__form {
-  position: relative;
-  max-width: 550px;
-  z-index: 3;
-  padding: 83px 36px;
-  background: #f2f4f4;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-}
-.backvoice__form-content {
-  width: 100%;
-}
-@media screen and (max-width: 1024px) {
-  .backvoice__form {
-    padding: 73px 50px;
-  }
-}
-@media screen and (max-width: 896px) {
-  .backvoice__form {
-    margin-top: -45px;
-    padding: 51px 20px;
-    max-width: 320px;
-  }
 }
 
 .overlay {

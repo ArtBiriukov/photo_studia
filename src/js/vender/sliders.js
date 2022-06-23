@@ -1,10 +1,11 @@
-import Swiper, { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 
 const sliders = () => {
   new Swiper('.works__slider', {
     slidesPerView: 3,
     centeredSlides: true,
     initialSlide: 1,
+    loop: true,
 
     modules: [Navigation, Pagination, Autoplay],
 

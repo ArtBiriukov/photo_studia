@@ -690,53 +690,7 @@
 
       <!-- блок с контактами -->
       <div class="backvoice container" id="backvoice">
-  <div class="backvoice__map">
-    <div class="backvoice__map-wrapper">
-      <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
-
-      <div id="mapexMap" style="width: 100%; height: 540px">
-        <script type="text/javascript">
-          ymaps.ready(function () {
-            var mapexMap = new ymaps.Map('mapexMap', {
-                center: [55.9925, 37.8524614], // центр карты
-                zoom: 17, // масштаб
-                controls: ['zoomControl'],
-              }),
-              myPlacemark = new ymaps.Placemark(
-                [55.9917208, 37.8508414], // координаты маркера
-                {
-                  iconContent: `<div class="marker">
-                                    <img src="images/logo_marker.svg" alt="logo" class="marker__logo">
-                                    <div class="marker__content">
-                                      <p class="marker__text">+7 (499) 344 60 91</p>
-                                      <p class="marker__text">content@addmarkets.ru</p>
-                                      <p class="marker__text">Режим работы:
-                                        ПН-ПТ 09:00 - 18:00</p>
-                                    </div>
-                                  </div>`,
-                  balloonContent: '',
-                  balloonContentHeader: 'AddPhoto',
-                }, // контент маркера
-                {
-                  // Опции.
-                  // Необходимо указать данный тип макета.
-                  iconLayout: 'default#imageWithContent',
-                  // Своё изображение иконки метки.
-                  //iconImageHref: 'images/marker.png',
-                  // Размеры метки.
-                  iconImageSize: [1, 1],
-                  // Смещение левого верхнего угла иконки относительно
-                  // её "ножки" (точки привязки).
-                  iconImageOffset: [-100, -225],
-                }
-              );
-            mapexMap.behaviors.disable('scrollZoom');
-            mapexMap.geoObjects.add(myPlacemark);
-          });
-        </script>
-      </div>
-    </div>
-  </div>
+  <div id="map" class="backvoice__map"></div>
 
   <form class="backvoice__form" action="#" id="backvoice-form" method="post">
     <h3 class="backvoice__form-title form__title">Форма обратной связи</h3>
@@ -832,7 +786,8 @@
     <div class="btn__top"></div>
     <!-- модалки -->
     
-
+    <!-- Подключение карты -->
+    <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>
