@@ -1989,6 +1989,8 @@ svg {
 }
 
 .btn {
+  position: relative;
+  display: block;
   border: none;
   border-radius: 10px;
   background: linear-gradient(180deg, #ffa96b 21.43%, #ee7a28 100%);
@@ -2001,15 +2003,25 @@ svg {
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
-  transition: all 0.3s ease-in-out;
 }
-.btn:hover {
+.btn > span {
+  position: relative;
+  z-index: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-.btn:active {
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 2px;
+.btn:hover::after {
+  opacity: 1;
 }
 @media screen and (max-width: 896px) {
   .btn {
@@ -2306,18 +2318,14 @@ svg {
   }
 }
 .main-screen__btn {
-  width: 366px;
+  min-width: 366px;
   height: 64px;
-  transition: all 0.3s ease-in-out;
+  padding: 22px 27px;
 }
 @media screen and (max-width: 896px) {
   .main-screen__btn {
-    width: 320px;
+    min-width: 320px;
     height: 56px;
-  }
-  .main-screen__btn:active {
-    width: 281px;
-    height: 49px;
   }
 }
 

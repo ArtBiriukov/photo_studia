@@ -96,23 +96,13 @@
   }
 
   &__btn {
-    width: 366px;
+    min-width: 366px;
     height: 64px;
-    transition: all 0.3s ease-in-out;
-
-    // &:active {
-    //   width: 319px;
-    //   height: 56px;
-    // }
+    padding: 22px 27px;
 
     @media screen and (max-width: 896px) {
-      width: 320px;
+      min-width: 320px;
       height: 56px;
-
-      &:active {
-        width: 281px;
-        height: 49px;
-      }
     }
   }
 }
