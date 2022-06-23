@@ -77,11 +77,11 @@
 
     <!-- блок шапки -->
     <header class="header container" id="header">
-  <a class="header__logo" href="index.html">
+  <a class="header__logo" href="index.html" data-aos="fade-right">
     <img class="logo" src="images/logo.svg" alt="logo" />
   </a>
 
-  <nav class="header__menu menu">
+  <nav class="header__menu menu" data-aos="fade-down">
     <ul class="menu__list">
       <li class="menu__item">
         <a href="#works" class="menu__link">Портфолио</a>
@@ -101,7 +101,7 @@
     </ul>
   </nav>
 
-  <div class="header__order order">
+  <div class="header__order order" data-aos="fade-left">
     <a href="tel:+74999999999" class="order__phone">+7 (499) 999 99 99</a>
     <a href="#backvoice" class="order__call">Обратный звонок</a>
 
@@ -129,26 +129,26 @@
 
   <div class="main-screen__wrapper container">
     <div class="main-screen__content">
-      <h1 class="main-screen__heading"><span class="main-screen__heading-ls">Профессиональная</span> фотосессия в студии</h1>
-      <h2 class="main-screen__title title">
+      <h1 class="main-screen__heading" data-aos="fade-right"><span class="main-screen__heading-ls">Профессиональная</span> фотосессия в студии</h1>
+      <h2 class="main-screen__title title" data-aos="fade-right" data-aos-delay="150">
         Наша фотостудия позволит<br />
         исполнить ваши мечты
       </h2>
-      <p class="main-screen__text">
+      <p class="main-screen__text" data-aos="fade-right" data-aos-delay="200">
         Фотографии стали неотъемлемой частью нашей жизни. Это теперь не просто памятные снимки в альбомах, ныне фото становиться способом понравиться окружающим, получить восхищение, заявить о себе
         всему миру. <br />
         Выбор правильной фотостудии занимает далеко не последнее место в получение<br />
         фотографий. И мы с точностью заявляем, что нашей фотостудией вы останетесь довольны <br />
         и еще не раз захотите возвращаться к нам.
       </p>
-      <button class="main-screen__btn btn btn__contact">Получить консультацию</button>
+      <button class="main-screen__btn btn btn__contact" data-aos="fade-right" data-aos-delay="300">Получить консультацию</button>
     </div>
   </div>
 </section>
 
       <!-- блок с работами -->
       <section class="works" id="works">
-  <h2 class="works__title title">Наши работы</h2>
+  <h2 class="works__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Наши работы</h2>
 
   <div class="swiper works__slider">
     <div class="swiper-wrapper slider__wrapper">
@@ -190,7 +190,7 @@
       <!-- блок локаций -->
       <section class="locations" id="locations">
   <div class="locations__container container">
-    <h2 class="locations__title title">Наши локации</h2>
+    <h2 class="locations__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Наши локации</h2>
 
     <div class="slider locations__slider">
       <div class="swiper locations__slider-container">
@@ -269,7 +269,8 @@
 
       <!-- блок декора студии -->
       <section class="decor" id="decor">
-  <h2 class="decor__title title">Оформление фотостудии</h2>
+  <h2 class="decor__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Оформление фотостудии</h2>
+
   <div class="decor__content">
     <video autoplay muted loop id="decor_video" class="video">
       <source src="clip.mp4" type="video/mp4" />
@@ -279,49 +280,50 @@
 
       <!-- блок видов услуг -->
       <section class="services container" id="services">
-  <h2 class="services__title title">Виды услуг</h2>
+  <h2 class="services__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Виды услуг</h2>
+
   <div class="services__content">
-    <div class="services__photo services__photo-family" data-text="Семейная фотосессия (дети +14)">
+    <div class="services__photo services__photo-family" data-text="Семейная фотосессия (дети +14)" data-aos="zoom-in">
       <img src="images/services/famile.jpg" alt="Семейная фотосессия (дети +14)" />
     </div>
 
-    <div class="services__photo services__photo-girls" data-text="Фотосессия для девушек">
+    <div class="services__photo services__photo-girls" data-text="Фотосессия для девушек" data-aos="zoom-in">
       <img src="images/services/for_girl.jpg" alt="Фотосессия для девушек" />
     </div>
 
-    <div class="services__photo services__photo-loves" data-text="Фотосессия Лав Стори">
+    <div class="services__photo services__photo-loves" data-text="Фотосессия Лав Стори" data-aos="zoom-in">
       <img src="images/services/love_story1.jpg" data-photo1="images/services/love_story2.jpg" data-photo2="images/services/love_story3.jpg" alt="Фотосессия Лав Стори" />
     </div>
 
-    <div class="services__photo services__photo-animals" data-text="Фотосессия с животными">
+    <div class="services__photo services__photo-animals" data-text="Фотосессия с животными" data-aos="zoom-in">
       <img src="images/services/photo_animal3.jpg" data-photo1="images/services/photo_animal2.jpg" data-photo2="images/services/photo_animal1.jpg" alt="Фотосессия с животными" />
     </div>
 
-    <div class="services__photo services__photo-lookbooks" data-text="Фотосессия Лукбук">
+    <div class="services__photo services__photo-lookbooks" data-text="Фотосессия Лукбук" data-aos="zoom-in">
       <img src="images/services/lookbook.jpg" alt="Фотосессия Лукбук" />
     </div>
 
-    <div class="services__photo services__photo-boys" data-text="Фотосессия для парней">
+    <div class="services__photo services__photo-boys" data-text="Фотосессия для парней" data-aos="zoom-in">
       <img src="images/services/photo_boys.jpg" alt="Фотосессия для парней" />
     </div>
 
-    <div class="services__photo services__photo-groups" data-text="Групповая фотосессия">
+    <div class="services__photo services__photo-groups" data-text="Групповая фотосессия" data-aos="zoom-in">
       <img src="images/services/photo_group.jpg" alt="Групповая фотосессия" />
     </div>
 
-    <div class="services__photo services__photo-pregnats" data-text="Фотосессия для беременных">
+    <div class="services__photo services__photo-pregnats" data-text="Фотосессия для беременных" data-aos="zoom-in">
       <img src="images/services/pregnant1.jpg" data-photo1="images/services/pregnant2.jpg" data-photo2="images/services/pregnant3.jpg" alt="Фотосессия для беременных" />
     </div>
 
-    <div class="services__photo services__photo-works" data-text="Фотосессия «Деловой стиль»">
+    <div class="services__photo services__photo-works" data-text="Фотосессия «Деловой стиль»" data-aos="zoom-in">
       <img src="images/services/work_style3.jpg" data-photo1="images/services/work_style2.jpg" data-photo2="images/services/work_style1.jpg" alt="Фотосессия «Деловой стиль»" />
     </div>
 
-    <div class="services__photo services__photo-teens" data-text="Фотосессия для подростков">
+    <div class="services__photo services__photo-teens" data-text="Фотосессия для подростков" data-aos="zoom-in">
       <img src="images/services/photo_teens1.jpg" data-photo1="images/services/photo_teens2.jpg" data-photo2="images/services/photo_teens3.jpg" alt="Фотосессия для подростков" />
     </div>
 
-    <div class="services__photo services__photo-pair" data-text="Парная фотосессия">
+    <div class="services__photo services__photo-pair" data-text="Парная фотосессия" data-aos="zoom-in">
       <img src="images/services/photo_pair.jpg" data-photo1="images/services/photo_pair1.jpg" alt="Парная фотосессия" />
     </div>
   </div>
@@ -329,42 +331,46 @@
 
       <!-- блок этапов работам -->
       <section class="steps" id="steps">
-  <h2 class="steps__title title">Этапы работ</h2>
+  <h2 class="steps__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Этапы работ</h2>
+
   <div class="steps__container container">
-    <div class="steps__item">
+    <div class="steps__item" data-aos="zoom-in-right">
       <h3 class="steps__item-title">Заявка</h3>
       <p class="steps__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких.</p>
       <span class="steps__item-num">1</span>
     </div>
-    <div class="steps__item">
+
+    <div class="steps__item" data-aos="zoom-in-left">
       <h3 class="steps__item-title">Бронь</h3>
       <p class="steps__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких.</p>
       <span class="steps__item-num">2</span>
     </div>
-    <div class="steps__item">
-      <h3 class="steps__item-title">Составление
-        Технического задания</h3>
+
+    <div class="steps__item" data-aos="zoom-in-left">
+      <h3 class="steps__item-title">Составление Технического задания</h3>
       <p class="steps__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких.</p>
       <span class="steps__item-num">3</span>
     </div>
-    <div class="steps__item">
+
+    <div class="steps__item" data-aos="zoom-in-right">
       <h3 class="steps__item-title">Съёмка</h3>
       <p class="steps__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких.</p>
       <span class="steps__item-num">4</span>
     </div>
-    <div class="steps__item">
+
+    <div class="steps__item" data-aos="zoom-in-left">
       <h3 class="steps__item-title">Готовые фото</h3>
-      <p class="steps__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких. </p>
+      <p class="steps__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще этих мягких.</p>
       <span class="steps__item-num">5</span>
     </div>
-
   </div>
 </section>
+
       <!-- тестовый блок  -->
       <section class="textblock textblock--ideas" id="textblock-ideas">
 
   <div class="textblock__container container">
-    <h2 class="textblock__title title">Фотостудия для любых идейных фотоссесий</h2>
+    <h2 class="textblock__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Фотостудия для любых идейных фотоссесий</h2>
 
     <div class="textblock__text">
       <span class="show_text">Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один из наших залов.<br>А их, -на секундочку, -аж семь штук. Каждый наш зал оборудован интерьером и профессиональным оборудованием, и подойдет<br>для любой фотоссесии, а мы хотим рассказать вам о все подробнее.<br></span> 
@@ -419,9 +425,10 @@
 </section>
       <!-- блок с ценами -->
       <section class="price" id="price">
-  <h2 class="price__title title">Стоимость фотосесии</h2>
+  <h2 class="price__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Стоимость фотосесии</h2>
+
   <div class="price__list container">
-    <div class="price__item item">
+    <div class="price__item item" data-aos="flip-right" data-aos-delay="300">
       <div class="item__content">
         <header class="item__header">
           <h3 class="item__title">MINI</h3>
@@ -451,7 +458,7 @@
       <button class="price__btn btn">Забронировать</button>
     </div>
 
-    <div class="price__item item">
+    <div class="price__item item" data-aos="flip-right" data-aos-delay="600">
       <div class="item__content">
         <header class="item__header">
           <h3 class="item__title">STANDART</h3>
@@ -481,7 +488,7 @@
       <button class="price__btn btn">Забронировать</button>
     </div>
 
-    <div class="price__item item">
+    <div class="price__item item" data-aos="flip-right" data-aos-delay="900">
       <div class="item__content">
         <header class="item__header">
           <h3 class="item__title">MAXI</h3>
@@ -516,7 +523,7 @@
       <section class="textblock textblock--trends" id="textblock-trends">
 
   <div class="textblock__container container">
-    <h2 class="textblock__title title">Фотостудия для любых идейных фотоссесий</h2>
+    <h2 class="textblock__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Фотостудия для любых идейных фотоссесий</h2>
 
     <div class="textblock__text">
       <span class="show_text">Мы&nbsp;искренни так считаем и&nbsp;готовы кричать эту фразу на&nbsp;весь мир. Фотографии давно перестали пылиться на&nbsp;полках в&nbsp;семейных, <br>потрёпанных альбомах. <br><br>Хотите самовыразиться и&nbsp;не&nbsp;знаете как? Позвоните нам и&nbsp;закажите фотосъемку. <br>Хотите удивить и&nbsp;впечатлить? Мы&nbsp;вам поможем.<br> Не&nbsp;уверены? Посмотрите отзывы и&nbsp;проконсультируйтесь.<br> Боитесь фотографироваться? Наши локации помогут вам расслабиться и&nbsp;почувствовать себя как дома.<br></span> 
@@ -555,15 +562,12 @@
 </section>
       <!-- блок с подарками -->
       <section class="present container" id="present">
-  <h2 class="present__title title">Подарочный сертификат на фотосессию</h2>
+  <h2 class="present__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Подарочный сертификат на фотосессию</h2>
 
-  <div class="present__container ">
-
+  <div class="present__container">
     <div class="present__left">
       <p class="present__info">СЕРТИФИКАТ НА ФОТОСЕССИЮ</p>
-      <h3 class="present__heading">Это подарок,
-        который западает
-        в душу</h3>
+      <h3 class="present__heading">Это подарок, который западает в душу</h3>
       <ul class="present__list">
         <li class="present__item">Креативное оформление</li>
         <li class="present__item">Открытый календарь</li>
@@ -572,23 +576,21 @@
     </div>
 
     <div class="present__right">
-      <img src="images/present_img.png" alt="Сертификат" class="present__img">
+      <img src="images/present_img.png" alt="Сертификат" class="present__img" />
 
       <div class="present__buy">
-        <p class="present__text">Срок действия сертификата: 2 месяца
-          со дня приобретения.</p>
+        <p class="present__text">Срок действия сертификата: 2 месяца со дня приобретения.</p>
         <button class="present__btn btn btn__contact">Приобрести</button>
       </div>
     </div>
 
-    <img class="present__decor" src="images/present_bg.svg" alt="Тропка муравья">
-
+    <img class="present__decor" src="images/present_bg.svg" alt="Тропка муравья" />
   </div>
-
 </section>
+
       <!-- блок с отзывами -->
       <section class="reviews container" id="reviews">
-  <h2 class="reviews__title title">Отзывы</h2>
+  <h2 class="reviews__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Отзывы</h2>
 
   <div class="swiper reviews__slider">
     <div class="swiper-wrapper slider__wrapper">

@@ -17,7 +17,6 @@ const map = () => {
                           <p class="marker__text">Режим работы: ПН-ПТ 09:00 - 18:00</p>
                         </div>
                       </div>`,
-        balloonContentHeader: 'AddPhoto',
       }, // контент маркера
       {
         // Опции.

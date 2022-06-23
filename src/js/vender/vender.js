@@ -1,6 +1,10 @@
 //Галлерея
 import 'fslightbox';
-import 'aos';
+
+//Анимация AOS
+import AOS from 'aos';
+
+AOS.init();
 
 //Карусель и модальное окно
 import { Carousel } from '@fancyapps/ui';

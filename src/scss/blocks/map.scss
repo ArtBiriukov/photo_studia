@@ -1,4 +1,4 @@
-.ymaps-2-1-79-map-bg {
+[class*='map-bg'] {
   border-radius: 26px 0px 0px 26px;
 
   @media screen and (max-width: 896px) {
@@ -6,7 +6,7 @@
   }
 }
 
-.ymaps-2-1-79-inner-panes {
+[class*='inner-panes'] {
   border: 5px solid $bg_color1;
   border-radius: 26px 0px 0px 26px;
   box-shadow: 0px 3px 7px rgba(121, 121, 121, 0.2);
