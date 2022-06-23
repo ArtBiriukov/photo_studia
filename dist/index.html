@@ -447,7 +447,7 @@
         </ul>
       </div>
 
-      <div class="item__additionals additionals">
+      <form class="item__additionals additionals" action="/" method="post" id="price-mini">
         <h3 class="additionals__title">Дополнительные услуги</h3>
 
         <div class="additionals__list">
@@ -455,11 +455,11 @@
           <button class="additionals__item" data-additional-name="visagiste" ="">Визажист + 2000 <span class="additionals__text-littel">₽</span></button>
           <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
         </div>
-      </div>
 
-      <button class="price__btn btn">
-        <span> Забронировать</span>
-      </button>
+        <button class="price__btn btn">
+          <span> Забронировать</span>
+        </button>
+      </form>
     </div>
 
     <div class="price__item item" data-aos="flip-right" data-aos-delay="600">
@@ -479,7 +479,7 @@
         </ul>
       </div>
 
-      <div class="item__additionals additionals">
+      <form class="item__additionals additionals" action="/" method="post" id="price-standart">
         <h3 class="additionals__title">Дополнительные услуги</h3>
 
         <div class="additionals__list">
@@ -487,11 +487,11 @@
           <button class="additionals__item" data-additional-name="visagiste" ="">Визажист + 2000 <span class="additionals__text-littel">₽</span></button>
           <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
         </div>
-      </div>
 
-      <button class="price__btn btn">
-        <span> Забронировать</span>
-      </button>
+        <button class="price__btn btn">
+          <span> Забронировать</span>
+        </button>
+      </form>
     </div>
 
     <div class="price__item item" data-aos="flip-right" data-aos-delay="900">
@@ -512,17 +512,17 @@
         </ul>
       </div>
 
-      <div class="item__additionals additionals">
+      <form class="item__additionals additionals" action="/" method="post" id="price-maxi">
         <h3 class="additionals__title">Дополнительные услуги</h3>
 
         <div class="additionals__list">
           <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
         </div>
-      </div>
 
-      <button class="price__btn btn">
-        <span> Забронировать</span>
-      </button>
+        <button class="price__btn btn">
+          <span> Забронировать</span>
+        </button>
+      </form>
     </div>
   </div>
 </section>
@@ -707,33 +707,35 @@
   <div id="map" class="backvoice__map"></div>
 
   <form class="backvoice__form" action="#" id="backvoice-form" method="post">
-    <h3 class="backvoice__form-title form__title">Форма обратной связи</h3>
+    <div class="backvoice__form-container">
+      <h3 class="backvoice__form-title form__title">Форма обратной связи</h3>
 
-    <div class="backvoice__form-content form__content">
-      <div class="form__elem">
-        <h3 class="form__label" for="name">Имя</h3>
-        <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя" />
+      <div class="backvoice__form-content form__content">
+        <div class="form__elem">
+          <h3 class="form__label" for="name">Имя</h3>
+          <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя" />
+        </div>
+
+        <div class="form__elem">
+          <h3 class="form__label" for="email">E-mail</h3>
+          <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail" />
+        </div>
+
+        <div class="form__elem">
+          <h3 class="form__label" for="tel">Телефон</h3>
+          <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон" />
+        </div>
+
+        <button class="form__btn btn" type="submit">
+          <span>Отправить</span>
+        </button>
       </div>
 
-      <div class="form__elem">
-        <h3 class="form__label" for="email">E-mail</h3>
-        <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail" />
-      </div>
-
-      <div class="form__elem">
-        <h3 class="form__label" for="tel">Телефон</h3>
-        <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон" />
-      </div>
-
-      <button class="form__btn btn" type="submit">
-        <span>Отправить</span>
-      </button>
+      <p class="form__notific">
+        Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с
+        <a href="#">политикой конфиденциальности</a>
+      </p>
     </div>
-
-    <p class="form__notific">
-      Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с
-      <a href="#">политикой конфиденциальности</a>
-    </p>
 
     <div class="backvoice__decor decor1"></div>
     <div class="backvoice__decor decor2"></div>

@@ -5,7 +5,6 @@ const sliders = () => {
     slidesPerView: 3,
     centeredSlides: true,
     initialSlide: 1,
-    loop: true,
 
     modules: [Navigation, Pagination, Autoplay],
 

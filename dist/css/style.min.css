@@ -2904,18 +2904,7 @@ svg {
   background-size: contain;
 }
 .price .item .additionals {
-  margin-bottom: 52px;
   flex-direction: column;
-}
-@media screen and (max-width: 1024px) {
-  .price .item .additionals {
-    margin-bottom: 46px;
-  }
-}
-@media screen and (max-width: 896px) {
-  .price .item .additionals {
-    margin-bottom: 32px;
-  }
 }
 .price .item .additionals__title {
   font-weight: 600;
@@ -2925,11 +2914,18 @@ svg {
 }
 .price .item .additionals__list {
   max-width: 370px;
+  margin-bottom: 52px;
   gap: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .price .item .additionals__list {
+    margin-bottom: 46px;
+  }
 }
 @media screen and (max-width: 896px) {
   .price .item .additionals__list {
     flex-wrap: wrap;
+    margin-bottom: 32px;
   }
 }
 .price .item .additionals__item {
@@ -2996,9 +2992,6 @@ svg {
 }
 .price .item:nth-child(3) .item__content {
   margin-bottom: 25px;
-}
-.price .item:nth-child(3) .additionals {
-  margin-bottom: 40px;
 }
 .price .item:nth-child(3)::after {
   top: -106px;
@@ -3287,6 +3280,8 @@ svg {
 .backvoice__map {
   width: 650px;
   height: 540px;
+  border-radius: 26px 0px 0px 26px;
+  background-color: #f9f4ee;
 }
 @media screen and (max-width: 1024px) {
   .backvoice__map {
@@ -3296,6 +3291,7 @@ svg {
 @media screen and (max-width: 896px) {
   .backvoice__map {
     width: 340px;
+    border-radius: 15px;
   }
 }
 .backvoice__decor {
@@ -3718,7 +3714,7 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 100;
   width: 100%;
   height: 100vh;
   opacity: 0;
@@ -3761,7 +3757,7 @@ footer {
   .modal__close {
     top: 12px;
     right: 12px;
-    stroke: #D8D8D8;
+    stroke: #d8d8d8;
   }
 }
 .modal__content {
@@ -3815,7 +3811,7 @@ footer {
   font-weight: 600;
   font-size: 36px;
   line-height: 120%;
-  color: #4A4A4A;
+  color: #4a4a4a;
   z-index: 10;
 }
 @media screen and (max-width: 896px) {
@@ -3847,7 +3843,7 @@ footer {
   top: 30.2114803625%;
   width: 264px;
   height: 264px;
-  background: #F9F4EE;
+  background: #f9f4ee;
 }
 @media screen and (max-width: 896px) {
   .modal__decor1 {
@@ -3859,7 +3855,7 @@ footer {
   top: 83.081570997%;
   width: 106px;
   height: 106px;
-  background: #F9F4EE;
+  background: #f9f4ee;
   mix-blend-mode: multiply;
 }
 @media screen and (max-width: 896px) {
@@ -4005,7 +4001,7 @@ footer {
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 100;
+  z-index: 5;
   height: 50px;
   width: 50px;
   font-family: swiper-icons;

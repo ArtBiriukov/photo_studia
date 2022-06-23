@@ -116,17 +116,8 @@
     }
 
     & .additionals {
-      margin-bottom: 52px;
       @extend %displayCenter;
       flex-direction: column;
-
-      @media screen and (max-width: 1024px) {
-        margin-bottom: 46px;
-      }
-
-      @media screen and (max-width: 896px) {
-        margin-bottom: 32px;
-      }
 
       &__title {
         font-weight: 600;
@@ -137,12 +128,18 @@
 
       &__list {
         max-width: 370px;
+        margin-bottom: 52px;
 
         @extend %displaySpaceBeetwen;
         gap: 5px;
 
+        @media screen and (max-width: 1024px) {
+          margin-bottom: 46px;
+        }
+
         @media screen and (max-width: 896px) {
           flex-wrap: wrap;
+          margin-bottom: 32px;
         }
       }
 
@@ -223,10 +220,6 @@
 
       & .item__content {
         margin-bottom: 25px;
-      }
-
-      & .additionals {
-        margin-bottom: 40px;
       }
 
       //Декор big

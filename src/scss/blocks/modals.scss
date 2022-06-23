@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
 
-  z-index: 3;
+  z-index: 100;
 
   width: 100%;
   height: 100vh;
@@ -57,7 +57,7 @@
     @media screen and (max-width: 896px) {
       top: 12px;
       right: 12px;
-      stroke: #D8D8D8;
+      stroke: #d8d8d8;
     }
   }
 
@@ -116,7 +116,7 @@
       font-size: 36px;
       line-height: 120%;
 
-      color: #4A4A4A;
+      color: #4a4a4a;
       z-index: 10;
 
       @media screen and (max-width: 896px) {
@@ -154,7 +154,7 @@
 
     width: 264px;
     height: 264px;
-    background: #F9F4EE;
+    background: #f9f4ee;
 
     @media screen and (max-width: 896px) {
       left: percent(-177, 337);
@@ -168,7 +168,7 @@
     width: 106px;
     height: 106px;
 
-    background: #F9F4EE;
+    background: #f9f4ee;
     mix-blend-mode: multiply;
 
     @media screen and (max-width: 896px) {
@@ -204,7 +204,6 @@
       top: percent(82, 331);
     }
   }
-
 }
 
 //Картинка для модалки обратной связи
