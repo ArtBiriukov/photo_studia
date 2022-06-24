@@ -1,12 +1,6 @@
 .slider {
   position: relative;
 
-  // &__wrapper {
-  // }
-
-  // &__slide {
-  // }
-
   &__button {
     position: absolute;
     top: 50%;
@@ -15,6 +9,7 @@
     width: 73px;
     height: 73px;
     border-radius: 50%;
+    border: none;
 
     background-color: white;
 

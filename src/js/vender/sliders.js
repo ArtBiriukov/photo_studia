@@ -5,7 +5,7 @@ const sliders = () => {
     slidesPerView: 3,
     centeredSlides: true,
     initialSlide: 1,
-
+    loop: true,
     modules: [Navigation, Pagination, Autoplay],
 
     navigation: {
@@ -28,6 +28,7 @@ const sliders = () => {
     slidesPerView: 1,
     autoHeight: true,
     modules: [Navigation, Autoplay],
+    loop: true,
 
     navigation: {
       nextEl: '.locations__btn-next',
