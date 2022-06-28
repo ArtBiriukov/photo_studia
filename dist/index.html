@@ -76,46 +76,48 @@
 </svg>
 
     <!-- блок шапки -->
-    <header class="header container" id="header">
-  <a class="header__logo" href="index.html" data-aos="fade-right">
-    <img class="logo" src="images/logo.svg" alt="logo" />
-  </a>
-
-  <nav class="header__menu menu" data-aos="fade-down">
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a href="#works" class="menu__link">Портфолио</a>
-      </li>
-      <li class="menu__item">
-        <a href="#services" class="menu__link">Виды работ</a>
-      </li>
-      <li class="menu__item">
-        <a href="#textblock-ideas" class="menu__link">О фотостудии</a>
-      </li>
-      <li class="menu__item">
-        <a href="#price" class="menu__link">Услуги и цены</a>
-      </li>
-      <li class="menu__item">
-        <a href="#backvoice" class="menu__link">Контакты</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="header__order order" data-aos="fade-left">
-    <a href="tel:+74999999999" class="order__phone">+7 (499) 999 99 99</a>
-    <a href="#backvoice" class="order__call">Обратный звонок</a>
-
-    <a href="#backvoice" class="header__icon order__icon btn__reset">
-      <svg width="26" height="26">
-        <use xlink:href="#icon-call"></use>
-      </svg>
+    <header class="header" id="header">
+  <div class="header__container container">
+    <a class="header__logo" href="index.html" data-aos="fade-right">
+      <img class="logo" src="images/logo.svg" alt="logo" />
     </a>
 
-    <button class="header__icon menu__icon btn__reset">
-      <svg width="32" height="32">
-        <use xlink:href="#icon-burger-menu"></use>
-      </svg>
-    </button>
+    <nav class="header__menu menu" data-aos="fade-down">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#works" class="menu__link">Портфолио</a>
+        </li>
+        <li class="menu__item">
+          <a href="#services" class="menu__link">Виды работ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#textblock-ideas" class="menu__link">О фотостудии</a>
+        </li>
+        <li class="menu__item">
+          <a href="#price" class="menu__link">Услуги и цены</a>
+        </li>
+        <li class="menu__item">
+          <a href="#backvoice" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__order order" data-aos="fade-left">
+      <a href="tel:+74999999999" class="order__phone">+7 (499) 999 99 99</a>
+      <a href="#backvoice" class="order__call" data-fancybox="modals" data-src="#modal-backvoice">Обратный звонок</a>
+
+      <a href="#backvoice" class="header__icon order__icon btn__reset" data-fancybox="modals" data-src="#modal-backvoice">
+        <svg width="26" height="26">
+          <use xlink:href="#icon-call"></use>
+        </svg>
+      </a>
+
+      <button class="header__icon menu__icon btn__reset">
+        <svg width="32" height="32">
+          <use xlink:href="#icon-burger-menu"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -141,7 +143,7 @@
         фотографий. И мы с точностью заявляем, что нашей фотостудией вы останетесь довольны <br />
         и еще не раз захотите возвращаться к нам.
       </p>
-      <a class="main-screen__btn btn btn__contact">
+      <a class="main-screen__btn btn btn__contact" data-fancybox="modals" data-src="#modal-backvoice" data-aos="fade-right" data-aos-delay="250">
         <span>Получить консультацию</span>
       </a>
     </div>
@@ -266,7 +268,7 @@
       </button>
     </div>
 
-    <button class="locations__btn btn"><span>выбрать локацию</span></button>
+    <button class="locations__btn btn" data-fancybox="modals" data-src="#modal-locations"><span>выбрать локацию</span></button>
   </div>
 </section>
 
@@ -589,7 +591,7 @@
 
       <div class="present__buy">
         <p class="present__text">Срок действия сертификата: 2 месяца со дня приобретения.</p>
-        <button class="present__btn btn btn__contact">
+        <button class="present__btn btn btn__contact" data-fancybox="modals" data-src="#modal-backvoice">
           <span>Приобрести</span>
         </button>
       </div>
@@ -698,7 +700,7 @@
     </button>
   </div>
 
-  <button class="reviews__btn btn">
+  <button class="reviews__btn btn" data-fancybox="modals" data-src="#modal__review">
     <span>Добавить отзыв</span>
   </button>
 </section>
@@ -804,20 +806,13 @@
 
     <div class="btn__top"></div>
     <!-- модалки -->
-    <div class="overlay"></div>
-
-<!-- Форма обратной связи-->
-<div class="modal modal__backvoice">
-  <div class="modal__close">
-    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L22 22" stroke-width="2" stroke-linecap="round" />
-      <path d="M22 1L1 22" stroke-width="2" stroke-linecap="round" />
-    </svg>
-  </div>
-
-  <div class="modal__content">
+    <!-- Форма обратной связи-->
+<div class="modal__content" id="modal-backvoice">
+  <div class="modal__body">
     <!-- Контент обратной связи сама форма!!! -->
-    <img class="modal__img backvoice__img" src="images/modal/backvoice.svg" alt="Обратная связь" />
+    <div class="modal__img">
+      <img class="backvoice__img" src="images/modal/backvoice.svg" alt="Обратная связь" />
+    </div>
 
     <form class="modal__form form" action="#" id="form__backvoice" method="post">
       <h3 class="form__title">Форма обратной связи</h3>
@@ -838,38 +833,43 @@
           <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон" />
         </div>
 
-        <button class="form__btn btn" type="submit">Отправить</button>
+        <button class="form__btn btn" type="submit"><span>Отправить</span></button>
       </div>
 
       <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
     </form>
   </div>
-</div>
 
-<div class="modal__content-sucsses">
-  <h2 class="modal__title-sucsses">Благодарим <br />за оставленную заявку!</h2>
-  <p class="modal__text-sucsses">
-    Наши специалисты уже обрабатывают <br />
-    Вашу заявку и свяжутся с Вами в ближайшее время
-  </p>
+  <div class="modal__message modal__message-sucsses message">
+    <h2 class="message__title message__title-sucsses">Благодарим <br />за оставленную заявку!</h2>
+    <p class="message__text">
+      Наши специалисты уже обрабатывают <br />
+      Вашу заявку и свяжутся с Вами в ближайшее время
+    </p>
 
-  <div class="modal__decor modal__decor1"></div>
-  <div class="modal__decor modal__decor2"></div>
-  <div class="modal__decor modal__decor3"></div>
-  <div class="modal__decor modal__decor4"></div>
+    <div class="message__decor message__decor-1"></div>
+    <div class="message__decor message__decor-2"></div>
+    <div class="message__decor message__decor-3"></div>
+    <div class="message__decor message__decor-4"></div>
+  </div>
+
+  <div class="modal__message modal__message-error message">
+    <h2 class="message__title message__title-error">К сожалению произошла ощибка!</h2>
+    <p class="message__text">Текст ошибки</p>
+
+    <div class="message__decor message__decor-1"></div>
+    <div class="message__decor message__decor-2"></div>
+    <div class="message__decor message__decor-3"></div>
+    <div class="message__decor message__decor-4"></div>
+  </div>
 </div>
 
 <!-- Форма выбора локации-->
-<div class="modal modal__location">
-  <div class="modal__close">
-    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L22 22" stroke-width="2" stroke-linecap="round" />
-      <path d="M22 1L1 22" stroke-width="2" stroke-linecap="round" />
-    </svg>
-  </div>
-
-  <div class="modal__content">
-    <img class="location__img" src="images/modal/location.svg" alt="Выбор локации" />
+<div class="modal__content" id="modal-locations">
+  <div class="modal__body">
+    <div class="modal__img">
+      <img class="location__img" src="images/modal/location.svg" alt="Выбор локации" />
+    </div>
 
     <form class="modal__form form" action="#" id="form__location" method="post">
       <h3 class="form__title">Форма выбора локации</h3>
@@ -907,25 +907,41 @@
           </div>
         </div>
 
-        <button class="form__btn btn" type="submit">Отправить</button>
+        <button class="form__btn btn" type="submit"><span>Отправить</span></button>
       </div>
 
       <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
     </form>
   </div>
+
+  <div class="modal__message modal__message-sucsses message">
+    <h2 class="message__title message__title-sucsses">Благодарим <br />за оставленную заявку!</h2>
+    <p class="message__text">
+      Наши специалисты уже обрабатывают <br />
+      Вашу заявку и свяжутся с Вами в ближайшее время
+    </p>
+
+    <div class="message__decor message__decor-1"></div>
+    <div class="message__decor message__decor-2"></div>
+    <div class="message__decor message__decor-3"></div>
+    <div class="message__decor message__decor-4"></div>
+  </div>
+
+  <div class="modal__message modal__message-error message">
+    <h2 class="message__title message__title-error">К сожалению произошла ощибка!</h2>
+    <p class="message__text">Текст ошибки</p>
+
+    <div class="message__decor message__decor-1"></div>
+    <div class="message__decor message__decor-2"></div>
+    <div class="message__decor message__decor-3"></div>
+    <div class="message__decor message__decor-4"></div>
+  </div>
 </div>
 
 <!-- Форма отзыва -->
-<div class="modal modal__review">
-  <div class="modal__close">
-    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M1 1L22 22" stroke-width="2" stroke-linecap="round" />
-      <path d="M22 1L1 22" stroke-width="2" stroke-linecap="round" />
-    </svg>
-  </div>
-
-  <div class="modal__content modal__content-col">
-    <form class="modal__form form" action="#" id="form__review" method="post">
+<div class="modal__content modal__content-col" id="modal__review">
+  <div class="modal__body">
+    <form class="modal__form form" action="#" id="form__review" method="post" enctype="multipart/form-data">
       <h3 class="form__title">Оставьте отзыв о том, как прошла ваша фотосессия</h3>
 
       <div class="form__date">
@@ -954,7 +970,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <img src="../../images/placeholder.jpg" alt="Заглушка" />
+                  <img src="images/placeholder.jpg" alt="Заглушка" />
                 </div>
 
                 <div class="form__photo-item">
@@ -964,7 +980,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <img src="../../images/placeholder.jpg" alt="Заглушка" />
+                  <img src="images/placeholder.jpg" alt="Заглушка" />
                 </div>
 
                 <div class="form__photo-item">
@@ -974,7 +990,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <img src="../../images/placeholder.jpg" alt="Заглушка" />
+                  <img src="images/placeholder.jpg" alt="Заглушка" />
                 </div>
 
                 <div class="form__photo-item">
@@ -984,7 +1000,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <img src="../../images/placeholder.jpg" alt="Заглушка" />
+                  <img src="images/placeholder.jpg" alt="Заглушка" />
                 </div>
               </div>
 
@@ -1001,23 +1017,34 @@
           </div>
         </div>
 
-        <button class="form__btn btn" type="submit">Отправить</button>
+        <button class="form__btn btn" type="submit"><span>Отправить</span></button>
       </div>
 
       <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
     </form>
-
-    <img class="review__img" src="images/modal/review.svg" alt="Оставить отзыв" />
+    <div class="modal__img">
+      <img class="review__img" src="images/modal/review.svg" alt="Оставить отзыв" />
+    </div>
   </div>
-</div>
 
-<div class="modal__content-sucsses">
-  <h2 class="modal__title-sucsses">Благодарим<br />за оставленный отзыв!</h2>
+  <div class="modal__message modal__message-sucsses message">
+    <h2 class="message__title message__title-sucsses">Благодарим<br />за оставленный отзыв!</h2>
 
-  <div class="modal__decor modal__decor1"></div>
-  <div class="modal__decor modal__decor2"></div>
-  <div class="modal__decor modal__decor3"></div>
-  <div class="modal__decor modal__decor4"></div>
+    <div class="message__decor message__decor-1"></div>
+    <div class="message__decor message__decor-2"></div>
+    <div class="message__decor message__decor-3"></div>
+    <div class="message__decor message__decor-4"></div>
+  </div>
+
+  <div class="modal__message modal__message-error message">
+    <h2 class="message__title message__title-error">Произошла ошибка добавления отзыва!</h2>
+    <p class="message__text">Текст ошибки</p>
+
+    <div class="message__decor message__decor-1"></div>
+    <div class="message__decor message__decor-2"></div>
+    <div class="message__decor message__decor-3"></div>
+    <div class="message__decor message__decor-4"></div>
+  </div>
 </div>
 
     <!-- Подключение карты -->

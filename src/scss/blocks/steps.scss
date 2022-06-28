@@ -4,6 +4,7 @@
   background-image: url(../images/steps_bg.svg);
   background-repeat: no-repeat;
   background-position: center 320px;
+  overflow: hidden;
 
   @media screen and (max-width: 1024px) {
     padding-bottom: 124px;
@@ -32,7 +33,6 @@
   &__container {
     position: relative;
     min-height: 826px;
-    overflow: hidden;
 
     @media screen and (max-width: 1024px) {
       min-height: 920px;

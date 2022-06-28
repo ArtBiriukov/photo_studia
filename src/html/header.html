@@ -1,42 +1,44 @@
-<header class="header container" id="header">
-  <a class="header__logo" href="index.html" data-aos="fade-right">
-    <img class="logo" src="@images/logo.svg" alt="logo" />
-  </a>
-
-  <nav class="header__menu menu" data-aos="fade-down">
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a href="#works" class="menu__link">Портфолио</a>
-      </li>
-      <li class="menu__item">
-        <a href="#services" class="menu__link">Виды работ</a>
-      </li>
-      <li class="menu__item">
-        <a href="#textblock-ideas" class="menu__link">О фотостудии</a>
-      </li>
-      <li class="menu__item">
-        <a href="#price" class="menu__link">Услуги и цены</a>
-      </li>
-      <li class="menu__item">
-        <a href="#backvoice" class="menu__link">Контакты</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="header__order order" data-aos="fade-left">
-    <a href="tel:+74999999999" class="order__phone">+7 (499) 999 99 99</a>
-    <a href="#backvoice" class="order__call">Обратный звонок</a>
-
-    <a href="#backvoice" class="header__icon order__icon btn__reset">
-      <svg width="26" height="26">
-        <use xlink:href="#icon-call"></use>
-      </svg>
+<header class="header" id="header">
+  <div class="header__container container">
+    <a class="header__logo" href="index.html" data-aos="fade-right">
+      <img class="logo" src="@images/logo.svg" alt="logo" />
     </a>
 
-    <button class="header__icon menu__icon btn__reset">
-      <svg width="32" height="32">
-        <use xlink:href="#icon-burger-menu"></use>
-      </svg>
-    </button>
+    <nav class="header__menu menu" data-aos="fade-down">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#works" class="menu__link">Портфолио</a>
+        </li>
+        <li class="menu__item">
+          <a href="#services" class="menu__link">Виды работ</a>
+        </li>
+        <li class="menu__item">
+          <a href="#textblock-ideas" class="menu__link">О фотостудии</a>
+        </li>
+        <li class="menu__item">
+          <a href="#price" class="menu__link">Услуги и цены</a>
+        </li>
+        <li class="menu__item">
+          <a href="#backvoice" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__order order" data-aos="fade-left">
+      <a href="tel:+74999999999" class="order__phone">+7 (499) 999 99 99</a>
+      <a href="#backvoice" class="order__call" data-fancybox="modals" data-src="#modal-backvoice">Обратный звонок</a>
+
+      <a href="#backvoice" class="header__icon order__icon btn__reset" data-fancybox="modals" data-src="#modal-backvoice">
+        <svg width="26" height="26">
+          <use xlink:href="#icon-call"></use>
+        </svg>
+      </a>
+
+      <button class="header__icon menu__icon btn__reset">
+        <svg width="32" height="32">
+          <use xlink:href="#icon-burger-menu"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>

@@ -1,20 +1,28 @@
 .header {
-  position: relative;
-  @extend %displaySpaceBeetwen;
-  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  background-color: white;
+  width: 100%;
 
-  @media screen and (max-width: 896px) {
-    height: 50px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 
-    position: fixed;
-    top: 0;
-    z-index: 101;
-    background-color: white;
-    width: 100%;
+  &__container {
+    @extend %displaySpaceBeetwen;
+    padding-top: 23px;
+    padding-bottom: 23px;
 
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    @media screen and (max-width: 896px) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
 
-    &__logo img {
+  &__logo {
+    width: 108px;
+    display: block;
+
+    @media screen and (max-width: 896px) {
       width: 63px;
     }
   }
