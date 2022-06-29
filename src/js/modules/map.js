@@ -1,5 +1,7 @@
 //Карты
 const map = () => {
+  let flag = 0;
+
   function mapInit() {
     let map = new ymaps.Map('map', {
       center: [55.80892347253291, 37.52779156834339],
@@ -34,7 +36,16 @@ const map = () => {
     map.geoObjects.add(myPlacemark);
   }
 
-  ymaps.ready(mapInit);
+  window.addEventListener('scroll', function () {
+    let scrollY = window.scrollY;
+    let map = document.querySelector('#map').offsetTop;
+
+    if (scrollY >= map - 600 && flag === 0) {
+      ymaps.ready(mapInit);
+
+      flag = 1;
+    }
+  });
 };
 
 export default map;

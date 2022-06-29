@@ -1,19 +1,19 @@
 .steps {
   padding-top: 120px;
-  padding-bottom: 166px;
+  padding-bottom: 66px;
   background-image: url(../images/steps_bg.svg);
   background-repeat: no-repeat;
   background-position: center 320px;
   overflow: hidden;
 
   @media screen and (max-width: 1024px) {
-    padding-bottom: 124px;
+    padding-bottom: 24px;
     background-image: url(../images/steps_bg-tablet.svg);
   }
 
   @media screen and (max-width: 896px) {
     padding-top: 60px;
-    padding-bottom: 64px;
+    padding-bottom: 34px;
     background-image: url(../images/steps_bg-mobile.svg);
     background-position: center 180px;
   }

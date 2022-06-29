@@ -1,10 +1,18 @@
 .textblock {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 100px;
 
   @media screen and (max-width: 896px) {
-    padding-top: 50px;
-    padding-bottom: 36px;
+    padding-top: 30px;
+  }
+
+  &__wrapper {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width: 896px) {
+      padding-top: 50px;
+      padding-bottom: 36px;
+    }
   }
 
   &__title {
@@ -83,4 +91,8 @@
   &--trends {
     background-color: $bg_color2;
   }
+}
+
+#textblock-trends {
+  padding-top: 0;
 }

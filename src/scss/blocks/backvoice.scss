@@ -1,9 +1,11 @@
 .backvoice {
   margin-bottom: 148px;
+  padding-top: 186px;
   @extend %displayCenter;
 
   @media screen and (max-width: 896px) {
     flex-direction: column;
+    padding-top: 80px;
   }
 
   &__map {

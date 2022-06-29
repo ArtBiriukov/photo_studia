@@ -4,11 +4,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 186px;
-
-  @media screen and (max-width: 896px) {
-    margin-bottom: 80px;
-  }
 
   &__btn {
     padding: 14px 70px;
