@@ -2952,6 +2952,7 @@ svg {
 }
 @media screen and (max-width: 896px) {
   .price .item .additionals__list {
+    width: 100%;
     flex-wrap: wrap;
     margin-bottom: 32px;
   }
