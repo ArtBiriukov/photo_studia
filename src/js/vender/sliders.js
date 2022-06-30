@@ -62,6 +62,7 @@ const sliders = () => {
     slidesPerView: 1,
     loop: true,
     slideActiveClass: 'slider__slide-active',
+    autoHeight: true,
 
     modules: [Navigation, Autoplay],
 

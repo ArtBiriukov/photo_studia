@@ -3,7 +3,7 @@ import AOS from 'aos';
 
 AOS.init({
   disable: function () {
-    var maxWidth = 800;
+    let maxWidth = 896;
     return window.innerWidth < maxWidth;
   },
 });

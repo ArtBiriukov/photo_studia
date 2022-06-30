@@ -267,6 +267,18 @@
       padding: 16px 0;
     }
 
+    .swiper-slide {
+      height: 544px;
+
+      @media screen and (max-width: 1024px) {
+        height: 400px;
+      }
+
+      @media screen and (max-width: 625px) {
+        height: 230px;
+      }
+    }
+
     .swiper-slide-active {
       transform: scale(1.13);
       z-index: 1;

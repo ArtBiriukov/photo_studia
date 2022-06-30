@@ -155,9 +155,10 @@
 
   &__img {
     position: relative;
+    width: initial;
+    height: initial;
     z-index: 3;
     margin-top: -6px;
-    width: initial;
 
     @media screen and (max-width: 1024px) {
       max-width: 438px;

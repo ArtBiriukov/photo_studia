@@ -173,6 +173,17 @@
           <img src="images/works/three-slide.jpg" alt="Slide 3" />
         </a>
       </div>
+      <div class="swiper-slide slider__slide">
+        <a data-fancybox="gallery-works" href="images/works/4.jpg" data-caption="slide 4">
+          <img src="images/works/4.jpg" alt="Slide 4" />
+        </a>
+      </div>
+
+      <div class="swiper-slide slider__slide">
+        <a data-fancybox="gallery-works" href="images/works/5.jpg" data-caption="slide 5">
+          <img src="images/works/5.jpg" alt="Slide 5" />
+        </a>
+      </div>
     </div>
 
     <button class="slider__button slider__button-prev works__slider-btn-prev">
@@ -375,7 +386,7 @@
       <section class="textblock" id="textblock-ideas">
 <div class="textblock__wrapper textblock--ideas">
   <div class="textblock__container container">
-    <h2 class="textblock__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Фотостудия для любых идейных фотоссесий</h2>
+    <h2 class="textblock__title title">Фотостудия для любых идейных фотоссесий</h2>
 
     <div class="textblock__text">
       <span class="show_text">Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один из наших залов.<br>А их, -на секундочку, -аж семь штук. Каждый наш зал оборудован интерьером и профессиональным оборудованием, и подойдет<br>для любой фотоссесии, а мы хотим рассказать вам о все подробнее. </span> 
@@ -452,19 +463,23 @@
         </ul>
       </div>
 
-      <form class="item__additionals additionals" action="/" method="post" id="price-mini">
+      <div class="item__additionals additionals" id="price-mini">
         <h3 class="additionals__title">Дополнительные услуги</h3>
 
         <div class="additionals__list">
-          <button class="additionals__item" data-additional-name="help">Помощь в позировании</button>
+          <button class="additionals__item active" data-additional-name="help">Помощь в позировании</button>
           <button class="additionals__item" data-additional-name="visagiste" ="">Визажист + 2000 <span class="additionals__text-littel">₽</span></button>
-          <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
+          <button class="additionals__item" data-additional-name="retouch" data-fancybox="modals" data-src="#popUp__retouch">
+            Дополнительная ретушь фото —
+            <span class="additionals__count"> 1 шт. / 250 </span>
+            <span class="additionals__text-littel">₽</span>
+          </button>
         </div>
 
-        <button class="price__btn btn">
+        <button class="price__btn btn" data-fancybox="modals" data-src="#modal-backvoice">
           <span> Забронировать</span>
         </button>
-      </form>
+      </div>
     </div>
 
     <div class="price__item item" data-aos="flip-right" data-aos-delay="600">
@@ -484,19 +499,23 @@
         </ul>
       </div>
 
-      <form class="item__additionals additionals" action="/" method="post" id="price-standart">
+      <div class="item__additionals additionals" id="price-standart">
         <h3 class="additionals__title">Дополнительные услуги</h3>
 
         <div class="additionals__list">
           <button class="additionals__item" data-additional-name="help">Помощь в позировании</button>
           <button class="additionals__item" data-additional-name="visagiste" ="">Визажист + 2000 <span class="additionals__text-littel">₽</span></button>
-          <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
+          <button class="additionals__item" data-additional-name="retouch" data-fancybox="modals" data-src="#popUp__retouch">
+            Дополнительная ретушь фото —
+            <span class="additionals__count"> 1 шт. / 250 </span>
+            <span class="additionals__text-littel">₽</span>
+          </button>
         </div>
 
-        <button class="price__btn btn">
+        <button class="price__btn btn" data-fancybox="modals" data-src="#modal-backvoice">
           <span> Забронировать</span>
         </button>
-      </form>
+      </div>
     </div>
 
     <div class="price__item item" data-aos="flip-right" data-aos-delay="900">
@@ -517,17 +536,21 @@
         </ul>
       </div>
 
-      <form class="item__additionals additionals" action="/" method="post" id="price-maxi">
+      <div class="item__additionals additionals" id="price-maxi">
         <h3 class="additionals__title">Дополнительные услуги</h3>
 
         <div class="additionals__list">
-          <button class="additionals__item" data-additional-name="retouch">Дополнительная ретушь фото — 1 шт. / 250 <span class="additionals__text-littel">₽</span></button>
+          <button class="additionals__item" data-additional-name="retouch" data-fancybox="modals" data-src="#popUp__retouch">
+            Дополнительная ретушь фото —
+            <span class="additionals__count"> 1 шт. / 250 </span>
+            <span class="additionals__text-littel">₽</span>
+          </button>
         </div>
 
-        <button class="price__btn btn">
-          <span> Забронировать</span>
+        <button class="price__btn btn" data-fancybox="modals" data-src="#modal-backvoice">
+          <span>Забронировать</span>
         </button>
-      </form>
+      </div>
     </div>
   </div>
 </section>
@@ -536,7 +559,7 @@
       <section class="textblock" id="textblock-trends">
   <div class="textblock__wrapper textblock--trends"> 
     <div class="textblock__container container">
-      <h2 class="textblock__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Фотостудия для любых идейных фотоссесий</h2>
+      <h2 class="textblock__title title">Фотостудия для любых идейных фотоссесий</h2>
   
       <div class="textblock__text">
         <span class="show_text">Мы&nbsp;искренни так считаем и&nbsp;готовы кричать эту фразу на&nbsp;весь мир. Фотографии давно перестали пылиться на&nbsp;полках в&nbsp;семейных, <br>потрёпанных альбомах. <br><br>Хотите самовыразиться и&nbsp;не&nbsp;знаете как? Позвоните нам и&nbsp;закажите фотосъемку. <br>Хотите удивить и&nbsp;впечатлить? Мы&nbsp;вам поможем.<br> Не&nbsp;уверены? Посмотрите отзывы и&nbsp;проконсультируйтесь.<br> Боитесь фотографироваться? Наши локации помогут вам расслабиться и&nbsp;почувствовать себя как дома.</span> 
@@ -594,7 +617,7 @@
 
       <div class="present__buy">
         <p class="present__text">Срок действия сертификата: 2 месяца со дня приобретения.</p>
-        <button class="present__btn btn btn__contact" data-fancybox="modals" data-src="#modal-backvoice">
+        <button class="present__btn btn" data-fancybox="modals" data-src="#modal-backvoice">
           <span>Приобрести</span>
         </button>
       </div>
@@ -1015,6 +1038,21 @@
     <div class="message__decor message__decor-2"></div>
     <div class="message__decor message__decor-3"></div>
     <div class="message__decor message__decor-4"></div>
+  </div>
+</div>
+
+<!-- Попап по количеству ретуши -->
+<div class="modal__content popUp" id="popUp__retouch">
+  <div class="popUp__body">
+    <h2 class="popUp__title">Дополнительная ретушь фото</h2>
+
+    <div class="popUp__container">
+      <label class="popUp__label form__label" for="name">Количество</label>
+      <input class="popUp__input form__input" type="number" name="count" id="retuoch__count" placeholder="Введите количество фото для ретуши" />
+      <button class="form__btn btn popUp__btn">
+        <span>Сохранить</span>
+      </button>
+    </div>
   </div>
 </div>
 
