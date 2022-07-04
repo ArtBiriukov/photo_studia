@@ -10,7 +10,6 @@ import scrollTop from './modules/scrollTop.js';
 import marginMenu from './modules/marginMenu.js';
 import selectLocation from './modules/selectLocation.js';
 import { priceFrom } from './modules/pricesForm.js';
-// import changePhotos from './modules/changePhotos.js';
 import openMenu from './modules/openMenu.js';
 import smoothScroll from './modules/smoothScroll.js';
 import map from './modules/map.js';
@@ -23,8 +22,6 @@ sliders();
 validation();
 //Показать текст в текстовом блоке
 showText();
-//Смена картинки в карточках
-// changePhotos();
 //Выбор прайса
 priceFrom();
 //Бургер меню
