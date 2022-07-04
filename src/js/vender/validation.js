@@ -6,6 +6,8 @@ let maskOptions = {
 };
 
 const validation = () => {
+  const popUpInput = document.querySelector('.popUp__input');
+
   const forms = document.querySelectorAll('form');
 
   forms.forEach((form) => {
