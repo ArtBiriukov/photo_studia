@@ -11,18 +11,18 @@
 
       <div class="form__date">
         <div class="form__elem">
-          <h3 class="form__label" for="name">Имя</h3>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя" />
+          <label class="form__label" for="backvoice-name">Имя</label>
+          <input class="form__input" type="text" name="name" id="backvoice-name" placeholder="Ввеите ваше имя" />
         </div>
 
         <div class="form__elem">
-          <h3 class="form__label" for="email">E-mail</h3>
-          <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail" />
+          <label class="form__label" for="backvoice-email">E-mail</label>
+          <input class="form__input" type="email" name="email" id="backvoice-email" placeholder="Введите ваш E-mail" />
         </div>
 
         <div class="form__elem">
-          <h3 class="form__label" for="tel">Телефон</h3>
-          <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон" />
+          <label class="form__label" for="backvoice-tel">Телефон</label>
+          <input class="form__input" type="tel" name="tel" id="backvoice-tel" placeholder="Введи ваш Телефон" />
         </div>
 
         <button class="form__btn btn" type="submit"><span>Отправить</span></button>
@@ -68,27 +68,27 @@
 
       <div class="form__date">
         <div class="form__elem">
-          <h3 class="form__label" for="name">Имя</h3>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя" />
+          <label class="form__label" for="locations-name">Имя</label>
+          <input class="form__input" type="text" name="name" id="locations-name" placeholder="Ввеите ваше имя" />
         </div>
 
         <div class="form__elem">
-          <h3 class="form__label" for="email">E-mail</h3>
-          <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail" />
+          <label class="form__label" for="locations-email">E-mail</label>
+          <input class="form__input" type="email" name="email" id="locations-email" placeholder="Введите ваш E-mail" />
         </div>
 
         <div class="form__elem">
           <label for="tel">
-            <h3 class="form__label">Телефон</h3>
-            <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введи ваш Телефон" />
+            <label class="form__label" for="locations-tel">Телефон</label>
+            <input class="form__input" type="tel" name="tel" id="locations-tel" placeholder="Введи ваш Телефон" />
           </label>
         </div>
 
         <div class="form__elem">
-          <h3 class="form__label" for="location">Локации</h3>
+          <label class="form__label" for="locations-select">Локации</label>
 
           <div class="form__select select">
-            <input class="form__input select__btn" type="text" name="location" id="form-location" placeholder="Выберите локацию" />
+            <input class="form__input select__btn" type="text" name="location" id="locations-select" placeholder="Выберите локацию" />
 
             <!-- <ul class="select__list">
               <li class="select__item" data-select="option" data-value="location1" data-index="0">Локация 1</li>
@@ -148,20 +148,20 @@
 
       <div class="form__date">
         <div class="form__elem">
-          <h3 class="form__label" for="name">Имя</h3>
-          <input class="form__input" type="text" name="name" id="name" placeholder="Ввеите ваше имя" />
+          <label class="form__label" for="review-name">Имя</label>
+          <input class="form__input" type="text" name="name" id="review-name" placeholder="Ввеите ваше имя" />
         </div>
 
         <div class="form__elem">
-          <h3 class="form__label" for="email">E-mail</h3>
-          <input class="form__input" type="email" name="email" id="email" placeholder="Введите ваш E-mail" />
+          <label class="form__label" for="review-email">E-mail</label>
+          <input class="form__input" type="email" name="email" id="review-email" placeholder="Введите ваш E-mail" />
         </div>
 
         <div class="form__elem">
-          <h3 class="form__label" for="review">Отзыв</h3>
+          <label class="form__label" for="review-text">Отзыв</label>
 
           <div class="form__input">
-            <textarea class="form__textarea" name="review" id="review" placeholder="Введите ваш отзыв"></textarea>
+            <textarea class="form__textarea" name="review" id="review-text" placeholder="Введите ваш отзыв"></textarea>
 
             <div class="form__photo">
               <div class="form__photo-content">
@@ -255,8 +255,8 @@
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="name">Количество</label>
-      <input class="popUp__input form__input" type="text" name="count" id="retuoch__count" placeholder="Введите количество фото для ретуши" />
+      <label class="popUp__label form__label" for="retouch-mini-count">Количество</label>
+      <input class="popUp__input form__input" id="retouch-mini-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
       <button class="form__btn btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
@@ -269,21 +269,22 @@
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="name">Количество</label>
-      <input class="popUp__input form__input" type="text" name="count" id="retuoch__count" placeholder="Введите количество фото для ретуши" />
+      <label class="popUp__label form__label" for="retouch-standart-count">Количество</label>
+      <input class="popUp__input form__input" id="retouch-standart-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
       <button class="form__btn btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
     </div>
   </div>
 </div>
+
 <div class="modal__content popUp" id="popUp__retouch-maxi">
   <div class="popUp__body">
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="name">Количество</label>
-      <input class="popUp__input form__input" type="text" name="count" id="retuoch__count" placeholder="Введите количество фото для ретуши" />
+      <label class="popUp__label form__label" for="retouch-maxi-count">Количество</label>
+      <input class="popUp__input form__input" id="retouch-maxi-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
       <button class="form__btn btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
