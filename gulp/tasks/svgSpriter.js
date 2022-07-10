@@ -1,27 +1,28 @@
-import svgSprite from "gulp-svg-sprite";
+import svgSprite from 'gulp-svg-sprite';
 
 export const svgSpriter = () => {
-  return (
-    app.gulp.src(`${app.path.src.svgicons}`, {})
-      .pipe(
-        app.plugins.plumber(
-          app.plugins.notify.onError({
-            title: 'SVG',
-            message: 'Error: <%= error.message %>',
-          })
-        )
+  return app.gulp
+    .src(`${app.path.src.svgicons}`, {})
+    .pipe(
+      app.plugins.plumber(
+        app.plugins.notify.onError({
+          title: 'SVG',
+          message: 'Error: <%= error.message %>',
+        })
       )
+    )
 
-      .pipe(svgSprite({
+    .pipe(
+      svgSprite({
         mode: {
           stack: {
             sprite: `../icons/icons.svg`,
             //создавать страницу с перечнем иконок
             example: true,
-          }
-        }
-      }))
+          },
+        },
+      })
+    )
 
-      .pipe(app.gulp.dest(app.path.build.images))
-  );
+    .pipe(app.gulp.dest(app.path.build.images));
 };

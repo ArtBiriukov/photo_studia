@@ -1,25 +1,25 @@
-//import webp from 'gulp-webp';
+import webp from 'gulp-webp';
 import imagemin from 'gulp-imagemin';
 
 export const images = () => {
   return (
     app.gulp
-    .src(app.path.src.images)
-    .pipe(
-      app.plugins.plumber(
-        app.plugins.notify.onError({
-          title: 'images',
-          message: 'Error: <%= error.message %>',
-        })
+      .src(app.path.src.images)
+      .pipe(
+        app.plugins.plumber(
+          app.plugins.notify.onError({
+            title: 'images',
+            message: 'Error: <%= error.message %>',
+          })
+        )
       )
-    )
 
-    /* //webp
-     .pipe(app.plugins.newer(app.path.build.images))
-     .pipe(app.plugins.if(app.isBuild, webp()))
-     .pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.images)))
-     .pipe(app.plugins.if(app.isBuild, app.gulp.src(app.path.src.images)))
-     //webp end
+      //webp
+      .pipe(app.plugins.newer(app.path.build.images))
+      .pipe(app.plugins.if(app.isBuild, webp()))
+      .pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.images)))
+      .pipe(app.plugins.if(app.isBuild, app.gulp.src(app.path.src.images)))
+      //webp end
 
       .pipe(app.plugins.if(app.isBuild, app.plugins.newer(app.path.build.images)))
       .pipe(
@@ -34,9 +34,9 @@ export const images = () => {
         )
       )
 
-      .pipe(app.gulp.dest(app.path.build.images))*/
-    .pipe(app.gulp.src(app.path.src.svg))
-    .pipe(app.gulp.dest(app.path.build.images))
-    .pipe(app.plugins.browserSync.stream())
+      .pipe(app.gulp.dest(app.path.build.images))
+      .pipe(app.gulp.src(app.path.src.svg))
+      .pipe(app.gulp.dest(app.path.build.images))
+      .pipe(app.plugins.browserSync.stream())
   );
 };

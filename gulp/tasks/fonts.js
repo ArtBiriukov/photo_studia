@@ -88,10 +88,7 @@ export const fontStyle = () => {
               fontWeight = 600;
             } else if (fontWeight.toLocaleLowerCase() === 'bold') {
               fontWeight = 700;
-            } else if (
-              fontWeight.toLocaleLowerCase() === 'extrabold' ||
-              fontWeight.toLocaleLowerCase() === 'heavy'
-            ) {
+            } else if (fontWeight.toLocaleLowerCase() === 'extrabold' || fontWeight.toLocaleLowerCase() === 'heavy') {
               fontWeight = 800;
             } else if (fontWeight.toLocaleLowerCase() === 'black') {
               fontWeight = 900;
@@ -100,7 +97,9 @@ export const fontStyle = () => {
             }
             fs.appendFile(
               fontsFile,
-              `@font-face {\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\r\n`, cb);
+              `@font-face {\n\tfont-family: ${fontName};\n\tfont-display: swap;\n\tsrc: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\tfont-style: normal;\n}\r\n`,
+              cb
+            );
             newFileOnly = fontFileName;
           }
         }
@@ -111,5 +110,5 @@ export const fontStyle = () => {
     }
   });
   return app.gulp.src(`${app.path.srcFolder}`);
-  function cb() { }
+  function cb() {}
 };
