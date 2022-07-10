@@ -12,7 +12,7 @@ const map = () => {
       [55.80826942592592, 37.52762258917546], // координаты маркера
       {
         iconContent: `<div class="marker">
-                        <img src="@images/logo_marker.svg" alt="logo" class="marker__logo">
+                        <img src="images/logo_marker.svg" alt="logo" class="marker__logo">
                         <div class="marker__content">
                           <p class="marker__text">+7 (499) 999 99 99</p>
                           <p class="marker__text">content@addmarkets.ru</p>
