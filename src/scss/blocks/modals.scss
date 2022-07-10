@@ -9,34 +9,32 @@
 }
 
 .modal {
-  &__content {
-    display: none;
-    background: white;
-    border-radius: 15px;
-    padding: 0;
-    margin: 0 15px;
+  display: none;
+  background: white;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0 15px;
 
-    //Кнопка закрывания модалки
-    & > .carousel__button.is-close {
-      position: absolute;
-      z-index: 100;
-      top: -39px;
-      right: 0;
+  //Кнопка закрывания модалки
+  & > .carousel__button.is-close {
+    position: absolute;
+    z-index: 100;
+    top: -39px;
+    right: 0;
 
-      color: #fff;
-      cursor: pointer;
+    color: #fff;
+    cursor: pointer;
 
-      @include transition;
+    @include transition;
 
-      &:hover {
-        color: $accent_color;
-      }
+    &:hover {
+      color: $accent_color;
+    }
 
-      @media screen and (max-width: 896px) {
-        top: 12px;
-        right: 12px;
-        color: #d8d8d8;
-      }
+    @media screen and (max-width: 896px) {
+      top: 12px;
+      right: 12px;
+      color: #d8d8d8;
     }
   }
 
@@ -59,7 +57,7 @@
       flex-direction: column;
     }
 
-    &-col {
+    &--col {
       @media screen and (max-width: 896px) {
         flex-direction: column-reverse;
       }

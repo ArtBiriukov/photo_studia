@@ -9,6 +9,14 @@
     padding-top: 60px;
     padding-bottom: 40px;
 
+    &--ideas {
+      background-color: $bg_color1;
+    }
+
+    &--trends {
+      background-color: $bg_color2;
+    }
+
     @media screen and (max-width: 896px) {
       padding-top: 50px;
       padding-bottom: 36px;
@@ -82,14 +90,6 @@
       margin-top: 22px;
       justify-content: center;
     }
-  }
-
-  &--ideas {
-    background-color: $bg_color1;
-  }
-
-  &--trends {
-    background-color: $bg_color2;
   }
 }
 

@@ -33,6 +33,6 @@ selectLocation();
 //Плавный скролл
 smoothScroll('.menu__link');
 smoothScroll('.footer__menu-link');
-scrollTop('.btn__top', '#main-screen');
+scrollTop('.btn-top', '#main-screen');
 //Карта
 map();
