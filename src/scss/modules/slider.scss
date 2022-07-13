@@ -1,7 +1,7 @@
 .slider {
   position: relative;
 
-  &__button {
+  &-button {
     position: absolute;
     top: 50%;
     z-index: 100;
@@ -32,7 +32,7 @@
       height: 36px;
     }
 
-    &-icon {
+    &__icon {
       width: 24px;
       height: 45px;
 
@@ -211,6 +211,10 @@
     .slider__avatar {
       max-width: 236px;
       margin-bottom: 30px;
+
+      @media screen and (max-width: 730px) {
+        margin-bottom: 24px;
+      }
     }
 
     .slider__content {
@@ -225,6 +229,10 @@
       line-height: 24px;
       color: $text_color2;
       margin-bottom: 14px;
+
+      @media screen and (max-width: 730px) {
+        font-size: 18px;
+      }
     }
 
     .slider__text {
@@ -232,6 +240,11 @@
       font-size: 16px;
       line-height: 26px;
       color: $text_color1;
+
+      @media screen and (max-width: 730px) {
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
 
     &-controls {
@@ -241,11 +254,11 @@
         width: 340px;
       }
 
-      .slider__button-prev {
-        left: 16px;
+      .slider-button-prev {
+        left: 15px;
       }
-      .slider__button-next {
-        right: 16px;
+      .slider-button-next {
+        right: 15px;
       }
     }
   }
@@ -316,6 +329,8 @@
         background: $color_grey;
         opacity: 1;
         margin: 0 14px 0 0 !important;
+        border-radius: 50%;
+        cursor: pointer;
 
         &:last-child {
           margin: 0 !important;

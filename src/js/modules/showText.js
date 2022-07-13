@@ -3,15 +3,15 @@ const showText = () => {
 
   textBlocks.forEach((textBlock) => {
     let text = textBlock.querySelector('.textblock__text'),
-      showText = textBlock.querySelector('.show_text'),
+      showText = textBlock.querySelector('.show-text'),
       button = textBlock.querySelector('.textblock__btn'),
       textContent = text.innerText;
 
     //Вся высота текстового блока
     let heightDefult = text.clientHeight;
 
-    //Блина символов блока который должен быть показан
-    let lengthTextShow = showText.textContent.length;
+    //Длина символов блока который должен быть показан
+    let lengthTextShow = showText.innerText.length;
 
     //Если длина больше чем нужна то добавляем ...
     if (textContent.length > 200) {

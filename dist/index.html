@@ -10,7 +10,6 @@
   <meta name="description" content="Проект про классные лакации в вашем городе" />
   <meta name="keywords" content="фото, лакации" />
   <meta name="author" content="Artem Biryukov" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="icon" type="image/icon" sizes="16x16" href="images/favicon.svg" />
   <link rel="stylesheet" href="css/style.min.css" />
   <title>Главная</title>
@@ -108,13 +107,13 @@
       <a href="tel:+74999999999" class="order__phone">+7 (499) 999 99 99</a>
       <a href="#backvoice" class="order__call" data-fancybox="modals" data-src="#modal-backvoice">Обратный звонок</a>
 
-      <a href="#backvoice" class="header__icon order__icon btn__reset" data-fancybox="modals" data-src="#modal-backvoice">
+      <a href="#backvoice" class="header__icon order__icon btn-reset" data-fancybox="modals" data-src="#modal-backvoice">
         <svg width="26" height="26">
           <use xlink:href="#icon-call"></use>
         </svg>
       </a>
 
-      <button class="header__icon menu__icon btn__reset">
+      <button class="header__icon menu-icon btn-reset">
         <svg width="32" height="32">
           <use xlink:href="#icon-burger-menu"></use>
         </svg>
@@ -145,7 +144,7 @@
         фотографий. И мы с точностью заявляем, что нашей фотостудией вы останетесь довольны <br />
         и еще не раз захотите возвращаться к нам.
       </p>
-      <a class="main-screen__btn btn btn__contact" data-fancybox="modals" data-src="#modal-backvoice" data-aos="fade-right" data-aos-delay="250">
+      <a class="main-screen__btn btn btn-contact" data-fancybox="modals" data-src="#modal-backvoice" data-aos="fade-right" data-aos-delay="250">
         <span>Получить консультацию</span>
       </a>
     </div>
@@ -156,46 +155,46 @@
       <section class="works" id="works">
   <h2 class="works__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Наши работы</h2>
 
-  <div class="swiper works__slider">
+  <div class="swiper slider works__slider">
     <div class="swiper-wrapper slider__wrapper">
       <div class="swiper-slide slider__slide">
         <a data-fancybox="gallery-works" href="images/works/big/first-slide.jpg" data-caption="Студия">
-          <picture><source srcset="images/works/first-slide.webp" type="image/webp"><img src="images/works/first-slide.jpg" alt="Slide 1" /></picture>
+          <picture><source srcset="images/works/first-slide.webp" type="image/webp"><img loading="lazy" src="images/works/first-slide.jpg" alt="Slide 1" /></picture>
         </a>
       </div>
 
       <div class="swiper-slide slider__slide">
         <a data-fancybox="gallery-works" href="images/works/big/second-slide.jpg" data-caption="Фотоапарат">
-          <picture><source srcset="images/works/second-slide.webp" type="image/webp"><img src="images/works/second-slide.jpg" alt="Slide 2" /></picture>
+          <picture><source srcset="images/works/second-slide.webp" type="image/webp"><img loading="lazy" src="images/works/second-slide.jpg" alt="Slide 2" /></picture>
         </a>
       </div>
 
       <div class="swiper-slide slider__slide">
         <a data-fancybox="gallery-works" href="images/works/big/three-slide.jpg" data-caption="Фотограф">
-          <picture><source srcset="images/works/three-slide.webp" type="image/webp"><img src="images/works/three-slide.jpg" alt="Slide 3" /></picture>
+          <picture><source srcset="images/works/three-slide.webp" type="image/webp"><img loading="lazy" src="images/works/three-slide.jpg" alt="Slide 3" /></picture>
         </a>
       </div>
       <div class="swiper-slide slider__slide">
         <a data-fancybox="gallery-works" href="images/works/4.jpg" data-caption="slide 4">
-          <picture><source srcset="images/works/4.webp" type="image/webp"><img src="images/works/4.jpg" alt="Slide 4" /></picture>
+          <picture><source srcset="images/works/4.webp" type="image/webp"><img loading="lazy" src="images/works/4.jpg" alt="Slide 4" /></picture>
         </a>
       </div>
 
       <div class="swiper-slide slider__slide">
         <a data-fancybox="gallery-works" href="images/works/5.jpg" data-caption="slide 5">
-          <picture><source srcset="images/works/5.webp" type="image/webp"><img src="images/works/5.jpg" alt="Slide 5" /></picture>
+          <picture><source srcset="images/works/5.webp" type="image/webp"><img loading="lazy" src="images/works/5.jpg" alt="Slide 5" /></picture>
         </a>
       </div>
     </div>
 
-    <button class="slider__button slider__button-prev works__slider-btn-prev">
-      <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="slider-button slider-button-prev works__slider-btn-prev">
+      <svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#slider-arrow"></use>
       </svg>
     </button>
 
-    <button class="slider__button slider__button-next works__slider-btn-next">
-      <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="slider-button slider-button-next works__slider-btn-next">
+      <svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#slider-arrow"></use>
       </svg>
     </button>
@@ -215,7 +214,7 @@
           <div class="slider__slide swiper-slide slide locations__slide">
             <a data-fancybox="gallery-locations" href="images/location/big/loc1.jpg" data-caption="локация 1">
               <div class="slide__content">
-                <picture><source srcset="images/location/loc1.webp" type="image/webp"><img class="slide__img" src="images/location/loc1.jpg" alt="локация 1" /></picture>
+                <picture><source srcset="images/location/loc1.webp" type="image/webp"><img loading="lazy" class="slide__img" src="images/location/loc1.jpg" alt="локация 1" /></picture>
                 <h3 class="slide__title">Название локации 1</h3>
               </div>
             </a>
@@ -224,7 +223,7 @@
           <div class="slider__slide swiper-slide slide locations__slide">
             <a data-fancybox="gallery-locations" href="images/location/big/loc2.jpg" data-caption="локация 2">
               <div class="slide__content">
-                <picture><source srcset="images/location/loc2.webp" type="image/webp"><img class="slide__img" src="images/location/loc2.jpg" alt="локация 2" /></picture>
+                <picture><source srcset="images/location/loc2.webp" type="image/webp"><img loading="lazy" class="slide__img" src="images/location/loc2.jpg" alt="локация 2" /></picture>
                 <h3 class="slide__title">Название локации 2</h3>
               </div>
             </a>
@@ -233,7 +232,7 @@
           <div class="slider__slide swiper-slide slide locations__slide">
             <a data-fancybox="gallery-locations" href="images/location/big/loc3.jpg" data-caption="локация 3">
               <div class="slide__content">
-                <picture><source srcset="images/location/loc3.webp" type="image/webp"><img class="slide__img" src="images/location/loc3.jpg" alt="локация 3" /></picture>
+                <picture><source srcset="images/location/loc3.webp" type="image/webp"><img loading="lazy" class="slide__img" src="images/location/loc3.jpg" alt="локация 3" /></picture>
                 <h3 class="slide__title">Название локации 3</h3>
               </div>
             </a>
@@ -242,7 +241,7 @@
           <div class="slider__slide swiper-slide slide locations__slide">
             <a data-fancybox="gallery-locations" href="images/location/big/loc1.jpg" data-caption="локация 4">
               <div class="slide__content">
-                <picture><source srcset="images/location/loc1.webp" type="image/webp"><img class="slide__img" src="images/location/loc1.jpg" alt="локация 4" /></picture>
+                <picture><source srcset="images/location/loc1.webp" type="image/webp"><img loading="lazy" class="slide__img" src="images/location/loc1.jpg" alt="локация 4" /></picture>
                 <h3 class="slide__title">Название локации 4</h3>
               </div>
             </a>
@@ -251,7 +250,7 @@
           <div class="slider__slide swiper-slide slide locations__slide">
             <a data-fancybox="gallery-locations" href="images/location/big/loc2.jpg" data-caption="локация 5">
               <div class="slide__content">
-                <picture><source srcset="images/location/loc2.webp" type="image/webp"><img class="slide__img" src="images/location/loc2.jpg" alt="локация 5" /></picture>
+                <picture><source srcset="images/location/loc2.webp" type="image/webp"><img loading="lazy" class="slide__img" src="images/location/loc2.jpg" alt="локация 5" /></picture>
                 <h3 class="slide__title">Название локации 5</h3>
               </div>
             </a>
@@ -260,7 +259,7 @@
           <div class="slider__slide swiper-slide slide locations__slide">
             <a data-fancybox="gallery-locations" href="images/location/big/loc3.jpg" data-caption="локация 6">
               <div class="slide__content">
-                <picture><source srcset="images/location/loc3.webp" type="image/webp"><img class="slide__img" src="images/location/loc3.jpg" alt="локация 6" /></picture>
+                <picture><source srcset="images/location/loc3.webp" type="image/webp"><img loading="lazy" class="slide__img" src="images/location/loc3.jpg" alt="локация 6" /></picture>
                 <h3 class="slide__title">Название локации 6</h3>
               </div>
             </a>
@@ -268,14 +267,14 @@
         </div>
       </div>
 
-      <button class="slider__button slider__button-prev locations__btn-prev">
-        <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button class="slider-button slider-button-prev locations__btn-prev">
+        <svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#slider-arrow"></use>
         </svg>
       </button>
 
-      <button class="slider__button slider__button-next locations__btn-next">
-        <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button class="slider-button slider-button-next locations__btn-next">
+        <svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#slider-arrow"></use>
         </svg>
       </button>
@@ -302,47 +301,47 @@
 
   <div class="services__content">
     <div class="services__photo services__photo-family" data-text="Семейная фотосессия (дети +14)" data-aos="zoom-in">
-      <picture><source srcset="images/services/famile.webp" type="image/webp"><img src="images/services/famile.jpg" alt="Семейная фотосессия (дети +14)" /></picture>
+      <picture><source srcset="images/services/famile.webp" type="image/webp"><img loading="lazy" src="images/services/famile.jpg" alt="Семейная фотосессия (дети +14)" /></picture>
     </div>
 
     <div class="services__photo services__photo-girls" data-text="Фотосессия для девушек" data-aos="zoom-in">
-      <picture><source srcset="images/services/for_girl.webp" type="image/webp"><img src="images/services/for_girl.jpg" alt="Фотосессия для девушек" /></picture>
+      <picture><source srcset="images/services/for_girl.webp" type="image/webp"><img loading="lazy" src="images/services/for_girl.jpg" alt="Фотосессия для девушек" /></picture>
     </div>
 
     <div class="services__photo services__photo-loves" data-text="Фотосессия Лав Стори" data-aos="zoom-in">
-      <picture><source srcset="images/services/love_story.webp" type="image/webp"><img src="images/services/love_story.jpg" alt="Фотосессия Лав Стори" /></picture>
+      <picture><source srcset="images/services/love_story.webp" type="image/webp"><img loading="lazy" src="images/services/love_story.jpg" alt="Фотосессия Лав Стори" /></picture>
     </div>
 
     <div class="services__photo services__photo-animals" data-text="Фотосессия с животными" data-aos="zoom-in">
-      <picture><source srcset="images/services/photo_animal.webp" type="image/webp"><img src="images/services/photo_animal.jpg" alt="Фотосессия с животными" /></picture>
+      <picture><source srcset="images/services/photo_animal.webp" type="image/webp"><img loading="lazy" src="images/services/photo_animal.jpg" alt="Фотосессия с животными" /></picture>
     </div>
 
     <div class="services__photo services__photo-lookbooks" data-text="Фотосессия Лукбук" data-aos="zoom-in">
-      <picture><source srcset="images/services/lookbook.webp" type="image/webp"><img src="images/services/lookbook.jpg" alt="Фотосессия Лукбук" /></picture>
+      <picture><source srcset="images/services/lookbook.webp" type="image/webp"><img loading="lazy" src="images/services/lookbook.jpg" alt="Фотосессия Лукбук" /></picture>
     </div>
 
     <div class="services__photo services__photo-boys" data-text="Фотосессия для парней" data-aos="zoom-in">
-      <picture><source srcset="images/services/photo_boys.webp" type="image/webp"><img src="images/services/photo_boys.jpg" alt="Фотосессия для парней" /></picture>
+      <picture><source srcset="images/services/photo_boys.webp" type="image/webp"><img loading="lazy" src="images/services/photo_boys.jpg" alt="Фотосессия для парней" /></picture>
     </div>
 
     <div class="services__photo services__photo-groups" data-text="Групповая фотосессия" data-aos="zoom-in">
-      <picture><source srcset="images/services/photo_group.webp" type="image/webp"><img src="images/services/photo_group.jpg" alt="Групповая фотосессия" /></picture>
+      <picture><source srcset="images/services/photo_group.webp" type="image/webp"><img loading="lazy" src="images/services/photo_group.jpg" alt="Групповая фотосессия" /></picture>
     </div>
 
     <div class="services__photo services__photo-pregnats" data-text="Фотосессия для беременных" data-aos="zoom-in">
-      <picture><source srcset="images/services/pregnant.webp" type="image/webp"><img src="images/services/pregnant.jpg" alt="Фотосессия для беременных" /></picture>
+      <picture><source srcset="images/services/pregnant.webp" type="image/webp"><img loading="lazy" src="images/services/pregnant.jpg" alt="Фотосессия для беременных" /></picture>
     </div>
 
     <div class="services__photo services__photo-works" data-text="Фотосессия «Деловой стиль»" data-aos="zoom-in">
-      <picture><source srcset="images/services/work_style.webp" type="image/webp"><img src="images/services/work_style.jpg" alt="Фотосессия «Деловой стиль»" /></picture>
+      <picture><source srcset="images/services/work_style.webp" type="image/webp"><img loading="lazy" src="images/services/work_style.jpg" alt="Фотосессия «Деловой стиль»" /></picture>
     </div>
 
     <div class="services__photo services__photo-teens" data-text="Фотосессия для подростков" data-aos="zoom-in">
-      <picture><source srcset="images/services/photo_teens.webp" type="image/webp"><img src="images/services/photo_teens.jpg" alt="Фотосессия для подростков" /></picture>
+      <picture><source srcset="images/services/photo_teens.webp" type="image/webp"><img loading="lazy" src="images/services/photo_teens.jpg" alt="Фотосессия для подростков" /></picture>
     </div>
 
     <div class="services__photo services__photo-pair" data-text="Парная фотосессия" data-aos="zoom-in">
-      <picture><source srcset="images/services/photo_pair.webp" type="image/webp"><img src="images/services/photo_pair.jpg" alt="Парная фотосессия" /></picture>
+      <picture><source srcset="images/services/photo_pair.webp" type="image/webp"><img loading="lazy" src="images/services/photo_pair.jpg" alt="Парная фотосессия" /></picture>
     </div>
   </div>
 </section>
@@ -391,8 +390,8 @@
       <h2 class="textblock__title title">Фотостудия для любых идейных фотоссесий</h2>
 
       <div class="textblock__text">
-        <span class="show_text"
-          >Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один из наших залов.<br />А их, -на секундочку, -аж семь штук. Каждый наш зал
+        <span class="show-text">
+          Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные, качественные фотографии, выбрав один из наших залов.<br />А их, -на секундочку, -аж семь штук. Каждый наш зал
           оборудован интерьером и профессиональным оборудованием, и подойдет<br />для любой фотоссесии, а мы хотим рассказать вам о все подробнее.
         </span>
         <br />
@@ -569,7 +568,7 @@
       <h2 class="textblock__title title">Фотостудия для любых идейных фотоссесий</h2>
 
       <div class="textblock__text">
-        <span class="show_text"
+        <span class="show-text"
           >Мы&nbsp;искренни так считаем и&nbsp;готовы кричать эту фразу на&nbsp;весь мир. Фотографии давно перестали пылиться на&nbsp;полках в&nbsp;семейных, <br />потрёпанных альбомах.
           <br /><br />Хотите самовыразиться и&nbsp;не&nbsp;знаете как? Позвоните нам и&nbsp;закажите фотосъемку. <br />Хотите удивить и&nbsp;впечатлить? Мы&nbsp;вам поможем.<br />
           Не&nbsp;уверены? Посмотрите отзывы и&nbsp;проконсультируйтесь.<br />
@@ -625,7 +624,7 @@
     </div>
 
     <div class="present__right">
-      <picture><source srcset="images/present_img.webp" type="image/webp"><img src="images/present_img.png" alt="Сертификат" class="present__img" /></picture>
+      <picture><source srcset="images/present_img.webp" type="image/webp"><img loading="lazy" src="images/present_img.png" alt="Сертификат" class="present__img" /></picture>
 
       <div class="present__buy">
         <p class="present__text">Срок действия сертификата: 2 месяца со дня приобретения.</p>
@@ -635,7 +634,7 @@
       </div>
     </div>
 
-    <img class="present__decor" src="images/present_bg.svg" alt="Тропка муравья" />
+    <img loading="lazy" class="present__decor" src="images/present_bg.svg" alt="Тропка муравья" />
   </div>
 </section>
 
@@ -643,11 +642,11 @@
       <section class="reviews container" id="reviews">
   <h2 class="reviews__title title" data-aos="zoom-in-down" data-aos-anchor-placement="top-bottom">Отзывы</h2>
 
-  <div class="swiper reviews__slider">
+  <div class="swiper reviews__slider slider">
     <div class="swiper-wrapper slider__wrapper">
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <picture><source srcset="images/revies_avatar1.webp" type="image/webp"><img src="images/revies_avatar1.png" alt="аватарка" /></picture>
+          <picture><source srcset="images/revies_avatar1.webp" type="image/webp"><img loading="lazy" src="images/revies_avatar1.png" alt="аватарка" /></picture>
         </div>
 
         <div class="slider__content">
@@ -658,7 +657,7 @@
 
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <picture><source srcset="images/revies_avatar2.webp" type="image/webp"><img src="images/revies_avatar2.png" alt="аватарка" /></picture>
+          <picture><source srcset="images/revies_avatar2.webp" type="image/webp"><img loading="lazy" src="images/revies_avatar2.png" alt="аватарка" /></picture>
         </div>
 
         <div class="slider__content">
@@ -669,7 +668,7 @@
 
       <div class="swiper-slide slider__slide">
         <div class="slider__avatar">
-          <picture><source srcset="images/revies_avatar3.webp" type="image/webp"><img src="images/revies_avatar3.png" alt="аватарка" /></picture>
+          <picture><source srcset="images/revies_avatar3.webp" type="image/webp"><img loading="lazy" src="images/revies_avatar3.png" alt="аватарка" /></picture>
         </div>
 
         <div class="slider__content">
@@ -681,13 +680,13 @@
   </div>
 
   <div class="reviews__slider-controls">
-    <button class="slider__button slider__button-prev revies__button-prev">
-      <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="slider-button slider-button-prev revies-button-prev">
+      <svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#slider-arrow"></use>
       </svg>
     </button>
-    <button class="slider__button slider__button-next revies__button-next">
-      <svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="slider-button slider-button-next revies-button-next">
+      <svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#slider-arrow"></use>
       </svg>
     </button>
@@ -702,7 +701,7 @@
       <div class="backvoice container" id="backvoice">
   <div id="map" class="backvoice__map"></div>
 
-  <form class="backvoice__form" action="#" id="backvoice-form" method="post">
+  <form class="backvoice__form form" action="#" id="backvoice-form" method="post">
     <div class="backvoice__form-container">
       <h3 class="backvoice__form-title form__title">Форма обратной связи</h3>
 
@@ -804,7 +803,7 @@
   <div class="modal__body">
     <!-- Контент обратной связи сама форма!!! -->
     <div class="modal__img">
-      <img class="backvoice__img" src="images/modal/backvoice.svg" alt="Обратная связь" />
+      <img loading="lazy" class="modal__img-backvoice" src="images/modal/backvoice.svg" alt="Обратная связь" />
     </div>
 
     <form class="modal__form form" action="#" id="form__backvoice" method="post">
@@ -861,7 +860,7 @@
 <div class="modal" id="modal-locations">
   <div class="modal__body">
     <div class="modal__img">
-      <img class="location__img" src="images/modal/location.svg" alt="Выбор локации" />
+      <img loading="lazy" class="modal__img-location" src="images/modal/location.svg" alt="Выбор локации" />
     </div>
 
     <form class="modal__form form" action="#" id="form__location" method="post">
@@ -879,10 +878,8 @@
         </div>
 
         <div class="form__elem">
-          <label for="tel">
-            <label class="form__label" for="locations-tel">Телефон</label>
-            <input class="form__input" type="tel" name="tel" id="locations-tel" placeholder="Введи ваш Телефон" />
-          </label>
+          <label class="form__label" for="locations-tel">Телефон</label>
+          <input class="form__input" type="tel" name="tel" id="locations-tel" placeholder="Введи ваш Телефон" />
         </div>
 
         <div class="form__elem">
@@ -973,7 +970,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <picture><source srcset="images/placeholder.webp" type="image/webp"><img src="images/placeholder.jpg" alt="Заглушка" /></picture>
+                  <picture><source srcset="images/placeholder.webp" type="image/webp"><img loading="lazy" src="images/placeholder.jpg" alt="Заглушка" /></picture>
                 </div>
 
                 <div class="form__photo-item">
@@ -983,7 +980,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <picture><source srcset="images/placeholder.webp" type="image/webp"><img src="images/placeholder.jpg" alt="Заглушка" /></picture>
+                  <picture><source srcset="images/placeholder.webp" type="image/webp"><img loading="lazy" src="images/placeholder.jpg" alt="Заглушка" /></picture>
                 </div>
 
                 <div class="form__photo-item">
@@ -993,7 +990,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <picture><source srcset="images/placeholder.webp" type="image/webp"><img src="images/placeholder.jpg" alt="Заглушка" /></picture>
+                  <picture><source srcset="images/placeholder.webp" type="image/webp"><img loading="lazy" src="images/placeholder.jpg" alt="Заглушка" /></picture>
                 </div>
 
                 <div class="form__photo-item">
@@ -1003,7 +1000,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <picture><source srcset="images/placeholder.webp" type="image/webp"><img src="images/placeholder.jpg" alt="Заглушка" /></picture>
+                  <picture><source srcset="images/placeholder.webp" type="image/webp"><img loading="lazy" src="images/placeholder.jpg" alt="Заглушка" /></picture>
                 </div>
               </div>
 
@@ -1026,7 +1023,7 @@
       <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
     </form>
     <div class="modal__img">
-      <img class="review__img" src="images/modal/review.svg" alt="Оставить отзыв" />
+      <img loading="lazy" class="modal__img-review" src="images/modal/review.svg" alt="Оставить отзыв" />
     </div>
   </div>
 
@@ -1056,9 +1053,9 @@
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="retouch-mini-count">Количество</label>
-      <input class="popUp__input form__input" id="retouch-mini-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
-      <button class="form__btn btn popUp__btn" data-fancybox-close>
+      <label class="popUp__label" for="retouch-mini-count">Количество</label>
+      <input class="popUp__input" id="retouch-mini-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
+      <button class="btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
     </div>
@@ -1070,9 +1067,9 @@
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="retouch-standart-count">Количество</label>
-      <input class="popUp__input form__input" id="retouch-standart-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
-      <button class="form__btn btn popUp__btn" data-fancybox-close>
+      <label class="popUp__label" for="retouch-standart-count">Количество</label>
+      <input class="popUp__input" id="retouch-standart-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
+      <button class="btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
     </div>
@@ -1084,9 +1081,9 @@
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="retouch-maxi-count">Количество</label>
-      <input class="popUp__input form__input" id="retouch-maxi-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
-      <button class="form__btn btn popUp__btn" data-fancybox-close>
+      <label class="popUp__label" for="retouch-maxi-count">Количество</label>
+      <input class="popUp__input" id="retouch-maxi-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
+      <button class="btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
     </div>

@@ -1,12 +1,12 @@
 const openMenu = () => {
-  const headerBtn = document.querySelector('.menu__icon'),
+  const headerBtn = document.querySelector('.menu-icon'),
     headerMenu = document.querySelector('.header__menu'),
     body = document.querySelector('body');
 
   document.addEventListener('click', (e) => {
     const target = e.target;
 
-    if (target.closest('.menu__icon')) {
+    if (target.closest('.menu-icon')) {
       toggelMenu();
     }
 

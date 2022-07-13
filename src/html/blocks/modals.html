@@ -3,7 +3,7 @@
   <div class="modal__body">
     <!-- Контент обратной связи сама форма!!! -->
     <div class="modal__img">
-      <img class="backvoice__img" src="@images/modal/backvoice.svg" alt="Обратная связь" />
+      <img loading="lazy" class="modal__img-backvoice" src="@images/modal/backvoice.svg" alt="Обратная связь" />
     </div>
 
     <form class="modal__form form" action="#" id="form__backvoice" method="post">
@@ -60,7 +60,7 @@
 <div class="modal" id="modal-locations">
   <div class="modal__body">
     <div class="modal__img">
-      <img class="location__img" src="@images/modal/location.svg" alt="Выбор локации" />
+      <img loading="lazy" class="modal__img-location" src="@images/modal/location.svg" alt="Выбор локации" />
     </div>
 
     <form class="modal__form form" action="#" id="form__location" method="post">
@@ -78,10 +78,8 @@
         </div>
 
         <div class="form__elem">
-          <label for="tel">
-            <label class="form__label" for="locations-tel">Телефон</label>
-            <input class="form__input" type="tel" name="tel" id="locations-tel" placeholder="Введи ваш Телефон" />
-          </label>
+          <label class="form__label" for="locations-tel">Телефон</label>
+          <input class="form__input" type="tel" name="tel" id="locations-tel" placeholder="Введи ваш Телефон" />
         </div>
 
         <div class="form__elem">
@@ -172,7 +170,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <img src="@images/placeholder.jpg" alt="Заглушка" />
+                  <img loading="lazy" src="@images/placeholder.jpg" alt="Заглушка" />
                 </div>
 
                 <div class="form__photo-item">
@@ -182,7 +180,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <img src="@images/placeholder.jpg" alt="Заглушка" />
+                  <img loading="lazy" src="@images/placeholder.jpg" alt="Заглушка" />
                 </div>
 
                 <div class="form__photo-item">
@@ -192,7 +190,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <img src="@images/placeholder.jpg" alt="Заглушка" />
+                  <img loading="lazy" src="@images/placeholder.jpg" alt="Заглушка" />
                 </div>
 
                 <div class="form__photo-item">
@@ -202,7 +200,7 @@
                       <path d="M13 1L1 13" stroke="#CBCBCB" stroke-width="2" stroke-linecap="round" />
                     </svg>
                   </span>
-                  <img src="@images/placeholder.jpg" alt="Заглушка" />
+                  <img loading="lazy" src="@images/placeholder.jpg" alt="Заглушка" />
                 </div>
               </div>
 
@@ -225,7 +223,7 @@
       <p class="form__notific">Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
     </form>
     <div class="modal__img">
-      <img class="review__img" src="@images/modal/review.svg" alt="Оставить отзыв" />
+      <img loading="lazy" class="modal__img-review" src="@images/modal/review.svg" alt="Оставить отзыв" />
     </div>
   </div>
 
@@ -255,9 +253,9 @@
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="retouch-mini-count">Количество</label>
-      <input class="popUp__input form__input" id="retouch-mini-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
-      <button class="form__btn btn popUp__btn" data-fancybox-close>
+      <label class="popUp__label" for="retouch-mini-count">Количество</label>
+      <input class="popUp__input" id="retouch-mini-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
+      <button class="btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
     </div>
@@ -269,9 +267,9 @@
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="retouch-standart-count">Количество</label>
-      <input class="popUp__input form__input" id="retouch-standart-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
-      <button class="form__btn btn popUp__btn" data-fancybox-close>
+      <label class="popUp__label" for="retouch-standart-count">Количество</label>
+      <input class="popUp__input" id="retouch-standart-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
+      <button class="btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
     </div>
@@ -283,9 +281,9 @@
     <h2 class="popUp__title">Дополнительная ретушь фото</h2>
 
     <div class="popUp__container">
-      <label class="popUp__label form__label" for="retouch-maxi-count">Количество</label>
-      <input class="popUp__input form__input" id="retouch-maxi-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
-      <button class="form__btn btn popUp__btn" data-fancybox-close>
+      <label class="popUp__label" for="retouch-maxi-count">Количество</label>
+      <input class="popUp__input" id="retouch-maxi-count" type="text" name="count" placeholder="Введите количество фото для ретуши" />
+      <button class="btn popUp__btn" data-fancybox-close>
         <span data-fancybox-close>Сохранить</span>
       </button>
     </div>

@@ -67,8 +67,8 @@ const sliders = () => {
     modules: [Navigation, Autoplay],
 
     navigation: {
-      nextEl: '.revies__button-next',
-      prevEl: '.revies__button-prev',
+      nextEl: '.revies-button-next',
+      prevEl: '.revies-button-prev',
     },
 
     breakpoints: {
