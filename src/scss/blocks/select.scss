@@ -1,92 +1,88 @@
-.select {
+.selector {
   position: relative;
-  width: 100%;
 
-  // border: 1px solid #dddee4;
-  // border-radius: 5px;
-}
+  &__box {
+    position: relative;
+    min-height: 48px;
+    padding: 16px 14px;
 
-.select__btn {
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
+    border: 1px solid #dddee4;
+    border-radius: 5px;
 
-  background-color: #fff;
-  border: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba($color_grey, 0.4);
 
-  padding: 18px 16px;
-
-  opacity: 0.4;
-
-  color: #b1b1b1;
-  font-size: 12px;
-  line-height: 12px;
-
-  cursor: pointer;
-  user-select: none;
-}
-
-// .select__btn::after {
-//   content: '';
-//   width: 0.75rem;
-//   height: 0.75rem;
-
-//   margin-left: 1rem;
-//   background-size: cover;
-//   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100"%3E%3Cpath d="M97.625 25.3l-4.813-4.89c-1.668-1.606-3.616-2.41-5.84-2.41-2.27 0-4.194.804-5.777 2.41L50 52.087 18.806 20.412C17.223 18.805 15.298 18 13.03 18c-2.225 0-4.172.804-5.84 2.41l-4.75 4.89C.813 26.95 0 28.927 0 31.23c0 2.346.814 4.301 2.439 5.865l41.784 42.428C45.764 81.174 47.689 82 50 82c2.268 0 4.215-.826 5.84-2.476l41.784-42.428c1.584-1.608 2.376-3.563 2.376-5.865 0-2.26-.792-4.236-2.375-5.932z"/%3E%3C/svg%3E');
-// }
-
-// .select__btn:focus {
-//   outline: none;
-// }
-
-// .show.select__btn::after {
-//   transform: rotate(180deg);
-// }
-
-.select__list {
-  position: absolute;
-  z-index: 2;
-  top: 55px;
-  left: 0;
-  right: 0;
-  max-height: 10rem;
-
-  // display: none;
-  background-color: #fff;
-  border: 1px solid #dddee4;
-  border-radius: 5px;
-
-  overflow-y: auto;
-
-  &.show {
-    display: block;
-  }
-}
-
-.select__item {
-  padding: 10px 28px;
-  color: $text_color1;
-
-  &:hover {
-    background-color: $text_white;
     cursor: pointer;
-    transition: 0.2s background-color ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 6px;
+      width: 11px;
+
+      right: 14px;
+
+      background-image: url(../images/icons/selector-icon.svg);
+      background-repeat: no-repeat;
+      transition: all 0.3s ease-in;
+    }
+
+    &.show::after {
+      transform: rotate(180deg);
+    }
   }
 
-  &-selected {
-    background-color: $bg_color1;
-    @extend %displaySpaceBeetwen;
+  &__selected {
+    color: $text_color1;
   }
 
-  // &-selected::after {
-  //   content: '';
-  //   width: 0.75rem;
-  //   height: 0.75rem;
-  //   color: #0277bd;
-  //   background-size: cover;
-  //   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
-  // }
+  &__options {
+    position: absolute;
+    z-index: 3;
+    top: 55px;
+
+    width: 100%;
+
+    border: 1px solid rgba($color_grey, 0.4);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-color: white;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease-in;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__item {
+    min-height: 40px;
+    padding: 10px 28px;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f2f4f4;
+    }
+  }
+
+  &__icon {
+    width: 12px;
+    height: 7px;
+
+    & path {
+      fill: #e0e0e0;
+    }
+  }
 }

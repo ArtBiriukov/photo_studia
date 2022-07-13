@@ -44,9 +44,10 @@ export const priceFrom = () => {
       } else {
         if (item.dataset.additionalName === 'retouch') {
           popUpSelect(item);
+        } else {
+          item.classList.add('active');
+          item.setAttribute('data-select', '1');
         }
-        item.classList.add('active');
-        item.setAttribute('data-select', '1');
       }
     });
   });

@@ -1,26 +1,32 @@
 const selectLocation = () => {
   // console.log('selections');
 
-  const formLocation = document.querySelector('#form__location');
-  const selectWrapper = formLocation.querySelector('.select');
-  const selectList = formLocation.querySelector('.select__list');
-  const selectBtn = formLocation.querySelector('.select__btn');
+  const selectorBox = document.querySelector('.selector__box'),
+    selectorOptions = document.querySelector('.selector__options'),
+    selectorItems = document.querySelectorAll('.selector__item');
 
-  const openSelect = () => {
-    selectBtn.classList.toggle('show');
-    selectList.classList.toggle('show');
+  const showItems = () => {
+    selectorBox.classList.toggle('show');
+    selectorOptions.classList.toggle('show');
   };
 
-  selectWrapper.addEventListener('click', (e) => {
+  selectorBox.addEventListener('click', (e) => {
     const target = e.target;
-    openSelect();
 
-    if (target.classList.contains('select__item')) {
-      let text = target.innerText;
-
-      selectBtn.innerText = text;
-      openSelect();
+    if (target.closest('.selector__box')) {
+      showItems();
     }
+  });
+
+  selectorItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      const text = item.innerText;
+
+      selectorBox.innerText = text;
+      selectorBox.classList.add('selector__selected');
+
+      showItems();
+    });
   });
 };
 
