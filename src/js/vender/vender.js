@@ -1,6 +1,8 @@
 //Анимация AOS
 import AOS from 'aos';
 
+import './simplebar.min.js';
+
 AOS.init({
   disable: function () {
     let maxWidth = 896;
@@ -25,14 +27,14 @@ Fancybox.bind('[data-fancybox="gallery-works"]', {
 
   Carousel: {
     Navigation: {
-      prevTpl: '<svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#slider-arrow"></use></svg>',
-      nextTpl: '<svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#slider-arrow"></use></svg>',
+      prevTpl: '<svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#slider-arrow"></use></svg>',
+      nextTpl: '<svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#slider-arrow"></use></svg>',
 
       classNames: {
-        button: 'slider__button',
+        button: 'slider-button',
 
-        next: 'slider__button-next',
-        prev: 'slider__button-prev',
+        next: 'slider-button-next',
+        prev: 'slider-button-prev',
       },
     },
   },
@@ -52,14 +54,14 @@ Fancybox.bind('[data-fancybox="gallery-locations"]', {
 
   Carousel: {
     Navigation: {
-      prevTpl: '<svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#slider-arrow"></use></svg>',
-      nextTpl: '<svg class="slider__button-icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#slider-arrow"></use></svg>',
+      prevTpl: '<svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#slider-arrow"></use></svg>',
+      nextTpl: '<svg class="slider-button__icon" viewBox="0 0 24 45" fill="none" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#slider-arrow"></use></svg>',
 
       classNames: {
-        button: 'slider__button',
+        button: 'slider-button',
 
-        next: 'slider__button-next',
-        prev: 'slider__button-prev',
+        next: 'slider-button-next',
+        prev: 'slider-button-prev',
       },
     },
   },
@@ -71,8 +73,7 @@ Fancybox.bind('[data-fancybox="modals"]', {
   dragToClose: false,
 
   template: {
-    closeButton:
-      '<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L22 22" stroke-width="2" stroke-linecap="round" /><path d="M22 1L1 22" stroke-width="2" stroke-linecap="round" /></svg>',
+    closeButton: '<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L22 22" stroke-width="2" stroke-linecap="round" /><path d="M22 1L1 22" stroke-width="2" stroke-linecap="round" /></svg>',
   },
 
   Carousel: {
