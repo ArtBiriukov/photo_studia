@@ -1,5 +1,7 @@
 //Анимация AOS
 import AOS from 'aos';
+//Галлерея и модальное окно
+import { Fancybox } from '@fancyapps/ui';
 
 import './simplebar.min.js';
 
@@ -9,9 +11,6 @@ AOS.init({
     return window.innerWidth < maxWidth;
   },
 });
-
-//Галлерея и модальное окно
-import { Fancybox } from '@fancyapps/ui';
 
 Fancybox.bind('[data-fancybox="gallery-works"]', {
   Thumbs: false,
@@ -84,3 +83,7 @@ Fancybox.bind('[data-fancybox="modals"]', {
     },
   },
 });
+
+// const myElement = document.querySelector('.form__photo-content');
+
+// new SimpleBar(myElement);

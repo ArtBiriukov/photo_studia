@@ -2,7 +2,7 @@
 import './vender/vender.js';
 import preloader from './modules/preloader.js';
 import sliders from './vender/sliders.js';
-import validation from './vender/validation.js';
+import { validation } from './vender/validation.js';
 
 //Модули
 import showText from './modules/showText.js';

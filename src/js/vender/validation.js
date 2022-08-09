@@ -5,8 +5,8 @@ let maskOptions = {
   mask: '+{7}(000)000-00-00',
 };
 
-const validation = () => {
-  const popUpInput = document.querySelector('.popUp__input');
+export const validation = () => {
+  const popUpInput = document.querySelectorAll('.popUp__input');
 
   const forms = document.querySelectorAll('form');
 
@@ -17,7 +17,8 @@ const validation = () => {
       e.preventDefault();
     });
   });
-  // console.log(forms);
+
+  console.log(popUpInput);
 
   // const formTest = document.querySelector('.backvoice__form');
   // const telInput = formTest.querySelector('[name="tel"]');
@@ -26,5 +27,3 @@ const validation = () => {
 
   // let mask = IMask(telInput, maskOptions);
 };
-
-export default validation;
