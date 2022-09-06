@@ -2,7 +2,7 @@
 
 ## Демо
 
-[Демо страница](https://artbiryukov.github.io/photo_studia/dist/)
+[Демо страница](https://artbiriukov.github.io/photo_studia/dist/)
 
 ## Технологии применненые в проекте
 
